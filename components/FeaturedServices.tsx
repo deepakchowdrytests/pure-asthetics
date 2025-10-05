@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const services = [
   {
@@ -57,13 +58,15 @@ export function FeaturedServicesSection() {
           </h2>
 
           <p className="text-white text-base max-w-96 leading-relaxed">
-            Whether you&apos;re new to skincare or a seasoned pro, our services are
-            here to help you achieve your healthiest skin. Explore our tailored
-            offerings below.
+            Whether you&apos;re new to skincare or a seasoned pro, our services
+            are here to help you achieve your healthiest skin. Explore our
+            tailored offerings below.
           </p>
           <Button className="rounded-none rounded-tr-2xl font-normal w-44 bg-[#FCF3EE] hover:bg-[#FCF3EE]/85 text-brand-text-primary">
-            <span>View all services</span>
-            <ChevronRight className="size-4" strokeWidth={1.5} />
+            <Link href="/services/featured" className="flex items-center gap-1">
+              <span>View all services</span>
+              <ChevronRight className="size-4" strokeWidth={1.5} />
+            </Link>
           </Button>
         </div>
 

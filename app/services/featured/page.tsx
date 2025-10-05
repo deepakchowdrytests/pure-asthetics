@@ -1,0 +1,385 @@
+import Image from "next/image";
+
+const ServicesPage = () => {
+  const featuredServices = [
+    {
+      title: "Botox Injection",
+      description: "Reduce fine lines and wrinkles for a smoother look.",
+      image: "/images/service-1.png",
+    },
+    {
+      title: "Dermal & Bio Fillers",
+      description: "Restore volume and enhance natural contours.",
+      image: "/images/service-2.png",
+    },
+    {
+      title: "Sculptra",
+      description: "Stimulate collagen for long-lasting results.",
+      image: "/images/service-3.png",
+    },
+    {
+      title: "PRP Micro Needling",
+      description: "Harness your body’s own healing for radiant skin.",
+      image: "/images/service-4.png",
+    },
+  ];
+
+  const bodyServices = [
+    {
+      title: "Body Sculpting & Contouring",
+      description: "Shape and tone without surgery",
+      image: "/images/service-1.png",
+    },
+    {
+      title: "Weight Loss Solutions",
+      description: "Customized programs for sustainable results.",
+      image: "/images/service-2.png",
+    },
+    {
+      title: "Hair Restoration",
+      description: "Natural solutions for thinning hair.",
+      image: "/images/service-3.png",
+    },
+    {
+      title: "IV Nutrition",
+      description: "Boost energy and immunity with targeted nutrients",
+      image: "/images/service-4.png",
+    },
+  ];
+
+  const laserTreatments = [
+    {
+      title: "Laser Hair Removal",
+      description: "Smooth, hair-free skin that lasts.",
+      image: "/images/service-1.png",
+    },
+    {
+      title: "Laser Skin Rejuvenation",
+      description: "Restore youthful tone and texture",
+      image: "/images/service-2.png",
+    },
+    {
+      title: "Laser Tattoo & Pigment Removal",
+      description: "Safely fade unwanted ink and discolorationn",
+      image: "/images/service-3.png",
+    },
+  ];
+
+  const skinCareServices = [
+    {
+      title: "RF Microneedling",
+      description: "Improve skin tone and firmness.",
+      image: "/images/service-1.png",
+    },
+    {
+      title: "Medical Grade Acid Peeling",
+      description: "Reveal fresh, glowing skin.",
+      image: "/images/service-2.png",
+    },
+    {
+      title: "Acne Treatment",
+      description: "Solutions for clear, healthy skin.",
+      image: "/images/service-3.png",
+    },
+  ];
+
+  const healthServices = [
+    {
+      title: "Urinary Incontinence Treatment",
+      description: "Non-surgical treatments for bladder control.",
+      image: "/images/service-1.png",
+    },
+    {
+      title: "Intimacy Wellness",
+      description: "Rejuvenation for enhanced confidence and comfort.",
+      image: "/images/service-2.png",
+    },
+  ];
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen py-12 bg-[#FFF2E8]">
+      <h1 className="text-2xl md:text-4xl font-semibold text-brand-secondary-dark">
+        Featured Services
+      </h1>
+      <div className="flex justify-center w-full relative">
+        <Image
+          src="/images/injection-illustration.png"
+          alt="Pure Aesthetics MD"
+          width={160}
+          height={60}
+          className="w-[420px] object-cover absolute -top-40 -left-10"
+        />
+        <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
+          <div className="col-span-1 flex items-center">
+            <div className="space-y-3 md:space-y-6 text-center md:text-left">
+              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+                Face & Anti Aging Services
+              </h3>
+              <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
+                Smooth, refresh, and rejuvenate your appearance with
+                physician-administered injectables and advanced treatments.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {featuredServices.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col gap-1 items-center"
+              >
+                <div className="md:size-64 rounded-xl overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={1000}
+                    height={1000}
+                    className="aspect-square object-cover"
+                  />
+                </div>
+                <div className="flex flex-col items-center">
+                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                    {service.title}
+                  </h2>
+                  <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Image
+          src="/images/about-main-illustration.png"
+          alt="Pure Aesthetics MD"
+          width={160}
+          height={60}
+          className="w-80 object-cover absolute top-[450px] -left-10"
+        />
+      </div>
+      <div className="flex justify-center w-full bg-brand-primary/20 relative">
+        <Image
+          src="/images/about-main-illustration-2.png"
+          alt="Pure Aesthetics MD"
+          width={160}
+          height={60}
+          className="w-80 object-cover absolute top-0 -right-0"
+        />
+        <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
+          <div className="col-span-1 flex items-center justify-center md:hidden">
+            <div className="space-y-3 md:space-y-6 text-center">
+              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+                Body & Wellness Services
+              </h3>
+              <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
+                Feel confident inside and out with non-invasive solutions that
+                target body concerns and support overall well-being.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {bodyServices.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col gap-1 items-center"
+              >
+                <div className="md:size-64 rounded-xl overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={1000}
+                    height={1000}
+                    className="aspect-square object-cover"
+                  />
+                </div>
+                <div className="flex flex-col items-center">
+                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                    {service.title}
+                  </h2>
+                  <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="col-span-1 md:flex items-center justify-center hidden">
+            <div className="space-y-6">
+              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+                Body & Wellness Services
+              </h3>
+              <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
+                Feel confident inside and out with non-invasive solutions that
+                target body concerns and support overall well-being.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className="flex justify-center w-full relative">
+        <Image
+          src="/images/dropper-illustration.png"
+          alt="Pure Aesthetics MD"
+          width={160}
+          height={60}
+          className="w-80 object-cover absolute -top-40 -left-10"
+        />
+        <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
+          <div className="col-span-1 flex items-center">
+            <div className="space-y-3 md:space-y-6 text-center md:text-left">
+              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+                Laser Treatments
+              </h3>
+              <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
+                Advanced technology for skin renewal, hair reduction, and
+                pigment correction
+              </p>
+            </div>
+          </div>
+          <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {laserTreatments.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col gap-1 items-center"
+              >
+                <div className="md:size-64 rounded-xl overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={1000}
+                    height={1000}
+                    className="aspect-square object-cover"
+                  />
+                </div>
+                <div className="flex flex-col items-center">
+                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                    {service.title}
+                  </h2>
+                  <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Image
+          src="/images/about-main-illustration-2.png"
+          alt="Pure Aesthetics MD"
+          width={160}
+          height={60}
+          className="w-80 object-cover absolute top-60 -right-0"
+        />
+      </div>
+
+      <div className="flex justify-center w-full bg-brand-primary-light/20 relative">
+        <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
+          <div className="col-span-1 flex items-center justify-center md:hidden">
+            <div className="space-y-3 md:space-y-6 text-center">
+              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+                Skin Care Services
+              </h3>
+              <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
+                Transform your skin with treatments tailored to your unique
+                needs.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {skinCareServices.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col gap-1 items-center"
+              >
+                <div className="md:size-64 rounded-xl overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={1000}
+                    height={1000}
+                    className="aspect-square object-cover"
+                  />
+                </div>
+                <div className="flex flex-col items-center">
+                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                    {service.title}
+                  </h2>
+                  <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="col-span-1 md:flex items-center justify-center hidden">
+            <div className="space-y-6">
+              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+                Skin Care Services
+              </h3>
+              <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
+                Transform your skin with treatments tailored to your unique
+                needs.
+              </p>
+            </div>
+          </div>
+        </section>
+        <Image
+          src="/images/dropper-illustration-2.png"
+          alt="Pure Aesthetics MD"
+          width={160}
+          height={60}
+          className="w-80 object-cover absolute top-60 -right-0"
+        />
+      </div>
+
+      <div className="flex justify-center w-full relative">
+        <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
+          <div className="col-span-1 flex items-center">
+            <div className="space-y-3 md:space-y-6 text-center md:text-left">
+              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+                Women&apos;s Health Services
+              </h3>
+              <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
+                Confidential care to restore comfort, confidence, and intimacy
+              </p>
+            </div>
+          </div>
+          <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {healthServices.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col gap-1 items-center"
+              >
+                <div className="md:size-64 rounded-xl overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={1000}
+                    height={1000}
+                    className="aspect-square object-cover"
+                  />
+                </div>
+                <div className="flex flex-col items-center">
+                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                    {service.title}
+                  </h2>
+                  <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Image
+          src="/images/about-main-illustration.png"
+          alt="Pure Aesthetics MD"
+          width={160}
+          height={60}
+          className="w-80 object-cover absolute top-20 -left-10 opacity-50"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default ServicesPage;
