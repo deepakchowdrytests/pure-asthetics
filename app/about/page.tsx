@@ -1,0 +1,438 @@
+import { Button } from "@/components/ui/button";
+import { PhoneIcon } from "@/lib/icons";
+import { PlayIcon } from "lucide-react";
+import Image from "next/image";
+
+const About = () => {
+  return (
+    <div className="min-h-screen bg-[#FCF3EE] flex items-center flex-col justify-center">
+      {/* Hero Section */}
+      <div className="flex md:items-center items-end justify-center w-full relative min-h-[80vh] md:h-screen overflow-hidden">
+        <Image
+          src={"/images/about-main-illustration.png"}
+          alt=""
+          width={2000}
+          height={1200}
+          className="w-80 absolute -bottom-80 left-0 hidden md:block"
+        />
+        <section className="w-11/12 md:w-10/12 h-full relative">
+          <h1 className="text-3xl font-bold mb-6 text-brand-text-primary absolute top-10 left-1/2 -translate-x-1/2 hidden md:block">
+            Your Journey to Radiant skin starts here
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-3 h-full">
+            <div className="hidden relative h-11/12 md:flex flex-col justify-end col-span-1">
+              <div className="flex justify-start">
+                <Image
+                  src={"/images/about-img-1.png"}
+                  alt="Facial treatment"
+                  width={2000}
+                  height={1200}
+                  className="w-72"
+                />
+              </div>
+              <div className="w-full flex justify-end">
+                <Image
+                  src={"/images/about-img-2.png"}
+                  alt="Consultation"
+                  width={2000}
+                  height={1200}
+                  className="w-72 -translate-y-28"
+                />
+              </div>
+            </div>
+            <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center">
+              <div className="w-full md:w-8/12 space-y-6 md:space-y-10">
+                <h1 className="text-2xl md:text-4xl font-bold mb-6 text-brand-text-primary md:hidden">
+                  Your Journey to Radiant skin starts here
+                </h1>
+                <div className="space-y-2">
+                  <p className="text-base md:text-xl leading-10 text-brand-text-primary">
+                    At Pure Aesthetics MD, we blend science, care, and expertise
+                    to enhance confidence at every stage of your journey.
+                  </p>
+                  <p className="text-base md:text-xl leading-10 text-brand-text-primary">
+                    Our advanced, physician-led treatments are designed to
+                    deliver results that look natural, feel effortless, and are
+                    always tailored to you.
+                  </p>
+                </div>
+                <Button className="rounded-none rounded-tr-2xl font-normal w-40 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary">
+                  <PhoneIcon width={20} height={20} />
+                  <span>Schedule now</span>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <Image
+          src={"/images/about-main-illustration-2.png"}
+          alt=""
+          width={2000}
+          height={1200}
+          className="w-96 absolute -bottom-96 right-0 rotate-6 hidden md:block"
+        />
+      </div>
+
+      <section className="flex flex-col items-center justify-center gap-8 w-11/12 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+          <div className="col-span-1 md:col-span-2 space-y-8 md:space-y-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+                Our Philosophy
+              </h2>
+              <p className="text-base text-brand-text-primary leading-relaxed">
+                At Pure Aesthetics MD, we believe beauty should feel natural and
+                safe. That’s why every treatment we offer is physician-led,
+                combining the art of aesthetics with the science of medicine.
+              </p>
+              <p className="text-base text-brand-text-primary leading-relaxed">
+                Our goal is simple: help you look and feel your best without
+                compromising your health, confidence, or individuality.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+                Our Story
+              </h2>
+              <p className="text-base text-brand-text-primary leading-relaxed">
+                Pure Aesthetics MD was founded on a commitment to provide
+                trusted, medically supervised aesthetic care in a warm and
+                welcoming environment. We understand that your appearance
+                impacts your confidence, and we’re here to ensure you feel
+                empowered every step of the way. Whether you’re looking for
+                subtle anti-aging treatments or complete skin rejuvenation, we
+                deliver results that look natural, never overdone.
+              </p>
+            </div>
+          </div>
+
+          <div className="col-span-1">
+            <Image
+              src={"/images/about-img-3.png"}
+              alt=""
+              width={2000}
+              height={1200}
+              className="w-96"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+          <div className="col-span-1 md:col-span-2 space-y-8 md:space-y-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+                Our Mission
+              </h2>
+              <p className="text-base text-brand-text-primary leading-relaxed">
+                To deliver safe, effective, and physician-directed aesthetic
+                treatments that enhance natural beauty, restore confidence, and
+                promote overall well-being all in a professional and welcoming
+                setting.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+                Our Vision
+              </h2>
+              <p className="text-base text-brand-text-primary leading-relaxed">
+                To be the most trusted medical aesthetics destination in
+                Southern New Hampshire, recognized for clinical excellence,
+                personalized care, and natural-looking results.
+              </p>
+            </div>
+          </div>
+
+          <div className="col-span-1">
+            <Image
+              src={"/images/about-img-4.png"}
+              alt=""
+              width={2000}
+              height={1200}
+              className="w-96"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* What Makes Us Different */}
+      <section className="bg-[#FCF3EE] w-11/12 md:w-10/12 py-12 md:py-24">
+        <div className="">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 items-center">
+            <div className="relative col-span-1 hidden md:block">
+              <Image
+                width={2000}
+                height={1200}
+                src={"/images/about-img-5.png"}
+                alt="Radiant skin"
+              />
+            </div>
+            <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center">
+              <div className="w-full md:w-11/12">
+                <h2 className="text-3xl font-bold mb-8 text-brand-text-primary">
+                  What Makes Us Different
+                </h2>
+                <ul className="space-y-6 text-brand-text-primary">
+                  <li>
+                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                      Board-Certified Physician Oversight
+                    </h3>
+                    <p className="text-base text-brand-text-primary">
+                      Every treatment plan is designed and overseen by a
+                      qualified medical doctor obstetrics safety and precision.
+                    </p>
+                  </li>
+                  <li>
+                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                      Natural Approach
+                    </h3>
+                    <p className="text-base text-brand-text-primary">
+                      We focus on enhancing your natural beauty our best aging
+                      face.
+                    </p>
+                  </li>
+                  <li>
+                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                      Personalized Care
+                    </h3>
+                    <p className="text-base text-brand-text-primary">
+                      We take the time to listen to your goals and adjust to
+                      your unique needs.
+                    </p>
+                  </li>
+                  <li>
+                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                      Affordable Luxury
+                    </h3>
+                    <p className="text-base text-brand-text-primary">
+                      High quality care should be accessible. We are committed
+                      to honest pricing and transparent communication.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="relative col-span-1 md:hidden">
+              <Image
+                width={2000}
+                height={1200}
+                src={"/images/about-img-5.png"}
+                alt="Radiant skin"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Dr. Radhika Paluri */}
+      <section className="w-11/12 md:w-10/12">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 items-center">
+          <div className="col-span-2 mb-2 md:mb-0">
+            <div className="w-11/12">
+              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+                Meet Dr. Radhika Paluri, MD
+              </h2>
+              <p className="text-sm md:text-base text-brand-text-primary leading-relaxed mb-4">
+                Dr. Radhika Paluri, MD, is a board-certified physician with
+                years of experience in medical aesthetics and wellness care. Her
+                passion is helping patients feel confident in their skin through
+                safe, evidence-based treatments. Known for her gentle touch and
+                artistic eye, Dr.Radhika Paluri,takes the time to understand
+                your unique goals, creating customized plans for beautiful,
+                natural results.
+              </p>
+            </div>
+          </div>
+          <div className="relative col-span-1 border">
+            <Image
+              width={2000}
+              height={1200}
+              src={"/images/doctor.png"}
+              alt="Dr. Radhika Paluri"
+              className="rounded-2xl shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Our Commitment */}
+      <div className="relative">
+        <section className="flex items-center justify-center z-20 py-12">
+          <div className="w-11/12">
+            <div className="space-y-4">
+              <h2 className="text-2xl lg:text-4xl font-bold text-brand-text-primary">
+                Our Commitment
+              </h2>
+              <p className="text-base text-brand-text-primary leading-relaxed">
+                Your safety, comfort, and satisfaction come first. Every
+                treatment at Pure Aesthetics MD is performed or supervised by a
+                physician, ensuring you receive care in a professional, elevated
+                environment.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Image
+          width={2000}
+          height={1200}
+          src={"/images/about-main-illustration.png"}
+          alt="Dr. Radhika Paluri"
+          className="w-80 absolute top-0 left-0 opacity-25 md:opacity-100"
+        />
+
+        <Image
+          width={2000}
+          height={1200}
+          src={"/images/about-main-illustration-2.png"}
+          alt="Dr. Radhika Paluri"
+          className="w-80 absolute bottom-0 right-0 hidden md:block"
+        />
+
+        {/* What our clients say */}
+        <section className="z-20 bg-[#FFEFD7]/45 min-h-[70vh] flex items-center justify-center py-12 md:py-0">
+          <div className="w-11/12 flex flex-col items-center gap-12">
+            <div className="flex flex-col items-center">
+              <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-brand-text-primary">
+                What our clients say
+              </h2>
+              <p className="flex items-center gap-1 text-center">
+                5/5
+                <span className="flex justify-center gap-1 text-amber-500 text-base">
+                  ★★★★★
+                </span>
+                50 reviews on Google
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-3 w-11/12 md:w-9/12">
+              <div className="flex flex-col-reverse items-center gap-3 md:max-w-72 justify-evenly h-11/12">
+                <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
+                  <Image
+                    src={"/images/about-client.png"}
+                    alt=""
+                    width={2000}
+                    height={1200}
+                    className="w-12 h-12 object-cover"
+                  />
+                  <div className="space-y-1">
+                    <h3 className="text-base font-semibold">
+                      Adharsh Rangappa. CEO
+                    </h3>
+                    <p className="text-sm leading-relaxed">
+                      “From consultation to results, the process was seamless. I
+                      felt safe and cared for throughout.”
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-1 bg-[#FFEFD7] p-3 rounded-tr-[60px]">
+                  <h3 className="text-base font-semibold">Sarah M.</h3>
+                  <p className="text-sm leading-relaxed">
+                    My skin has never felt better! The team truly understands my
+                    needs and provides the best care possible.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative md:w-72 h-72">
+                <Image
+                  src={"/images/about-client.png"}
+                  alt="Happy client"
+                  width={2000}
+                  height={1200}
+                  className="w-full h-full object-cover rounded-lg mb-4"
+                />
+                <div className="absolute bottom-8 left-5 transform">
+                  <Button
+                    className="size-10 rounded-full bg-[#FF835A]"
+                    size="icon"
+                  >
+                    <PlayIcon
+                      className="size-4 fill-brand-text-primary text-brand-text-primary"
+                      strokeWidth={1.5}
+                    />
+                  </Button>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 md:max-w-72 justify-evenly h-11/12">
+                <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
+                  <Image
+                    src={"/images/about-client.png"}
+                    alt=""
+                    width={2000}
+                    height={1200}
+                    className="w-12 h-12 object-cover"
+                  />
+                  <div className="space-y-1">
+                    <h3 className="text-base font-semibold">
+                      Adharsh Rangappa. CEO
+                    </h3>
+                    <p className="text-sm leading-relaxed">
+                      “From consultation to results, the process was seamless. I
+                      felt safe and cared for throughout.”
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-1 bg-[#FFEFD7] p-3 rounded-tr-[60px]">
+                  <h3 className="text-base font-semibold">Sarah M.</h3>
+                  <p className="text-sm leading-relaxed">
+                    My skin has never felt better! The team truly understands my
+                    needs and provides the best care possible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* CTA Section */}
+      <section className="w-full h-40 md:h-80">
+        <div className="h-full relative flex items-center justify-end">
+          <Image
+            src={"/images/about-img-7.png"}
+            alt="Treatment closeup"
+            width={2000}
+            height={1200}
+            className="h-full absolute top-0 left-0"
+          />
+          <div className="bg-[#5D2B2B] h-full w-full md:w-4/6 z-30 flex flex-col justify-center items-center md:rounded-tl-[150px] relative">
+            <div className="w-11/12 md:w-10/12 space-y-3 md:space-y-6">
+              <h2 className="text-xs md:text-2xl font-bold text-[#FF835A] leading-relaxed">
+                Ready to experience the Pure <br /> difference?
+              </h2>
+              <p className="text-[10px] leading-relaxed md:text-sm text-[#FF835A] max-w-52 md:max-w-full">
+                Ready to achieve radiant, healthy skin? Let us help you get
+                started today.
+              </p>
+              <Button
+                size="sm"
+                className="rounded-none rounded-tr-2xl font-normal px-6 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary text-xs md:text-sm"
+              >
+                {/* <PhoneIcon width={16} height={16} /> */}
+                <span>
+                  Book{" "}
+                  <span className="hidden md:inline">your consultation</span>{" "}
+                  now
+                </span>
+              </Button>
+            </div>
+            <Image
+              width={2000}
+              height={1200}
+              src={"/images/cta-illustration.png"}
+              alt="Treatment closeup"
+              className="h-full w-1/2 absolute top-0 right-0"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
