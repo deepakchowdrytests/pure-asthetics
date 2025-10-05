@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Gallery = () => {
   const images = [
-    "/images/gallery-1.png",
-    "/images/gallery-2.png",
-    "/images/gallery-3.png",
-    "/images/gallery-4.png",
-    "/images/gallery-5.png",
-    "/images/gallery-6.png",
-    "/images/gallery-8.png",
+    "/img/gallery-1.jpeg",
+    "/img/gallery-2.jpeg",
+    "/img/gallery-3.jpg",
+    "/img/gallery-4.jpg",
+    "/img/gallery-5.jpeg",
+    "/img/gallery-6.jpg",
+    "/img/gallery-7.jpg",
   ];
 
   return (

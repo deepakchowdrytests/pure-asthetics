@@ -8,7 +8,7 @@ const Careers = () => {
         alt="Careers"
         width={1000}
         height={1000}
-        className="w-96 object-cover absolute top-1/2 right-0 -translate-y-1/2"
+        className="w-96 opacity-30 object-cover absolute top-1/2 right-0 -translate-y-1/2"
       />
       {/* Hero Section */}
       <section className="w-11/12 md:w-10/12 min-h-screen space-y-20">

@@ -11,12 +11,12 @@ const Hero = () => {
             alt=""
             width={2000}
             height={1200}
-            className="absolute top-0 left-0 w-68 h-[70vh] hidden md:block"
+            className="absolute top-0 left-0 w-68 h-[70vh] hidden md:block opacity-50"
           />
 
           <div className="col-span-1 md:col-span-3 h-full rounded-bl-[200px] md:rounded-bl-[300px] overflow-hidden md:hidden">
             <Image
-              src={"/images/main.png"}
+              src={"/img/main-bg.jpg"}
               alt=""
               width={2000}
               height={1200}

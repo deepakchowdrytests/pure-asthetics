@@ -74,7 +74,7 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="hover:text-[#FF835A] transition-colors duration-200"
+                className="hover:text-brand-text-primary/50 transition-colors duration-200"
               >
                 {link.label}
               </Link>

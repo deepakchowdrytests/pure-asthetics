@@ -5,22 +5,22 @@ const ServicesPage = () => {
     {
       title: "Botox Injection",
       description: "Reduce fine lines and wrinkles for a smoother look.",
-      image: "/images/service-1.png",
+      image: "/img/f-service-1.jpg",
     },
     {
       title: "Dermal & Bio Fillers",
       description: "Restore volume and enhance natural contours.",
-      image: "/images/service-2.png",
+      image: "/img/f-service-2.jpg",
     },
     {
       title: "Sculptra",
       description: "Stimulate collagen for long-lasting results.",
-      image: "/images/service-3.png",
+      image: "/img/f-service-3.jpg",
     },
     {
       title: "PRP Micro Needling",
       description: "Harness your body’s own healing for radiant skin.",
-      image: "/images/service-4.png",
+      image: "/img/gallery-2.jpeg",
     },
   ];
 
@@ -28,22 +28,22 @@ const ServicesPage = () => {
     {
       title: "Body Sculpting & Contouring",
       description: "Shape and tone without surgery",
-      image: "/images/service-1.png",
+      image: "/img/f-service-4.jpg",
     },
     {
       title: "Weight Loss Solutions",
       description: "Customized programs for sustainable results.",
-      image: "/images/service-2.png",
+      image: "/img/featured-3.jpg",
     },
     {
       title: "Hair Restoration",
       description: "Natural solutions for thinning hair.",
-      image: "/images/service-3.png",
+      image: "/img/f-service-5.png",
     },
     {
       title: "IV Nutrition",
       description: "Boost energy and immunity with targeted nutrients",
-      image: "/images/service-4.png",
+      image: "/img/f-service-6.jpg",
     },
   ];
 
@@ -51,17 +51,17 @@ const ServicesPage = () => {
     {
       title: "Laser Hair Removal",
       description: "Smooth, hair-free skin that lasts.",
-      image: "/images/service-1.png",
+      image: "/img/f-service-7.jpg",
     },
     {
       title: "Laser Skin Rejuvenation",
       description: "Restore youthful tone and texture",
-      image: "/images/service-2.png",
+      image: "/img/about-1.jpg",
     },
     {
       title: "Laser Tattoo & Pigment Removal",
       description: "Safely fade unwanted ink and discolorationn",
-      image: "/images/service-3.png",
+      image: "/img/f-service-8.jpg",
     },
   ];
 
@@ -87,12 +87,12 @@ const ServicesPage = () => {
     {
       title: "Urinary Incontinence Treatment",
       description: "Non-surgical treatments for bladder control.",
-      image: "/images/service-1.png",
+      image: "/img/featured-4.jpg",
     },
     {
       title: "Intimacy Wellness",
       description: "Rejuvenation for enhanced confidence and comfort.",
-      image: "/images/service-2.png",
+      image: "/img/intimacy.jpg",
     },
   ];
 
@@ -107,7 +107,7 @@ const ServicesPage = () => {
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
-          className="w-[420px] object-cover absolute -top-40 -left-10"
+          className="w-[420px] object-cover absolute -top-40 -left-10 opacity-30"
         />
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center">
@@ -153,7 +153,7 @@ const ServicesPage = () => {
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
-          className="w-80 object-cover absolute top-[450px] -left-10"
+          className="w-80 object-cover absolute top-[450px] -left-10 opacity-30"
         />
       </div>
       <div className="flex justify-center w-full bg-brand-primary/20 relative">
@@ -162,7 +162,7 @@ const ServicesPage = () => {
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
-          className="w-80 object-cover absolute top-0 -right-0"
+          className="w-80 object-cover absolute top-0 -right-0 opacity-30"
         />
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center justify-center md:hidden">
@@ -221,7 +221,7 @@ const ServicesPage = () => {
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
-          className="w-80 object-cover absolute -top-40 -left-10"
+          className="w-80 object-cover absolute -top-40 -left-10 opacity-30"
         />
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center">
@@ -267,7 +267,7 @@ const ServicesPage = () => {
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
-          className="w-80 object-cover absolute top-60 -right-0"
+          className="w-80 object-cover absolute top-60 -right-0 opacity-30"
         />
       </div>
 
@@ -327,7 +327,7 @@ const ServicesPage = () => {
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
-          className="w-80 object-cover absolute top-60 -right-0"
+          className="w-80 object-cover absolute top-60 -right-0 opacity-30"
         />
       </div>
 
@@ -375,7 +375,7 @@ const ServicesPage = () => {
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
-          className="w-80 object-cover absolute top-20 -left-10 opacity-50"
+          className="w-80 object-cover absolute top-20 -left-10 opacity-30"
         />
       </div>
     </div>

@@ -14,25 +14,25 @@ export const services = [
   {
     title: "Injectables & Anti‑Aging Solutions",
     desc: "Smooth lines, restore volume, and refresh your appearance with expert-administered treatments.",
-    img: "/images/service-img-1.png",
+    img: "/img/featured-1.jpg",
     alt: "Injectable treatment close-up",
   },
   {
     title: "Laser Treatments",
     desc: "State‑of‑the‑art technology for hair removal, skin rejuvenation, and tattoo removal for all skin types.",
-    img: "/images/service-img-2.png",
+    img: "/img/featured-2.jpg",
     alt: "Laser skincare procedure",
   },
   {
     title: "Body Sculpting & Wellness",
     desc: "Non‑invasive body contouring, weight support, and nutrition guidance to help you feel your best.",
-    img: "/images/service-img-3.png",
+    img: "/img/featured-3.jpg",
     alt: "Body contouring treatment",
   },
   {
     title: "Women's Health & Intimacy",
     desc: "Confidential, physician‑directed treatments for comfort, confidence, and long‑term wellness.",
-    img: "/images/service-img-4.png",
+    img: "/img/featured-4.jpg",
     alt: "Women's health appointment",
   },
 ];
@@ -46,7 +46,7 @@ export function FeaturedServicesSection() {
         alt=""
         width={1000}
         height={1000}
-        className="absolute top-0 left-0 w-60 h-full object-cover"
+        className="absolute top-0 left-0 w-60 h-full object-cover opacity-50"
       />
       <div className="w-11/12 flex flex-col items-center justify-end h-full gap-12">
         <div className="w-11/12 md:w-10/12 flex gap-3 md:gap-0 flex-col md:flex-row justify-between">
@@ -76,7 +76,7 @@ export function FeaturedServicesSection() {
             {services.map((s, i) => (
               <CarouselItem
                 key={s.title}
-                className="basis-full md:basis-1/4 gap-0 pl-4 md:pl-1"
+                className="basis-full md:basis-1/4 gap-0"
               >
                 <div className="group">
                   <div className="overflow-hidden rounded-tl-4xl aspect-[4/6]">
@@ -86,7 +86,7 @@ export function FeaturedServicesSection() {
                         alt={s.alt}
                         width={1000}
                         height={1000}
-                        className="h-full"
+                        className="h-full object-cover"
                       />
                       {/* Text panel with creamy rounded shape */}
                       <div

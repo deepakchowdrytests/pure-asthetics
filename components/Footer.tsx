@@ -12,7 +12,7 @@ const Footer = () => {
           alt=""
           width={2000}
           height={1200}
-          className="w-64"
+          className="w-64 opacity-30"
         />
       </div>
       <div className="col-span-5 md:col-span-4 md:pt-6 pb-3 px-4 md:px-0 relative flex flex-col justify-between">
@@ -138,7 +138,7 @@ const Footer = () => {
           alt=""
           width={2000}
           height={1200}
-          className="w-96 absolute bottom-0 right-0 opacity-75"
+          className="w-96 absolute bottom-0 right-0 opacity-50"
         />
       </div>
     </footer>

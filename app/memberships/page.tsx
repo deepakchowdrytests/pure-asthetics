@@ -24,7 +24,7 @@ const MemberShipsPage = () => {
           <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB]">
             <div className="aspect-square">
               <Image
-                src={"/images/membership-1.png"}
+                src={"/img/membership-1.png"}
                 alt=""
                 width={1000}
                 height={1000}
@@ -87,7 +87,7 @@ const MemberShipsPage = () => {
           <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB]">
             <div className="aspect-square">
               <Image
-                src={"/images/membership-2.png"}
+                src={"/img/membership-2.png"}
                 alt=""
                 width={1000}
                 height={1000}
@@ -150,7 +150,7 @@ const MemberShipsPage = () => {
           <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB]">
             <div className="aspect-square">
               <Image
-                src={"/images/membership-3.png"}
+                src={"/img/membership-3.png"}
                 alt=""
                 width={1000}
                 height={1000}
@@ -241,7 +241,7 @@ const MemberShipsPage = () => {
               <div className="rounded-2xl overflow-hidden bg-brand-base border border-black border-b-4">
                 <div className="relative h-56">
                   <Image
-                    src={"/images/membership-1.png"}
+                    src={"/img/special-1.jpg"}
                     alt=""
                     width={1000}
                     height={1000}
@@ -263,7 +263,7 @@ const MemberShipsPage = () => {
               <div className="col-span-1 md:col-span-2 flex flex-col gap-4 md:gap-6">
                 <div className="flex items-center gap-4 bg-brand-base border border-black border-b-4 h-32 rounded-2xl overflow-hidden">
                   <Image
-                    src={"/images/membership-2.png"}
+                    src={"/img/special-2.jpg"}
                     alt=""
                     width={1000}
                     height={1000}
@@ -276,7 +276,7 @@ const MemberShipsPage = () => {
                 </div>
                 <div className="flex items-center gap-4 bg-brand-base border border-black border-b-4 h-32 rounded-2xl overflow-hidden">
                   <Image
-                    src={"/images/membership-2.png"}
+                    src={"/img/f-service-5.png"}
                     alt=""
                     width={1000}
                     height={1000}
@@ -289,7 +289,7 @@ const MemberShipsPage = () => {
                 </div>
                 <div className="flex items-center gap-4 bg-brand-base border border-black border-b-4 h-32 rounded-2xl overflow-hidden">
                   <Image
-                    src={"/images/membership-2.png"}
+                    src={"/img/special-3.jpg"}
                     alt=""
                     width={1000}
                     height={1000}
@@ -324,7 +324,7 @@ const MemberShipsPage = () => {
           <div className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0">
             <div className="aspect-square col-span-1">
               <Image
-                src={"/images/membership-2.png"}
+                src={"/img/why.jpg"}
                 alt=""
                 width={1000}
                 height={1000}

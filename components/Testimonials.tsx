@@ -119,7 +119,7 @@ const Testimonials = () => {
         width={400}
         height={800}
         alt="doctor"
-        className="absolute top-0 right-0 h-full"
+        className="absolute top-0 right-0 h-full opacity-50"
       />
     </div>
   );

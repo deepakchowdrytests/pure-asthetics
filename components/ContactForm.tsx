@@ -1,10 +1,5 @@
 "use client";
-import {
-  EnvelopeIcon,
-  MessageIcon,
-  PhoneIcon,
-  UserIcon
-} from "@/lib/icons";
+import { EnvelopeIcon, MessageIcon, PhoneIcon, UserIcon } from "@/lib/icons";
 import { PenSquare } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -34,7 +29,7 @@ const ContactForm = () => {
       <Image
         src="/images/footer-illustration-2.png"
         alt="circle"
-        className="absolute bottom-0 right-0 w-[500px]"
+        className="absolute bottom-0 right-0 w-[500px] opacity-30"
         width={1000}
         height={1000}
       />
@@ -45,7 +40,7 @@ const ContactForm = () => {
           <div className="space-y-6 md:col-span-4 hidden md:block">
             <div className="">
               <Image
-                src="/images/contact-img-1.png"
+                src="/img/f-service-9.jpg"
                 alt="Beauty treatment"
                 className="w-full h-80 object-cover rounded-tr-[85px]"
                 width={600}
@@ -54,7 +49,7 @@ const ContactForm = () => {
             </div>
             <div className="">
               <Image
-                src="/images/contact-img-2.png"
+                src="/img/gallery-2.jpeg"
                 alt="Facial treatment"
                 className="w-full h-80 object-cover rounded-tr-[85px]"
                 width={600}

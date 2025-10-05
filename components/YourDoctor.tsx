@@ -8,7 +8,7 @@ const YourDoctor = () => {
         <div className="flex flex-col gap-5 col-span-1 md:col-span-2">
           <h2 className="text-3xl font-medium">MEET YOUR DOCTOR</h2>
           <Image
-            src={"/images/doctor.png"}
+            src={"/img/doctor-1.jpg"}
             width={400}
             height={800}
             alt="doctor"

@@ -155,7 +155,7 @@ const ContactPage = () => {
             <div className="space-y-6 md:col-span-4 hidden md:block">
               <div className="">
                 <Image
-                  src="/images/contact-img-1.png"
+                  src="/img/featured-1.jpg"
                   alt="Beauty treatment"
                   className="w-full h-80 object-cover rounded-tr-[85px]"
                   width={600}
@@ -164,7 +164,7 @@ const ContactPage = () => {
               </div>
               <div className="">
                 <Image
-                  src="/images/contact-img-2.png"
+                  src="/img/featured-2.jpg"
                   alt="Facial treatment"
                   className="w-full h-80 object-cover rounded-tr-[85px]"
                   width={600}

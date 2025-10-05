@@ -13,7 +13,7 @@ const About = () => {
           alt=""
           width={2000}
           height={1200}
-          className="w-80 absolute -bottom-80 left-0 hidden md:block"
+          className="w-80 absolute -bottom-80 left-0 hidden md:block opacity-30"
         />
         <section className="w-11/12 md:w-10/12 h-full relative">
           <h1 className="text-3xl font-bold mb-6 text-brand-text-primary absolute top-10 left-1/2 -translate-x-1/2 hidden md:block">
@@ -21,22 +21,22 @@ const About = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 h-full">
             <div className="hidden relative h-11/12 md:flex flex-col justify-end col-span-1">
-              <div className="flex justify-start">
+              <div className="flex justify-start w-72 rounded-3xl overflow-hidden">
                 <Image
-                  src={"/images/about-img-1.png"}
+                  src={"/img/about-1.jpg"}
                   alt="Facial treatment"
                   width={2000}
                   height={1200}
-                  className="w-72"
+                  className="object-cover aspect-square w-full h-full"
                 />
               </div>
-              <div className="w-full flex justify-end">
+              <div className="w-full flex justify-end aspect-[1/1]">
                 <Image
-                  src={"/images/about-img-2.png"}
+                  src={"/img/about-2.jpg"}
                   alt="Consultation"
                   width={2000}
                   height={1200}
-                  className="w-72 -translate-y-28"
+                  className="w-72 h-72 -translate-y-24 aspect-square object-cover rounded-3xl overflow-hidden"
                 />
               </div>
             </div>
@@ -69,7 +69,7 @@ const About = () => {
           alt=""
           width={2000}
           height={1200}
-          className="w-96 absolute -bottom-96 right-0 rotate-6 hidden md:block"
+          className="w-96 absolute -bottom-96 right-0 rotate-6 hidden md:block opacity-30"
         />
       </div>
 
@@ -107,9 +107,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 rounded-tl-[120px] overflow-hidden">
             <Image
-              src={"/images/about-img-3.png"}
+              src={"/img/gallery-5.jpeg"}
               alt=""
               width={2000}
               height={1200}
@@ -144,13 +144,13 @@ const About = () => {
             </div>
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 rounded-br-[120px] overflow-hidden">
             <Image
-              src={"/images/about-img-4.png"}
+              src={"/img/about-1.jpg"}
               alt=""
               width={2000}
               height={1200}
-              className="w-96"
+              className="w-full h-full"
             />
           </div>
         </div>
@@ -160,11 +160,11 @@ const About = () => {
       <section className="bg-[#FCF3EE] w-11/12 md:w-10/12 py-12 md:py-24">
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 items-center">
-            <div className="relative col-span-1 hidden md:block">
+            <div className="relative col-span-1 hidden md:block rounded-l-[120px] overflow-hidden">
               <Image
                 width={2000}
                 height={1200}
-                src={"/images/about-img-5.png"}
+                src={"/img/gallery-1.jpeg"}
                 alt="Radiant skin"
               />
             </div>
@@ -213,11 +213,11 @@ const About = () => {
                 </ul>
               </div>
             </div>
-            <div className="relative col-span-1 md:hidden">
+            <div className="relative col-span-1 md:hidden rounded-3xl overflow-hidden">
               <Image
                 width={2000}
                 height={1200}
-                src={"/images/about-img-5.png"}
+                src={"/img/gallery-1.jpeg"}
                 alt="Radiant skin"
               />
             </div>
@@ -244,13 +244,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="relative col-span-1 border">
+          <div className="relative col-span-1 rounded-r-[120px] overflow-hidden">
             <Image
               width={2000}
               height={1200}
               src={"/images/doctor.png"}
               alt="Dr. Radhika Paluri"
-              className="rounded-2xl shadow-lg w-full h-auto object-cover"
+              className=" w-full h-auto object-cover"
             />
           </div>
         </div>
@@ -279,7 +279,7 @@ const About = () => {
           height={1200}
           src={"/images/about-main-illustration.png"}
           alt="Dr. Radhika Paluri"
-          className="w-80 absolute top-0 left-0 opacity-25 md:opacity-100"
+          className="w-80 absolute top-0 left-0 opacity-30"
         />
 
         <Image
@@ -287,7 +287,7 @@ const About = () => {
           height={1200}
           src={"/images/about-main-illustration-2.png"}
           alt="Dr. Radhika Paluri"
-          className="w-80 absolute bottom-0 right-0 hidden md:block"
+          className="w-80 absolute bottom-0 right-0 hidden md:block opacity-30"
         />
 
         {/* What our clients say */}
@@ -336,15 +336,15 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="relative md:w-72 h-72">
+              <div className="relative md:w-72 h-72 rounded-[50px] overflow-hidden rounded-bl-none">
                 <Image
-                  src={"/images/about-client.png"}
+                  src={"/img/gallery-6.jpg"}
                   alt="Happy client"
                   width={2000}
                   height={1200}
-                  className="w-full h-full object-cover rounded-lg mb-4"
+                  className="w-full h-full object-cover mb-4"
                 />
-                <div className="absolute bottom-8 left-5 transform">
+                <div className="absolute bottom-5 left-5 transform">
                   <Button
                     className="size-10 rounded-full bg-[#FF835A]"
                     size="icon"
@@ -394,13 +394,13 @@ const About = () => {
       <section className="w-full h-40 md:h-80">
         <div className="h-full relative flex items-center justify-end">
           <Image
-            src={"/images/about-img-7.png"}
+            src={"/img/cta-1.jpg"}
             alt="Treatment closeup"
             width={2000}
             height={1200}
-            className="h-full absolute top-0 left-0"
+            className="h-full absolute top-0 left-0 object-cover"
           />
-          <div className="bg-[#5D2B2B] h-full w-full md:w-4/6 z-30 flex flex-col justify-center items-center md:rounded-tl-[150px] relative">
+          <div className="bg-[#5D2B2B] h-full w-full md:w-3/5 z-30 flex flex-col justify-center items-center md:rounded-tl-[150px] relative">
             <div className="w-11/12 md:w-10/12 space-y-3 md:space-y-6">
               <h2 className="text-xs md:text-2xl font-bold text-[#FF835A] leading-relaxed">
                 Ready to experience the Pure <br /> difference?
@@ -426,7 +426,7 @@ const About = () => {
               height={1200}
               src={"/images/cta-illustration.png"}
               alt="Treatment closeup"
-              className="h-full w-1/2 absolute top-0 right-0"
+              className="h-full w-1/2 absolute top-0 right-0 opacity-50"
             />
           </div>
         </div>
