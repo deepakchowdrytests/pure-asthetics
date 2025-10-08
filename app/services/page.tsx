@@ -17,7 +17,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { PhoneIcon } from "@/lib/icons";
-import { Calendar, ChevronRight, PlusIcon } from "lucide-react";
+import { ChevronRight, PlusIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

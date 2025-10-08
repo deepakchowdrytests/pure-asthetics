@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { PhoneIcon } from "@/lib/icons";
-import { PlayIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

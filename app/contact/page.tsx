@@ -50,7 +50,7 @@ const ContactPage = () => {
               Clinic information
             </h3>
             <p className="text-brand-text-primary">
-              Address: 110 Daniel Webster Hwy, Nashua, NH 03060 (with Rashda's
+              Address: 110 Daniel Webster Hwy, Nashua, NH 03060 (with Rashda&apos;s
               Beauty Salon)
             </p>
             <div className="space-y-3 grid grid-cols-1 md:grid-cols-2 list-none text-sm text-brand-text-primary max-w-3xl">

@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 
 export type Treatment = {
   id: string;
@@ -115,7 +115,7 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
   );
 };
 
-const FaceAndAntiAgingPage = () => {
+const ServicesPageContent = () => {
   const searchParams = useSearchParams();
 
   useEffect(() => {
@@ -230,6 +230,14 @@ const FaceAndAntiAgingPage = () => {
         </div>
       </div>
     </main>
+  );
+};
+
+const FaceAndAntiAgingPage = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ServicesPageContent />
+    </Suspense>
   );
 };
 

@@ -52,8 +52,8 @@ const Footer = () => {
               <div className="flex gap-1.5">
                 <MapPinIcon className="size-3.5 mt-1" strokeWidth={1.5} />
                 <span className="leading-relaxed font-medium text-[13px]">
-                  110 Daniel Webster Hwy, Nashua, <br /> NH 03060 (with Rashda's
-                  Beauty Salon)
+                  110 Daniel Webster Hwy, Nashua, <br /> NH 03060 (with
+                  Rashda&apos;s Beauty Salon)
                 </span>
               </div>
             </div>
