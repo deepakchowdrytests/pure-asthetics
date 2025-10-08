@@ -84,11 +84,11 @@ const Testimonials = () => {
                           <div className="flex gap-1 mb-4">
                             {renderStars(testimonial.rating)}
                           </div>
-                          <p className="text-sm mb-4 leading-6">
+                          <p className="text-sm mb-4 leading-relaxed">
                             {testimonial.text}
                           </p>
                         </div>
-                        <p className="text-sm font-medium">
+                        <p className="text-sm font-medium leading-relaxed">
                           — {testimonial.author}
                         </p>
                       </div>
@@ -107,15 +107,15 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             <div className="flex justify-center gap-4 mt-6">
-              <CarouselPrevious className="relative top-0 left-0 -translate-x-0 -translate-y-0 border-brand-text-primary/20 text-brand-text-primary hover:bg-brand-text-primary/5 hover:text-brand-text-primary" />
-              <CarouselNext className="relative top-0 right-0 -translate-x-0 -translate-y-0 border-brand-text-primary/20 text-brand-text-primary hover:bg-brand-text-primary/5 hover:text-brand-text-primary" />
+              <CarouselPrevious className="relative top-0 left-0 -translate-x-0 -translate-y-0 border-brand-text-primary/5 text-brand-text-primary bg-[#FF835A] hover:bg-[#FF835A]/75 hover:text-brand-text-primary" />
+              <CarouselNext className="relative top-0 right-0 -translate-x-0 -translate-y-0 border-brand-text-primary/5 text-brand-text-primary  bg-[#FF835A] hover:bg-[#FF835A]/75 hover:text-brand-text-primary" />
             </div>
           </Carousel>
         </div>
       </div>
 
       <Image
-        src="/images/client-illustration.png"
+        src="/images/testimonial-illustration.png"
         width={400}
         height={800}
         alt="doctor"

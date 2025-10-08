@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { PhoneIcon } from "@/lib/icons";
 import { PlayIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -9,14 +10,14 @@ const About = () => {
       {/* Hero Section */}
       <div className="flex md:items-center items-end justify-center w-full relative min-h-[80vh] md:h-screen overflow-hidden">
         <Image
-          src={"/images/about-main-illustration.png"}
+          src={"/images/about-illustration-1.png"}
           alt=""
           width={2000}
           height={1200}
           className="w-80 absolute -bottom-80 left-0 hidden md:block opacity-30"
         />
         <section className="w-11/12 md:w-10/12 h-full relative">
-          <h1 className="text-3xl font-bold mb-6 text-brand-text-primary absolute top-10 left-1/2 -translate-x-1/2 hidden md:block">
+          <h1 className="text-3xl font-medium mb-6 text-brand-text-primary absolute top-10 left-1/2 -translate-x-1/2 hidden md:block">
             Your Journey to Radiant skin starts here
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 h-full">
@@ -42,30 +43,35 @@ const About = () => {
             </div>
             <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center">
               <div className="w-full md:w-8/12 space-y-6 md:space-y-10">
-                <h1 className="text-2xl md:text-4xl font-bold mb-6 text-brand-text-primary md:hidden">
+                <h1 className="text-3xl md:text-4xl font-medium mb-6 text-brand-text-primary md:hidden">
                   Your Journey to Radiant skin starts here
                 </h1>
-                <div className="space-y-2">
-                  <p className="text-base md:text-xl leading-10 text-brand-text-primary">
+                <div className="space-y-5">
+                  <p className="text-base md:text-xl leading-7 text-justify text-brand-text-primary">
                     At Pure Aesthetics MD, we blend science, care, and expertise
                     to enhance confidence at every stage of your journey.
                   </p>
-                  <p className="text-base md:text-xl leading-10 text-brand-text-primary">
+                  <p className="text-base md:text-xl leading-7 text-justify text-brand-text-primary">
                     Our advanced, physician-led treatments are designed to
                     deliver results that look natural, feel effortless, and are
                     always tailored to you.
                   </p>
                 </div>
                 <Button className="rounded-none rounded-tr-2xl font-normal w-40 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary">
-                  <PhoneIcon width={20} height={20} />
-                  <span>Schedule now</span>
+                  <Link
+                    href={"tel:+16038000333"}
+                    className="flex items-center gap-1"
+                  >
+                    <PhoneIcon width={20} height={20} />
+                    <span>Schedule now</span>
+                  </Link>
                 </Button>
               </div>
             </div>
           </div>
         </section>
         <Image
-          src={"/images/about-main-illustration-2.png"}
+          src={"/images/about-illustration-2.png"}
           alt=""
           width={2000}
           height={1200}
@@ -77,25 +83,25 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
           <div className="col-span-1 md:col-span-2 space-y-8 md:space-y-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+              <h2 className="text-2xl md:text-3xl font-medium mb-6 text-brand-text-primary">
                 Our Philosophy
               </h2>
-              <p className="text-base text-brand-text-primary leading-relaxed">
+              <p className="text-base text-brand-text-primary leading-7 text-justify mb-2">
                 At Pure Aesthetics MD, we believe beauty should feel natural and
                 safe. That’s why every treatment we offer is physician-led,
                 combining the art of aesthetics with the science of medicine.
               </p>
-              <p className="text-base text-brand-text-primary leading-relaxed">
+              <p className="text-base text-brand-text-primary leading-7 text-justify">
                 Our goal is simple: help you look and feel your best without
                 compromising your health, confidence, or individuality.
               </p>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+              <h2 className="text-2xl md:text-3xl font-medium mb-6 text-brand-text-primary">
                 Our Story
               </h2>
-              <p className="text-base text-brand-text-primary leading-relaxed">
+              <p className="text-base text-brand-text-primary leading-7 text-justify">
                 Pure Aesthetics MD was founded on a commitment to provide
                 trusted, medically supervised aesthetic care in a warm and
                 welcoming environment. We understand that your appearance
@@ -121,10 +127,10 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
           <div className="col-span-1 md:col-span-2 space-y-8 md:space-y-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+              <h2 className="text-2xl md:text-3xl font-medium mb-6 text-brand-text-primary">
                 Our Mission
               </h2>
-              <p className="text-base text-brand-text-primary leading-relaxed">
+              <p className="text-base text-brand-text-primary leading-7 text-justify">
                 To deliver safe, effective, and physician-directed aesthetic
                 treatments that enhance natural beauty, restore confidence, and
                 promote overall well-being all in a professional and welcoming
@@ -133,10 +139,10 @@ const About = () => {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+              <h2 className="text-2xl md:text-3xl font-medium mb-6 text-brand-text-primary">
                 Our Vision
               </h2>
-              <p className="text-base text-brand-text-primary leading-relaxed">
+              <p className="text-base text-brand-text-primary leading-7 text-justify">
                 To be the most trusted medical aesthetics destination in
                 Southern New Hampshire, recognized for clinical excellence,
                 personalized care, and natural-looking results.
@@ -170,42 +176,42 @@ const About = () => {
             </div>
             <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center">
               <div className="w-full md:w-11/12">
-                <h2 className="text-3xl font-bold mb-8 text-brand-text-primary">
+                <h2 className="text-3xl md:text-3xl font-medium mb-8 text-brand-text-primary">
                   What Makes Us Different
                 </h2>
-                <ul className="space-y-6 text-brand-text-primary">
+                <ul className="space-y-6 text-brand-text-primary text-justify">
                   <li>
-                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                    <h3 className="font-medium text-lg mb-2 text-brand-text-primary">
                       Board-Certified Physician Oversight
                     </h3>
-                    <p className="text-base text-brand-text-primary">
+                    <p className="text-base text-brand-text-primary leading-7">
                       Every treatment plan is designed and overseen by a
                       qualified medical doctor obstetrics safety and precision.
                     </p>
                   </li>
                   <li>
-                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                    <h3 className="font-medium text-lg mb-2 text-brand-text-primary">
                       Natural Approach
                     </h3>
-                    <p className="text-base text-brand-text-primary">
+                    <p className="text-base text-brand-text-primary leading-7">
                       We focus on enhancing your natural beauty our best aging
                       face.
                     </p>
                   </li>
                   <li>
-                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                    <h3 className="font-medium text-lg mb-2 text-brand-text-primary">
                       Personalized Care
                     </h3>
-                    <p className="text-base text-brand-text-primary">
+                    <p className="text-base text-brand-text-primary leading-7">
                       We take the time to listen to your goals and adjust to
                       your unique needs.
                     </p>
                   </li>
                   <li>
-                    <h3 className="font-semibold text-lg mb-2 text-brand-text-primary">
+                    <h3 className="font-medium text-lg mb-2 text-brand-text-primary">
                       Affordable Luxury
                     </h3>
-                    <p className="text-base text-brand-text-primary">
+                    <p className="text-base text-brand-text-primary leading-7">
                       High quality care should be accessible. We are committed
                       to honest pricing and transparent communication.
                     </p>
@@ -229,11 +235,11 @@ const About = () => {
       <section className="w-11/12 md:w-10/12">
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 items-center">
           <div className="col-span-2 mb-2 md:mb-0">
-            <div className="w-11/12">
-              <h2 className="text-3xl font-bold mb-6 text-brand-text-primary">
+            <div className="w-full md:w-11/12">
+              <h2 className="text-3xl md:text-3xl font-medium mb-6 text-brand-text-primary">
                 Meet Dr. Radhika Paluri, MD
               </h2>
-              <p className="text-sm md:text-base text-brand-text-primary leading-relaxed mb-4">
+              <p className="text-base text-brand-text-primary leading-7 mb-4 text-justify">
                 Dr. Radhika Paluri, MD, is a board-certified physician with
                 years of experience in medical aesthetics and wellness care. Her
                 passion is helping patients feel confident in their skin through
@@ -277,7 +283,7 @@ const About = () => {
         <Image
           width={2000}
           height={1200}
-          src={"/images/about-main-illustration.png"}
+          src={"/images/about-illustration-1.png"}
           alt="Dr. Radhika Paluri"
           className="w-80 absolute top-0 left-0 opacity-30"
         />
@@ -285,7 +291,7 @@ const About = () => {
         <Image
           width={2000}
           height={1200}
-          src={"/images/about-main-illustration-2.png"}
+          src={"/images/about-illustration-2.png"}
           alt="Dr. Radhika Paluri"
           className="w-80 absolute bottom-0 right-0 hidden md:block opacity-30"
         />
@@ -317,10 +323,10 @@ const About = () => {
                     className="w-12 h-12 object-cover"
                   />
                   <div className="space-y-1">
-                    <h3 className="text-base font-semibold">
+                    <h3 className="text-base font-medium">
                       Adharsh Rangappa. CEO
                     </h3>
-                    <p className="text-sm leading-relaxed">
+                    <p className="text-sm leading-6">
                       “From consultation to results, the process was seamless. I
                       felt safe and cared for throughout.”
                     </p>
@@ -328,8 +334,8 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-col gap-1 bg-[#FFEFD7] p-3 rounded-tr-[60px]">
-                  <h3 className="text-base font-semibold">Sarah M.</h3>
-                  <p className="text-sm leading-relaxed">
+                  <h3 className="text-base font-medium">Sarah M.</h3>
+                  <p className="text-sm leading-6">
                     My skin has never felt better! The team truly understands my
                     needs and provides the best care possible.
                   </p>
@@ -344,17 +350,6 @@ const About = () => {
                   height={1200}
                   className="w-full h-full object-cover mb-4"
                 />
-                <div className="absolute bottom-5 left-5 transform">
-                  <Button
-                    className="size-10 rounded-full bg-[#FF835A]"
-                    size="icon"
-                  >
-                    <PlayIcon
-                      className="size-4 fill-brand-text-primary text-brand-text-primary"
-                      strokeWidth={1.5}
-                    />
-                  </Button>
-                </div>
               </div>
 
               <div className="flex flex-col items-center gap-3 md:max-w-72 justify-evenly h-11/12">
@@ -367,10 +362,10 @@ const About = () => {
                     className="w-12 h-12 object-cover"
                   />
                   <div className="space-y-1">
-                    <h3 className="text-base font-semibold">
+                    <h3 className="text-base font-medium">
                       Adharsh Rangappa. CEO
                     </h3>
-                    <p className="text-sm leading-relaxed">
+                    <p className="text-sm leading-6">
                       “From consultation to results, the process was seamless. I
                       felt safe and cared for throughout.”
                     </p>
@@ -378,8 +373,8 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-col gap-1 bg-[#FFEFD7] p-3 rounded-tr-[60px]">
-                  <h3 className="text-base font-semibold">Sarah M.</h3>
-                  <p className="text-sm leading-relaxed">
+                  <h3 className="text-base font-medium">Sarah M.</h3>
+                  <p className="text-sm leading-6">
                     My skin has never felt better! The team truly understands my
                     needs and provides the best care possible.
                   </p>
@@ -402,7 +397,7 @@ const About = () => {
           />
           <div className="bg-[#5D2B2B] h-full w-full md:w-3/5 z-30 flex flex-col justify-center items-center md:rounded-tl-[150px] relative">
             <div className="w-11/12 md:w-10/12 space-y-3 md:space-y-6">
-              <h2 className="text-xs md:text-2xl font-bold text-[#FF835A] leading-relaxed">
+              <h2 className="text-sm md:text-2xl font-medium text-[#FF835A] leading-relaxed">
                 Ready to experience the Pure <br /> difference?
               </h2>
               <p className="text-[10px] leading-relaxed md:text-sm text-[#FF835A] max-w-52 md:max-w-full">
@@ -414,11 +409,17 @@ const About = () => {
                 className="rounded-none rounded-tr-2xl font-normal px-6 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary text-xs md:text-sm"
               >
                 {/* <PhoneIcon width={16} height={16} /> */}
-                <span>
+                <Link
+                  href={"tel:+16038000333"}
+                  className="flex items-center gap-1"
+                >
+                  <PhoneIcon width={20} height={20} />
                   Book{" "}
-                  <span className="hidden md:inline">your consultation</span>{" "}
+                  <span className="hidden md:inline">
+                    your consultation
+                  </span>{" "}
                   now
-                </span>
+                </Link>
               </Button>
             </div>
             <Image

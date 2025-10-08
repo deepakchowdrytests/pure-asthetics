@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -9,35 +10,48 @@ import {
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const services = [
   {
-    title: "Injectables & Anti‑Aging Solutions",
-    desc: "Smooth lines, restore volume, and refresh your appearance with expert-administered treatments.",
+    title: "Face & Anti-Aging",
+    desc: "Smooth, refresh, and rejuvenate your appearance with physician-administered injectables and advanced treatments.",
     img: "/img/featured-1.jpg",
-    alt: "Injectable treatment close-up",
+    alt: "Face & Anti-Aging",
+    id: "#face-anti-aging",
+  },
+  {
+    title: "Body & Wellness",
+    desc: "Feel confident inside and out with non-invasive solutions that target body concerns and support overall well-being.",
+    img: "/img/f-service-4.jpg",
+    alt: "Body & Wellness",
+    id: "#body-wellness",
   },
   {
     title: "Laser Treatments",
-    desc: "State‑of‑the‑art technology for hair removal, skin rejuvenation, and tattoo removal for all skin types.",
-    img: "/img/featured-2.jpg",
-    alt: "Laser skincare procedure",
+    desc: "Advanced technology for skin renewal, hair reduction, and pigment correction. ",
+    img: "/img/about-1.jpg",
+    alt: "Laser Treatments",
+    id: "#laser-treatments",
   },
   {
-    title: "Body Sculpting & Wellness",
-    desc: "Non‑invasive body contouring, weight support, and nutrition guidance to help you feel your best.",
-    img: "/img/featured-3.jpg",
-    alt: "Body contouring treatment",
+    title: "Skin Care",
+    desc: "Transform your skin with treatments tailored to your unique needs.",
+    img: "/services/service-1.png",
+    alt: "Skin Care",
+    id: "#skin-care",
   },
   {
-    title: "Women's Health & Intimacy",
-    desc: "Confidential, physician‑directed treatments for comfort, confidence, and long‑term wellness.",
+    title: "Women’s Health",
+    desc: "Confidential care to restore comfort, confidence, and intimacy.",
     img: "/img/featured-4.jpg",
-    alt: "Women's health appointment",
+    alt: "Women's Health",
+    id: "#women-health",
   },
 ];
 
 export function FeaturedServicesSection() {
+  const router = useRouter();
   return (
     <section className="flex items-center justify-center pt-12 md:pt-0 min-h-[90vh] bg-[#969B59] relative">
       {/* Decorative floral watermark */}
@@ -71,12 +85,20 @@ export function FeaturedServicesSection() {
         </div>
 
         {/* Carousel */}
-        <Carousel className="">
+        <Carousel
+          className=""
+          opts={{
+            align: "start",
+            loop: true,
+            slidesToScroll: 1,
+          }}
+        >
           <CarouselContent className="gap-0">
             {services.map((s, i) => (
               <CarouselItem
-                key={s.title}
-                className="basis-full md:basis-1/4 gap-0"
+                key={s.id}
+                className="basis-full md:basis-1/4 gap-0 cursor-pointer"
+                onClick={() => router.push(`/services/featured${s.id}`)}
               >
                 <div className="group">
                   <div className="overflow-hidden rounded-tl-4xl aspect-[4/6]">
@@ -97,7 +119,9 @@ export function FeaturedServicesSection() {
                             ? "bg-[#FFEFD7]"
                             : i === 2
                             ? "bg-[#FEE0D9]"
-                            : i === 3 && "bg-[#FFF9F6]"
+                            : i === 3
+                            ? "bg-[#FFF9F6]"
+                            : "bg-[#FFEFD7]"
                         } absolute bottom-0 left-0 right-0 h-24 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
                       >
                         <h3 className="text-sm font-semibold line-clamp-1">
@@ -113,8 +137,8 @@ export function FeaturedServicesSection() {
           </CarouselContent>
 
           {/* Arrows */}
-          <CarouselPrevious className="translate-x-12 md:translate-x-8" />
-          <CarouselNext className="-translate-x-12 md:-translate-x-8" />
+          <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3" />
+          <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3" />
         </Carousel>
       </div>
     </section>

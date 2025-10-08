@@ -34,7 +34,7 @@ const ContactForm = () => {
         height={1000}
       />
 
-      <div className="w-10/12 relative text-brand-text-primary">
+      <div className="w-11/12 md:w-10/12 relative text-brand-text-primary">
         <div className="grid grid-cols-1 md:grid-cols-9 gap-6 md:gap-16 items-start">
           {/* Left side - Images */}
           <div className="space-y-6 md:col-span-4 hidden md:block">
@@ -60,8 +60,9 @@ const ContactForm = () => {
 
           {/* Right side - Form */}
           <div className="col-span-1 md:col-span-5 py-4 space-y-6">
-            <h2 className="text-2xl md:text-4xl font-medium text-brand-text-primary">
-              Schedule my Consultation
+            <h2 className="text-2xl md:text-3xl font-medium text-brand-text-primary">
+              You may also fill out the form below and we will respond as
+              quickly as possible.
             </h2>
 
             <div className="space-y-4">
@@ -122,9 +123,9 @@ const ContactForm = () => {
               </div>
 
               {/* Submit Button */}
-              <Button className="rounded-none rounded-tr-2xl font-normal w-40 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary mt-6">
+              <Button className="rounded-none rounded-tr-2xl font-normal bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary mt-6">
                 <MessageIcon width={16} height={16} />
-                <span>Schedule now</span>
+                <span>Submit</span>
               </Button>
             </div>
           </div>

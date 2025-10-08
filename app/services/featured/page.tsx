@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ServicesPage = () => {
   const featuredServices = [
@@ -6,21 +7,25 @@ const ServicesPage = () => {
       title: "Botox Injection",
       description: "Reduce fine lines and wrinkles for a smoother look.",
       image: "/img/f-service-1.jpg",
+      link: "/services/all#botox-injection",
     },
     {
       title: "Dermal & Bio Fillers",
       description: "Restore volume and enhance natural contours.",
       image: "/img/f-service-2.jpg",
+      link: "/services/all#dermal-fillers",
     },
     {
-      title: "Sculptra",
+      title: "Biostimulators : Radiesse® & Sculptra®",
       description: "Stimulate collagen for long-lasting results.",
       image: "/img/f-service-3.jpg",
+      link: "/services/all#biostimulators",
     },
     {
       title: "PRP Micro Needling",
       description: "Harness your body’s own healing for radiant skin.",
       image: "/img/gallery-2.jpeg",
+      link: "/services/all#prp-micro-needling",
     },
   ];
 
@@ -29,21 +34,25 @@ const ServicesPage = () => {
       title: "Body Sculpting & Contouring",
       description: "Shape and tone without surgery",
       image: "/img/f-service-4.jpg",
+      link: "/services/all#body-sculpting",
     },
     {
       title: "Weight Loss Solutions",
       description: "Customized programs for sustainable results.",
       image: "/img/featured-3.jpg",
+      link: "/services/all#weight-loss-solutions",
     },
     {
       title: "Hair Restoration",
       description: "Natural solutions for thinning hair.",
       image: "/img/f-service-5.png",
+      link: "/services/all#hair-restoration",
     },
     {
       title: "IV Nutrition",
       description: "Boost energy and immunity with targeted nutrients",
       image: "/img/f-service-6.jpg",
+      link: "/services/all#iv-nutrition",
     },
   ];
 
@@ -52,16 +61,19 @@ const ServicesPage = () => {
       title: "Laser Hair Removal",
       description: "Smooth, hair-free skin that lasts.",
       image: "/img/f-service-7.jpg",
+      link: "/services/all#laser-hair-removal",
     },
     {
       title: "Laser Skin Rejuvenation",
       description: "Restore youthful tone and texture",
       image: "/img/about-1.jpg",
+      link: "/services/all#laser-skin-rejuvenation",
     },
     {
       title: "Laser Tattoo & Pigment Removal",
       description: "Safely fade unwanted ink and discolorationn",
       image: "/img/f-service-8.jpg",
+      link: "/services/all#laser-tattoo-pigment-removal",
     },
   ];
 
@@ -70,16 +82,19 @@ const ServicesPage = () => {
       title: "RF Microneedling",
       description: "Improve skin tone and firmness.",
       image: "/images/service-1.png",
+      link: "/services/all#rf-microneedling",
     },
     {
       title: "Medical Grade Acid Peeling",
       description: "Reveal fresh, glowing skin.",
       image: "/images/service-2.png",
+      link: "/services/all#medical-grade-acid-peeling",
     },
     {
       title: "Acne Treatment",
       description: "Solutions for clear, healthy skin.",
       image: "/images/service-3.png",
+      link: "/services/all#acne-treatment",
     },
   ];
 
@@ -88,22 +103,24 @@ const ServicesPage = () => {
       title: "Urinary Incontinence Treatment",
       description: "Non-surgical treatments for bladder control.",
       image: "/img/featured-4.jpg",
+      link: "/services/all#urinary-incontinence-treatment",
     },
     {
       title: "Intimacy Wellness",
       description: "Rejuvenation for enhanced confidence and comfort.",
       image: "/img/intimacy.jpg",
+      link: "/services/all#intimacy-wellness",
     },
   ];
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-12 bg-[#FFF2E8]">
-      <h1 className="text-2xl md:text-4xl font-semibold text-brand-secondary-dark">
+      <h1 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
         Featured Services
       </h1>
-      <div className="flex justify-center w-full relative">
+      <div id="face-anti-aging" className="flex justify-center w-full relative">
         <Image
-          src="/images/injection-illustration.png"
+          src="/images/injection-illustration-1.png"
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
@@ -112,7 +129,7 @@ const ServicesPage = () => {
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center">
             <div className="space-y-3 md:space-y-6 text-center md:text-left">
-              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+              <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
                 Face & Anti Aging Services
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
@@ -123,7 +140,8 @@ const ServicesPage = () => {
           </div>
           <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {featuredServices.map((service) => (
-              <div
+              <Link
+                href={service.link}
                 key={service.title}
                 className="flex flex-col gap-1 items-center"
               >
@@ -137,28 +155,31 @@ const ServicesPage = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                  <h2 className="text-sm md:text-lg font-medium text-brand-secondary-dark leading-relaxed text-center">
                     {service.title}
                   </h2>
                   <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
         <Image
-          src="/images/about-main-illustration.png"
+          src="/images/about-illustration-1.png"
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
           className="w-80 object-cover absolute top-[450px] -left-10 opacity-30"
         />
       </div>
-      <div className="flex justify-center w-full bg-brand-primary/20 relative">
+      <div
+        id="body-wellness"
+        className="flex justify-center w-full bg-brand-primary/20 relative"
+      >
         <Image
-          src="/images/about-main-illustration-2.png"
+          src="/images/about-illustration-2.png"
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
@@ -167,7 +188,7 @@ const ServicesPage = () => {
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center justify-center md:hidden">
             <div className="space-y-3 md:space-y-6 text-center">
-              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+              <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
                 Body & Wellness Services
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
@@ -178,7 +199,8 @@ const ServicesPage = () => {
           </div>
           <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {bodyServices.map((service) => (
-              <div
+              <Link
+                href={service.link}
                 key={service.title}
                 className="flex flex-col gap-1 items-center"
               >
@@ -192,19 +214,19 @@ const ServicesPage = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                  <h2 className="text-sm md:text-lg font-medium text-brand-secondary-dark leading-relaxed text-center">
                     {service.title}
                   </h2>
                   <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="col-span-1 md:flex items-center justify-center hidden">
             <div className="space-y-6">
-              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+              <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
                 Body & Wellness Services
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
@@ -215,9 +237,12 @@ const ServicesPage = () => {
           </div>
         </section>
       </div>
-      <div className="flex justify-center w-full relative">
+      <div
+        id="laser-treatments"
+        className="flex justify-center w-full relative"
+      >
         <Image
-          src="/images/dropper-illustration.png"
+          src="/images/dropper-illustration-1.png"
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
@@ -226,7 +251,7 @@ const ServicesPage = () => {
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center">
             <div className="space-y-3 md:space-y-6 text-center md:text-left">
-              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+              <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
                 Laser Treatments
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
@@ -237,7 +262,8 @@ const ServicesPage = () => {
           </div>
           <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {laserTreatments.map((service) => (
-              <div
+              <Link
+                href={service.link}
                 key={service.title}
                 className="flex flex-col gap-1 items-center"
               >
@@ -251,19 +277,19 @@ const ServicesPage = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                  <h2 className="text-sm md:text-lg font-medium text-brand-secondary-dark leading-relaxed text-center">
                     {service.title}
                   </h2>
                   <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
         <Image
-          src="/images/about-main-illustration-2.png"
+          src="/images/about-illustration-2.png"
           alt="Pure Aesthetics MD"
           width={160}
           height={60}
@@ -271,11 +297,14 @@ const ServicesPage = () => {
         />
       </div>
 
-      <div className="flex justify-center w-full bg-brand-primary-light/20 relative">
+      <div
+        id="skin-care"
+        className="flex justify-center w-full bg-brand-primary-light/20 relative"
+      >
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center justify-center md:hidden">
             <div className="space-y-3 md:space-y-6 text-center">
-              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+              <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
                 Skin Care Services
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
@@ -286,7 +315,8 @@ const ServicesPage = () => {
           </div>
           <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {skinCareServices.map((service) => (
-              <div
+              <Link
+                href={service.link}
                 key={service.title}
                 className="flex flex-col gap-1 items-center"
               >
@@ -300,19 +330,19 @@ const ServicesPage = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                  <h2 className="text-sm md:text-lg font-medium text-brand-secondary-dark leading-relaxed text-center">
                     {service.title}
                   </h2>
                   <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="col-span-1 md:flex items-center justify-center hidden">
             <div className="space-y-6">
-              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+              <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
                 Skin Care Services
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
@@ -331,11 +361,11 @@ const ServicesPage = () => {
         />
       </div>
 
-      <div className="flex justify-center w-full relative">
+      <div id="women-health" className="flex justify-center w-full relative">
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center">
             <div className="space-y-3 md:space-y-6 text-center md:text-left">
-              <h3 className="text-lg md:text-2xl font-semibold text-brand-text-primary">
+              <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
                 Women&apos;s Health Services
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
@@ -345,7 +375,8 @@ const ServicesPage = () => {
           </div>
           <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {healthServices.map((service) => (
-              <div
+              <Link
+                href={service.link}
                 key={service.title}
                 className="flex flex-col gap-1 items-center"
               >
@@ -359,19 +390,19 @@ const ServicesPage = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <h2 className="text-sm md:text-lg font-semibold text-brand-secondary-dark leading-relaxed">
+                  <h2 className="text-sm md:text-lg font-medium text-brand-secondary-dark leading-relaxed text-center">
                     {service.title}
                   </h2>
                   <p className="text-xs md:text-sm text-center text-brand-secondary-dark/80 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
         <Image
-          src="/images/about-main-illustration.png"
+          src="/images/about-illustration-1.png"
           alt="Pure Aesthetics MD"
           width={160}
           height={60}

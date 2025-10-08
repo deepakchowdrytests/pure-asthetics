@@ -2,7 +2,7 @@ import { Treatment } from "@/app/services/all/page";
 
 export const bodyAndWellnessTreatments: Treatment[] = [
   {
-    id: "botox",
+    id: "#body-sculpting",
     title: "Body Sculpting & Contouring",
     tagline: "Shape and tone without surgery",
     imageSrc: "/img/f-service-4.jpg",
@@ -44,7 +44,7 @@ export const bodyAndWellnessTreatments: Treatment[] = [
     ],
   },
   {
-    id: "weight-loss",
+    id: "#weight-loss-solutions",
     title: "Weight Loss Solutions",
     tagline: "Customized programs for sustainable results.",
     imageSrc: "/img/featured-3.jpg",
@@ -86,7 +86,7 @@ export const bodyAndWellnessTreatments: Treatment[] = [
     ],
   },
   {
-    id: "biostim",
+    id: "#hair-restoration",
     title: "Hair Restoration",
     tagline: "Natural solutions for thinning hair.",
     imageSrc: "/img/f-service-5.png",
@@ -128,7 +128,7 @@ export const bodyAndWellnessTreatments: Treatment[] = [
     ],
   },
   {
-    id: "prp",
+    id: "#iv-nutrition",
     title: "IV Nutrition Therapy",
     tagline: "Boost energy and immunity with targeted nutrients",
     imageSrc: "/img/f-service-6.jpg",
@@ -173,7 +173,7 @@ export const bodyAndWellnessTreatments: Treatment[] = [
 
 export const faceAntiAgingtreatments: Treatment[] = [
   {
-    id: "botox",
+    id: "#botox-injection",
     title: "Botox Injections",
     tagline: "Reduce fine lines and wrinkles for a smoother look.",
     imageSrc: "/img/f-service-1.jpg",
@@ -215,7 +215,7 @@ export const faceAntiAgingtreatments: Treatment[] = [
     ],
   },
   {
-    id: "fillers",
+    id: "#dermal-fillers",
     title: "Dermal & Bio Fillers",
     tagline: "Restore volume and enhance natural contours.",
     imageSrc: "/img/f-service-2.jpg",
@@ -257,7 +257,7 @@ export const faceAntiAgingtreatments: Treatment[] = [
     ],
   },
   {
-    id: "biostim",
+    id: "#biostimulators",
     title: "Biostimulators : Radiesse® & Sculptra®",
     tagline: "Gradual, natural-looking collagen restoration.",
     imageSrc: "/img/f-service-3.jpg",
@@ -300,7 +300,7 @@ export const faceAntiAgingtreatments: Treatment[] = [
     ],
   },
   {
-    id: "prp",
+    id: "#prp-micro-needling",
     title: "PRP Microneedling",
     tagline: "Harness your body’s own healing for radiant skin.",
     imageSrc: "/img/gallery-2.jpeg",
@@ -345,7 +345,7 @@ export const faceAntiAgingtreatments: Treatment[] = [
 
 export const laserTreatments: Treatment[] = [
   {
-    id: "laser-hair-removal",
+    id: "#laser-hair-removal",
     title: "Laser Hair Removal",
     tagline: "Smooth, hair-free skin that lasts.",
     imageSrc: "/img/f-service-7.jpg",
@@ -387,7 +387,7 @@ export const laserTreatments: Treatment[] = [
     ],
   },
   {
-    id: "laser-skin-rejuvenation",
+    id: "#laser-skin-rejuvenation",
     title: "Laser Skin Rejuvenation",
     tagline: "Restore youthful tone and texture.",
     imageSrc: "/img/about-1.jpg",
@@ -429,7 +429,7 @@ export const laserTreatments: Treatment[] = [
     ],
   },
   {
-    id: "laser-tattoo-pigment-removal",
+    id: "#laser-tattoo-pigment-removal",
     title: "Laser Tattoo & Pigment Removal",
     tagline: "Safely fade unwanted ink and discoloration.",
     imageSrc: "/img/f-service-8.jpg",
@@ -474,7 +474,7 @@ export const laserTreatments: Treatment[] = [
 
 export const skinCareTreatments: Treatment[] = [
   {
-    id: "rf-microneedling",
+    id: "#rf-microneedling",
     title: "RF Microneedling",
     tagline: "Improve skin tone and firmness.",
     imageSrc: "/services/service-1.png",
@@ -516,7 +516,7 @@ export const skinCareTreatments: Treatment[] = [
     ],
   },
   {
-    id: "medical-grade-acid-peels",
+    id: "#medical-grade-acid-peeling",
     title: "Medical Grade Acid Peels",
     tagline: "Reveal fresh, glowing skin.",
     imageSrc: "/services/service-2.png",
@@ -558,7 +558,7 @@ export const skinCareTreatments: Treatment[] = [
     ],
   },
   {
-    id: "acne-treatment",
+    id: "#acne-treatment",
     title: "Acne Treatment",
     tagline: "Solutions for clear, healthy skin.",
     imageSrc: "/services/service-3.png",
@@ -603,10 +603,10 @@ export const skinCareTreatments: Treatment[] = [
 
 export const intimacyTreatments: Treatment[] = [
   {
-    id: "intimacy-wellness",
+    id: "#intimacy-wellness",
     title: "Intimacy Wellness",
     tagline: "Rejuvenation for enhanced confidence and comfort.",
-    imageSrc: "/img/featured-4.jpg",
+    imageSrc: "/img/intimacy.jpg",
     imageAlt: "Intimacy Wellness",
     ctaText: "Book your consultation now",
     ctaHref: "/book-now",
@@ -645,10 +645,10 @@ export const intimacyTreatments: Treatment[] = [
     ],
   },
   {
-    id: "medical-grade-acid-peels",
+    id: "#urinary-incontinence-treatment",
     title: "Medical Grade Acid Peels",
     tagline: "Reveal fresh, glowing skin.",
-    imageSrc: "/img/intimacy.jpg",
+    imageSrc: "/img/featured-4.jpg",
     imageAlt: "medical grade acid peels",
     ctaText: "Book your consultation now",
     ctaHref: "/book-now",

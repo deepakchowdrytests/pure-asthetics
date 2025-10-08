@@ -1,15 +1,18 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { PhoneIcon } from "@/lib/icons";
 import {
-    bodyAndWellnessTreatments,
-    faceAntiAgingtreatments,
-    intimacyTreatments,
-    laserTreatments,
-    skinCareTreatments,
+  bodyAndWellnessTreatments,
+  faceAntiAgingtreatments,
+  intimacyTreatments,
+  laserTreatments,
+  skinCareTreatments,
 } from "@/lib/services";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useSearchParams } from "next/navigation";
+import React, { useEffect } from "react";
 
 export type Treatment = {
   id: string;
@@ -33,11 +36,13 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
 
   return (
     <section
+      // id={data.id}
       aria-labelledby={`${data.id}-title`}
       className="min-h-screen grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0"
     >
       {/* Image + title/cta column */}
       <div
+        id={data.id.startsWith("#") ? data.id.substring(1) : data.id}
         className={`flex flex-col items-center col-span-1 gap-10 ${imgOrder}`}
       >
         <div className="aspect-square md:size-80 rounded-3xl overflow-hidden">
@@ -52,7 +57,7 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
         </div>
 
         <div className="flex flex-col items-center space-y-2.5 text-center">
-          <h3 className="text-2xl font-bold text-brand-text-primary">
+          <h3 className="text-2xl font-medium text-brand-text-primary">
             {data.title}
           </h3>
           <p className="text-brand-text-primary">{data.tagline}</p>
@@ -62,9 +67,9 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
           className="rounded-none rounded-tr-2xl font-thin px-6 bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary"
           asChild
         >
-          <Link href={data.ctaHref} aria-label={data.ctaText}>
+          <Link href={"tel:+16038000333"} aria-label={data.ctaText}>
             <PhoneIcon width={16} height={16} />
-            <span className="ml-2">{data.ctaText}</span>
+            <span className="">{data.ctaText}</span>
           </Link>
         </Button>
       </div>
@@ -76,7 +81,7 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
         <div className="w-11/12 md:w-10/12 space-y-10">
           <h2
             id={`${data.id}-title`}
-            className="text-4xl font-bold text-brand-text-primary text-center md:text-left"
+            className="text-4xl font-medium text-brand-text-primary text-center md:text-left"
           >
             {data.title}
           </h2>
@@ -84,7 +89,7 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
           {data.sections.map((block, i) =>
             block.type === "p" ? (
               <div key={i} className="space-y-2.5">
-                <h3 className="text-xl text-brand-text-primary font-semibold">
+                <h3 className="text-xl text-brand-text-primary font-medium">
                   {block.heading}
                 </h3>
                 <p className="text-brand-text-primary leading-relaxed text-sm">
@@ -93,7 +98,7 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
               </div>
             ) : (
               <div key={i} className="space-y-2.5">
-                <h3 className="text-xl text-brand-text-primary font-semibold">
+                <h3 className="text-xl text-brand-text-primary font-medium">
                   {block.heading}
                 </h3>
                 <ul className="list-disc text-brand-text-primary text-sm pl-5 space-y-4">
@@ -111,11 +116,57 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
 };
 
 const FaceAndAntiAgingPage = () => {
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    // Enable smooth scrolling for the entire document
+    document.documentElement.style.scrollBehavior = "smooth";
+
+    const serviceId = searchParams.get("service");
+    if (serviceId) {
+      // Add a longer delay to ensure the page has fully rendered and images loaded
+      setTimeout(() => {
+        scrollToService(serviceId);
+      }, 500);
+    }
+
+    // Cleanup function to reset scroll behavior when component unmounts
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, [searchParams]);
+
+  const scrollToService = (serviceId: string) => {
+    // Ensure the serviceId starts with # if not already present
+    const targetId = serviceId.startsWith("#") ? serviceId : `#${serviceId}`;
+    const element = document.getElementById(targetId.substring(1));
+
+    if (element) {
+      // Check if smooth scrolling is supported
+      const supportsSmooth = "scrollBehavior" in document.documentElement.style;
+
+      if (supportsSmooth) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      } else {
+        // Fallback for browsers that don't support smooth scrolling
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-[#FAD1B2]">
       <div className="w-full flex justify-center">
         <div className="w-11/12 md:w-11/12 flex flex-col items-center py-16 gap-12">
-          <h1 className="text-4xl font-bold text-brand-text-primary">
+          <h1 className="text-4xl font-medium text-brand-text-primary">
             Face And Anti Aging
           </h1>
 
@@ -128,7 +179,7 @@ const FaceAndAntiAgingPage = () => {
       </div>
       <div className="w-full flex justify-center bg-[#F7E2D2]">
         <div className="w-11/12 md:w-11/12 flex flex-col items-center py-16 gap-12">
-          <h1 className="text-4xl font-bold text-brand-text-primary">
+          <h1 className="text-4xl font-medium text-brand-text-primary">
             Body & Wellness Services
           </h1>
 
@@ -141,7 +192,7 @@ const FaceAndAntiAgingPage = () => {
       </div>
       <div className="w-full flex justify-center bg-[#FFF2E8]">
         <div className="w-11/12 md:w-11/12 flex flex-col items-center py-16 gap-12">
-          <h1 className="text-4xl font-bold text-brand-text-primary">
+          <h1 className="text-4xl font-medium text-brand-text-primary">
             Laser Treatments
           </h1>
 
@@ -154,7 +205,7 @@ const FaceAndAntiAgingPage = () => {
       </div>
       <div className="w-full flex justify-center bg-[#FFF5ED]">
         <div className="w-11/12 md:w-11/12 flex flex-col items-center py-16 gap-12">
-          <h1 className="text-4xl font-bold text-brand-text-primary">
+          <h1 className="text-4xl font-medium text-brand-text-primary">
             Skin Care Wellness
           </h1>
 
@@ -167,7 +218,7 @@ const FaceAndAntiAgingPage = () => {
       </div>
       <div className="w-full flex justify-center bg-[#FFFAF6]">
         <div className="w-11/12 md:w-11/12 flex flex-col items-center py-16 gap-12">
-          <h1 className="text-4xl font-bold text-brand-text-primary">
+          <h1 className="text-4xl font-medium text-brand-text-primary">
             Intimacy Wellness
           </h1>
 

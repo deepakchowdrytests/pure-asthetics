@@ -1,7 +1,9 @@
 import ContactForm from "@/components/ContactForm";
 import FeaturedServicesSection from "@/components/FeaturedServices";
 import Gallery from "@/components/Gallery";
+import GrandOpening from "@/components/GrandOpening";
 import Hero from "@/components/Hero";
+import MembershipProgram from "@/components/MembershipProgram";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Transformations from "@/components/Transformations";
@@ -18,6 +20,8 @@ export default function Home() {
       <Testimonials />
 
       <YourDoctor />
+      <GrandOpening />
+      <MembershipProgram />
       <ContactForm />
       <Gallery />
     </div>

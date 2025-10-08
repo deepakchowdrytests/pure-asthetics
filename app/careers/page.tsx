@@ -4,7 +4,7 @@ const Careers = () => {
   return (
     <div className="min-h-screen bg-brand-base-dark/80 flex flex-col items-center justify-center py-12 md:py-16 relative">
       <Image
-        src="/images/about-main-illustration-2.png"
+        src="/images/about-illustration-2.png"
         alt="Careers"
         width={1000}
         height={1000}
@@ -13,7 +13,7 @@ const Careers = () => {
       {/* Hero Section */}
       <section className="w-11/12 md:w-10/12 min-h-screen space-y-20">
         <div className="space-y-12">
-          <h1 className="text-3xl lg:text-4xl font-semibold text-brand-text-primary">
+          <h1 className="text-3xl lg:text-4xl font-medium text-brand-text-primary">
             Join Our Growing Team
           </h1>
           <p className="text-base text-brand-text-primary/80 leading-relaxed">
@@ -26,40 +26,34 @@ const Careers = () => {
         </div>
         <div className="grid gap-12 items-start w-full">
           <div className="w-full space-y-12">
-            <h2 className="text-3xl lg:text-4xl font-semibold text-brand-text-primary">
+            <h2 className="text-3xl lg:text-4xl font-medium text-brand-text-primary">
               Why Work With Us?
             </h2>
             <div className="space-y-8 w-full">
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">
-                    1. Physician-Led Practice
-                  </span>{" "}
+                  <span className="font-medium">1. Physician-Led Practice</span>{" "}
                   – Be part of a clinic where safety, medical expertise, and
                   patient trust come first.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">
-                    2. Collaborative Culture
-                  </span>{" "}
+                  <span className="font-medium">2. Collaborative Culture</span>{" "}
                   – Work alongside professionals who are passionate about
                   helping people look and feel their best.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">3. Professional Growth</span>{" "}
-                  – Access continuing education, training opportunities, and
+                  <span className="font-medium">3. Professional Growth</span> –
+                  Access continuing education, training opportunities, and
                   exposure to advanced medical aesthetics technology.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">
-                    4. Supportive Environment
-                  </span>{" "}
+                  <span className="font-medium">4. Supportive Environment</span>{" "}
                   – We value teamwork, respect, and creating a positive
                   workplace for staff and clients alike.
                 </p>
@@ -69,7 +63,7 @@ const Careers = () => {
         </div>
         <div className="grid gap-12 items-start w-full">
           <div className="w-full space-y-12">
-            <h2 className="text-3xl lg:text-4xl font-semibold text-brand-text-primary">
+            <h2 className="text-3xl lg:text-4xl font-medium text-brand-text-primary">
               Opportunities
             </h2>
             <p>
@@ -79,7 +73,7 @@ const Careers = () => {
             <div className="space-y-8 w-full">
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">
+                  <span className="font-medium">
                     1. Aesthetic Nurse Injectors (RN/NP/PA)
                   </span>{" "}
                   – Skilled in Botox, dermal fillers, and regenerative
@@ -88,15 +82,13 @@ const Careers = () => {
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">
-                    2. Medical Aestheticians
-                  </span>{" "}
+                  <span className="font-medium">2. Medical Aestheticians</span>{" "}
                   – Focused on skincare, facials, and advanced treatments.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">
+                  <span className="font-medium">
                     3. Client Care Specialists
                   </span>{" "}
                   – Passionate about customer service, scheduling, and helping
@@ -105,7 +97,7 @@ const Careers = () => {
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">
+                  <span className="font-medium">
                     4. Marketing & Support Staff
                   </span>{" "}
                   – Dedicated to sharing our story and growing our community
@@ -116,7 +108,7 @@ const Careers = () => {
         </div>
         <div className="grid gap-12 items-start w-full">
           <div className="w-full space-y-12">
-            <h2 className="text-3xl lg:text-4xl font-semibold text-brand-text-primary">
+            <h2 className="text-3xl lg:text-4xl font-medium text-brand-text-primary">
               Who We’re Looking For
             </h2>
             <div className="space-y-8 w-full">
@@ -146,7 +138,7 @@ const Careers = () => {
         </div>
         <div className="grid gap-12 items-start w-full">
           <div className="w-full space-y-12">
-            <h2 className="text-3xl lg:text-4xl font-semibold text-brand-text-primary">
+            <h2 className="text-3xl lg:text-4xl font-medium text-brand-text-primary">
               How to Apply
             </h2>
             <div className="space-y-4">

@@ -45,23 +45,23 @@ const Header = () => {
             : "bg-brand-base-dark h-14 md:h-18 w-full"
         }`}
       >
-        <div className="w-[98%] md:w-11/12 h-full flex items-center justify-between">
-          <Link href="/" className="z-50 min-w-40">
+        <div className="w-[95%] md:w-11/12 h-full flex items-center justify-between">
+          <Link href="/" className="z-50 min-w-40 ml-2 md:ml-0">
             {scrolled ? (
               <Image
-                src={"/images/logo-3.png"}
+                src={"/logos/logo-3.png"}
                 alt="Pure Aesthetics MD"
                 width={160}
                 height={60}
-                className="w-12 md:w-16 object-cover"
+                className="w-8 md:w-10 object-cover"
               />
             ) : (
               <Image
-                src={"/images/logo-1.png"}
+                src={"/logos/logo-1.png"}
                 alt="Pure Aesthetics MD"
                 width={160}
                 height={60}
-                className="w-24 md:w-28 object-cover"
+                className="w-28 md:w-40 object-cover"
               />
             )}
           </Link>
@@ -74,7 +74,7 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="hover:text-brand-text-primary/50 transition-colors duration-200"
+                className="hover:text-brand-text-primary/50 transition-colors duration-200 font-medium"
               >
                 {link.label}
               </Link>
@@ -86,7 +86,7 @@ const Header = () => {
               className="rounded-none rounded-tr-2xl font-thin w-40 bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary"
               asChild
             >
-              <Link href="/book-now">
+              <Link href="tel:+16038000333">
                 <PhoneIcon width={16} height={16} />
                 <span>Schedule now</span>
               </Link>
@@ -141,7 +141,7 @@ const Header = () => {
           asChild
         >
           <Link
-            href="/book-now"
+            href="tel:+16038000333"
             onClick={() => {
               setIsOpen(false);
               document.body.style.overflow = "auto";

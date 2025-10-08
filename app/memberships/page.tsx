@@ -8,7 +8,7 @@ const MemberShipsPage = () => {
     <div className="flex items-center justify-center min-h-screen bg-brand-base-dark py-12">
       <div className="w-[95%] md:w-11/12 h-full flex flex-col items-center justify-between gap-16">
         <div className="w-full md:w-10/12 flex flex-col items-center gap-6">
-          <h1 className="text-2xl md:text-4xl font-semibold text-center leading-relaxed">
+          <h1 className="text-2xl md:text-4xl font-medium text-brand-text-primary text-center leading-relaxed">
             Glow All Year Long With Exclusive Membership
           </h1>
           <p className="text-brand-text-primary text-sm md:text-base text-center max-w-3xl leading-relaxed">
@@ -21,7 +21,7 @@ const MemberShipsPage = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-3 w-11/12 md:w-10/12">
-          <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB]">
+          <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB] hover:scale-102 transition-all duration-300">
             <div className="aspect-square">
               <Image
                 src={"/img/membership-1.png"}
@@ -33,7 +33,9 @@ const MemberShipsPage = () => {
             </div>
             <div className="p-5 flex flex-col justify-between h-[420px]">
               <div className="flex flex-col justify-between h-16">
-                <h3 className="text-xl font-semibold">Glow Membership</h3>
+                <h3 className="text-xl font-medium text-brand-text-primary">
+                  Glow Membership
+                </h3>
                 <p className="text-brand-text-primary text-sm md:text-base">
                   Perfect for ongoing skin health
                 </p>
@@ -77,14 +79,21 @@ const MemberShipsPage = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-4">
-                <h2 className="text-3xl font-semibold font-mono">$99/month</h2>
+                <h2 className="text-3xl font-medium text-brand-text-primary">
+                  $99/month
+                </h2>
                 <Button className="h-11 text-primary w-full bg-[#F9B9AF] hover:bg-[#F9B9AF]/90 border border-black border-b-5">
-                  Get in Touch
+                  <Link
+                    href={"https://djrsv.myaestheticrecord.com/online-booking"}
+                    target="_blank"
+                  >
+                    Get in Touch
+                  </Link>
                 </Button>
               </div>
             </div>
           </div>
-          <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB]">
+          <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB] hover:scale-102 transition-all duration-300">
             <div className="aspect-square">
               <Image
                 src={"/img/membership-2.png"}
@@ -96,7 +105,9 @@ const MemberShipsPage = () => {
             </div>
             <div className="p-5 flex flex-col justify-between h-[420px]">
               <div className="flex flex-col justify-between h-16">
-                <h3 className="text-xl font-semibold">Radiance Membership</h3>
+                <h3 className="text-xl font-medium text-brand-text-primary">
+                  Radiance Membership
+                </h3>
                 <p className="text-brand-text-primary text-xs md:text-sm">
                   Best for clients who want flexibility & value.
                 </p>
@@ -140,14 +151,21 @@ const MemberShipsPage = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-4">
-                <h2 className="text-3xl font-semibold font-mono">$199/month</h2>
+                <h2 className="text-3xl font-medium text-brand-text-primary">
+                  $199/month
+                </h2>
                 <Button className="h-11 text-primary w-full bg-[#F9B9AF] hover:bg-[#F9B9AF]/90 border border-black border-b-5">
-                  Get in Touch
+                  <Link
+                    href={"https://djrsv.myaestheticrecord.com/online-booking"}
+                    target="_blank"
+                  >
+                    Get in Touch
+                  </Link>
                 </Button>
               </div>
             </div>
           </div>
-          <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB]">
+          <div className="border border-b-3 border-black rounded-t-full overflow-hidden bg-[#F6F1EB] hover:scale-102 transition-all duration-300">
             <div className="aspect-square">
               <Image
                 src={"/img/membership-3.png"}
@@ -159,7 +177,9 @@ const MemberShipsPage = () => {
             </div>
             <div className="p-5 flex flex-col justify-between h-[420px]">
               <div className="flex flex-col justify-between h-16">
-                <h3 className="text-xl font-semibold">Platinum Membership</h3>
+                <h3 className="text-xl font-medium text-brand-text-primary">
+                  Platinum Membership
+                </h3>
                 <p className="text-brand-text-primary text-sm md:text-base">
                   For the ultimate self-care experience.
                 </p>
@@ -203,9 +223,16 @@ const MemberShipsPage = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-4">
-                <h2 className="text-3xl font-semibold font-mono">$399/month</h2>
+                <h2 className="text-3xl font-medium text-brand-text-primary">
+                  $399/month
+                </h2>
                 <Button className="h-11 text-primary w-full bg-[#F9B9AF] hover:bg-[#F9B9AF]/90 border border-black border-b-5">
-                  Get in Touch
+                  <Link
+                    href={"https://djrsv.myaestheticrecord.com/online-booking"}
+                    target="_blank"
+                  >
+                    Get in Touch
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -216,7 +243,7 @@ const MemberShipsPage = () => {
           className="rounded-none rounded-tr-2xl font-normal px-6 bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary"
           asChild
         >
-          <Link href="/book-now">
+          <Link href="tel:+16038000333">
             <PhoneIcon className="size-4 mr-2" strokeWidth={1.5} />
             <span>Join our membership today</span>
           </Link>
@@ -226,7 +253,7 @@ const MemberShipsPage = () => {
         <div className="w-full md:w-10/12 py-16 bg-brand-secondary/5 flex items-center justify-center">
           <div className="w-11/12 md:w-10/12 space-y-10">
             <div className="flex flex-col items-center gap-4">
-              <h2 className="text-2xl md:text-4xl font-semibold text-brand-secondary-dark text-center">
+              <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark text-center">
                 Special Offers
               </h2>
               <p className="text-brand-secondary-dark/95 text-center max-w-2xl">
@@ -249,7 +276,7 @@ const MemberShipsPage = () => {
                   />
                 </div>
                 <div className="space-y-3 p-4">
-                  <h3 className="text-lg font-semibold text-brand-secondary-dark">
+                  <h3 className="text-lg font-medium text-brand-secondary-dark">
                     Grand Opening Special
                   </h3>
                   <p className="text-brand-secondary-dark/90 text-sm leading-6.5">
@@ -307,7 +334,7 @@ const MemberShipsPage = () => {
                 className="rounded-none rounded-tr-2xl font-normal px-6 bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary"
                 asChild
               >
-                <Link href="/book-now">
+                <Link href="tel:+16038000333">
                   <PhoneIcon className="size-4" strokeWidth={1.5} />
                   <span>Claim your offer now</span>
                 </Link>
@@ -333,7 +360,7 @@ const MemberShipsPage = () => {
             </div>
             <div className="col-span-1 md:col-span-2 flex flex-col items-center justify-center gap-6">
               <div className="w-full md:w-9/12 space-y-6">
-                <h2 className="text-2xl md:text-4xl font-semibold text-brand-secondary-dark">
+                <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
                   Why Join Us?
                 </h2>
                 <ul className="list-disc list-inside text-brand-secondary-dark text-sm md:text-base space-y-4">

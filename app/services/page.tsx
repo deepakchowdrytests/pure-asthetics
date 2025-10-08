@@ -16,12 +16,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { PhoneIcon } from "@/lib/icons";
 import { Calendar, ChevronRight, PlusIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 // Drop this file at app/services/page.tsx (Next.js App Router)
 export default function ServicesPage() {
+  const router = useRouter();
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#fff7f6]">
       {/* FEATURED SERVICES */}
@@ -36,12 +39,20 @@ export default function ServicesPage() {
             Featured Services
           </h2>
 
-          <Carousel className="">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+              slidesToScroll: 1,
+            }}
+            className=""
+          >
             <CarouselContent className="gap-0">
               {services.map((s, i) => (
                 <CarouselItem
-                  key={s.title}
-                  className="basis-full md:basis-1/4 gap-0 pl-4 md:pl-1"
+                  key={s.id}
+                  className="basis-full md:basis-1/4 cursor-pointer"
+                  onClick={() => router.push(`/services/featured${s.id}`)}
                 >
                   <div className="group">
                     <div className="overflow-hidden rounded-tl-4xl aspect-[4/6]">
@@ -51,7 +62,7 @@ export default function ServicesPage() {
                           alt={s.alt}
                           width={1000}
                           height={1000}
-                          className="h-full"
+                          className="h-full object-cover"
                         />
                         {/* Text panel with creamy rounded shape */}
                         <div
@@ -62,7 +73,9 @@ export default function ServicesPage() {
                               ? "bg-[#FFEFD7]"
                               : i === 2
                               ? "bg-[#FEE0D9]"
-                              : i === 3 && "bg-[#FFF9F6]"
+                              : i === 3
+                              ? "bg-[#FFF9F6]"
+                              : "bg-[#FCF3EE]"
                           } absolute bottom-0 left-0 right-0 h-24 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
                         >
                           <h3 className="text-sm font-semibold line-clamp-1">
@@ -78,18 +91,18 @@ export default function ServicesPage() {
             </CarouselContent>
 
             {/* Arrows */}
-            <CarouselPrevious className="translate-x-12 md:translate-x-8" />
-            <CarouselNext className="-translate-x-12 md:-translate-x-8" />
+            <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3" />
+            <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3" />
           </Carousel>
 
           <div className="mt-10 flex flex-col gap-8 items-center justify-center">
-            <p className="text-center max-w-3xl text-base  md:text-2xl text-white">
+            <p className="text-center max-w-3xl text-base md:text-xl text-white leading-relaxed">
               At Pure Aesthetics MD, we offer a wide range of physician-led
               aesthetic and wellness treatments designed to help you look and
               feel your best safely, naturally, and affordably.
             </p>
             <Button className="rounded-none rounded-tr-2xl font-normal px-7 bg-white hover:bg-brand-secondary-dark/85 text-brand-text-primary hover:text-white">
-              <Link href="/services/all">
+              <Link href="/services/featured">
                 <span>View all services</span>
               </Link>
               <ChevronRight className="size-4" strokeWidth={1.5} />
@@ -121,9 +134,11 @@ export default function ServicesPage() {
                         <AccordionItem value="item-1" className="border-0">
                           <AccordionTrigger className="px-5 py-3 text-left hover:no-underline flex items-center gap-2 justify-start text-brand-text-primary [&[data-state=open]>svg]:rotate-180">
                             <PlusIcon className="size-4" />
-                            <span className="font-medium">{q.q}</span>
+                            <span className="font-medium font-astrid">
+                              {q.q}
+                            </span>
                           </AccordionTrigger>
-                          <AccordionContent className="px-5 pb-5 text-sm text-brand-text-primary leading-relaxed pt-1.5">
+                          <AccordionContent className="font-shippori px-5 pb-5 text-sm text-brand-text-primary leading-relaxed pt-1.5">
                             {q.a}
                           </AccordionContent>
                         </AccordionItem>
@@ -149,8 +164,13 @@ export default function ServicesPage() {
           </p>
           <div className="mt-6 md:mt-10 w-full flex items-center justify-center">
             <Button className="rounded-none rounded-tr-2xl font-normal px-7 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary w-full md:w-auto">
-              <Calendar className="size-4" strokeWidth={1.5} />
-              <span>Book a consultation now</span>
+              <Link
+                href={"tel:+16038000333"}
+                className="flex items-center gap-2"
+              >
+                <PhoneIcon width={20} height={20} />
+                <span>Book a consultation now</span>
+              </Link>
             </Button>
           </div>
         </div>

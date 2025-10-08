@@ -156,6 +156,10 @@
   a,
   span,
   li {
-    @apply font-shippori font-semibold;
+    @apply font-shippori font-normal;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

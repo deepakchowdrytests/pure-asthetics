@@ -9,6 +9,7 @@ import { PhoneIcon } from "@/lib/icons";
 import { Smile } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Transformations = () => {
   const transformations = [
@@ -115,8 +116,10 @@ const Transformations = () => {
               </p>
             </div>
             <Button className="flex items-center gap-2 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary rounded-none rounded-tr-2xl">
-              <PhoneIcon width={20} height={20} />
-              Schedule my Consultation
+              <Link href={"tel:+16038000333"} className="flex items-center gap-1">
+                <PhoneIcon width={20} height={20} />
+                Schedule my Consultation
+              </Link>
             </Button>
           </div>
         </div>

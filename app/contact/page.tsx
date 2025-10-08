@@ -12,6 +12,7 @@ import {
 } from "@/lib/icons";
 import { Instagram, PenSquare } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const ContactPage = () => {
@@ -33,7 +34,7 @@ const ContactPage = () => {
       <div className="flex items-center justify-center min-h-[40vh] pb-16">
         <div className="w-11/12 md:w-10/12 flex flex-col gap-12">
           <div className="space-y-4">
-            <h3 className="text-brand-text-primary text-3xl font-semibold">
+            <h3 className="text-brand-text-primary text-3xl font-medium">
               Contact Us
             </h3>
             <p className="text-brand-text-primary">
@@ -45,12 +46,12 @@ const ContactPage = () => {
             </p>
           </div>
           <div className="space-y-4">
-            <h3 className="text-brand-text-primary text-3xl font-semibold">
+            <h3 className="text-brand-text-primary text-3xl font-medium">
               Clinic information
             </h3>
             <p className="text-brand-text-primary">
-              Address: Pure Aesthetics MD, 110 Daniel Webster Hwy,Nashua, NH
-              03060
+              Address: 110 Daniel Webster Hwy, Nashua, NH 03060 (with Rashda's
+              Beauty Salon)
             </p>
             <div className="space-y-3 grid grid-cols-1 md:grid-cols-2 list-none text-sm text-brand-text-primary max-w-3xl">
               <li>Call us: 603 800 0333</li>
@@ -251,7 +252,7 @@ const ContactPage = () => {
         <div className="h-full relative flex items-center justify-end">
           <div className="bg-[#5D2B2B] h-full w-full md:w-4/6 z-30 flex flex-col justify-center items-center md:rounded-tr-[150px] relative">
             <div className="w-11/12 md:w-10/12 space-y-3 md:space-y-6">
-              <h2 className="text-xs md:text-2xl font-bold text-[#FF835A] leading-relaxed">
+              <h2 className="text-xs md:text-2xl font-medium text-[#FF835A] leading-relaxed">
                 Ready for Radiant skin?
               </h2>
               <p className="text-[10px] leading-relaxed md:text-sm text-[#FF835A] max-w-52 md:max-w-[28rem]">
@@ -264,12 +265,17 @@ const ContactPage = () => {
                 size="sm"
                 className="rounded-none rounded-tr-2xl font-normal px-6 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary text-xs md:text-sm"
               >
-                {/* <PhoneIcon width={16} height={16} /> */}
-                <span>
+                <Link
+                  href={"tel:+16038000333"}
+                  className="flex items-center gap-2"
+                >
+                  <PhoneIcon width={16} height={16} />
                   Book{" "}
-                  <span className="hidden md:inline">your consultation</span>{" "}
+                  <span className="hidden md:inline">
+                    your consultation
+                  </span>{" "}
                   now
-                </span>
+                </Link>
               </Button>
             </div>
             <Image
@@ -283,7 +289,7 @@ const ContactPage = () => {
           <div className="md:flex items-center justify-center w-2/5 hidden">
             <div className="flex w-10/12 gap-2 flex-col">
               <EyeDropperIcon width={36} height={36} />
-              <h3 className="text-xs md:text-2xl font-bold text-brand-text-primary leading-relaxed">
+              <h3 className="text-xs md:text-2xl font-medium text-brand-text-primary leading-relaxed">
                 Sustainable Beauty
               </h3>
               <p className="text-sm text-brand-text-primary max-w-sm">
