@@ -47,8 +47,10 @@ const Hero = () => {
                 </Link>
               </button>
               <button className="flex items-center gap-1 text-brand-text-primary">
-                <PhoneIcon height={15} width={15} />
-                <span>Call us now</span>
+                <Link href={"tel:+16038000333"}>
+                  <PhoneIcon height={15} width={15} />
+                  <span>Call us now</span>
+                </Link>
               </button>
             </div>
           </div>
