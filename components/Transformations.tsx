@@ -16,20 +16,20 @@ const Transformations = () => {
     {
       id: 1,
       category: "Face treatments",
-      beforeImage: "/images/transform-before-1.png",
-      afterImage: "/images/transform-after-1.png",
+      beforeImage: "/images/transform-1.png",
+      afterImage: "/images/transform-2.png",
     },
     {
       id: 2,
       category: "Face treatments",
-      beforeImage: "/images/transform-before-2.png",
-      afterImage: "/images/transform-after-2.png",
+      beforeImage: "/images/transform-3.png",
+      afterImage: "/images/transform-4.png",
     },
     {
       id: 3,
       category: "Face treatments",
-      beforeImage: "/images/transform-before-1.png",
-      afterImage: "/images/transform-after-1.png",
+      beforeImage: "/images/transform-1.png",
+      afterImage: "/images/transform-2.png",
     },
   ];
 
@@ -116,7 +116,10 @@ const Transformations = () => {
               </p>
             </div>
             <Button className="flex items-center gap-2 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary rounded-none rounded-tr-2xl">
-              <Link href={"tel:+16038000333"} className="flex items-center gap-1">
+              <Link
+                href={"tel:+16038000333"}
+                className="flex items-center gap-1"
+              >
                 <PhoneIcon width={20} height={20} />
                 Schedule my Consultation
               </Link>

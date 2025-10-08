@@ -15,28 +15,28 @@ const Testimonials = () => {
       id: 1,
       text: "The results were better than I imagined. The body contouring helped me tone my abdomen and thighs without any downtime.",
       author: "Ankitha K. Babu, Student",
-      image: "/images/client.png",
+      image: "/images/transform-2.png",
       rating: 5,
     },
     {
       id: 2,
       text: "I'm so grateful I found Pure Aesthetics! My skin has never looked this good. The anti-aging treatments are gentle but powerful. I finally feel comfortable in my skin again!",
       author: "Emma T.",
-      image: "/images/client.png",
+      image: "/images/transform-4.png",
       rating: 5,
     },
     {
       id: 3,
       text: "The staff is incredibly professional and caring. Every treatment feels luxurious and the results speak for themselves. Highly recommend!",
       author: "Sarah M., Business Owner",
-      image: "/images/client.png",
+      image: "/images/transform-2.png",
       rating: 5,
     },
     {
       id: 4,
       text: "Amazing experience from start to finish. The consultation was thorough and the treatments exceeded my expectations. My confidence has never been higher!",
       author: "Jessica L.",
-      image: "/images/client.png",
+      image: "/images/transform-4.png",
       rating: 5,
     },
   ];
@@ -98,7 +98,7 @@ const Testimonials = () => {
                           height={240}
                           src={testimonial.image}
                           alt={testimonial.author}
-                          className="h-full w-full object-cover rounded-tr-[50px]"
+                          className="h-full w-full object-cover object-top rounded-t-[80px]"
                         />
                       </div>
                     </div>

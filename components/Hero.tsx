@@ -17,7 +17,7 @@ const Hero = () => {
 
           <div className="col-span-1 md:col-span-3 h-full rounded-bl-[200px] md:rounded-bl-[300px] overflow-hidden md:hidden">
             <Image
-              src={"/img/main-bg.jpg"}
+              src={"/images/main.jpg"}
               alt=""
               width={2000}
               height={1200}
@@ -55,7 +55,7 @@ const Hero = () => {
 
           <div className="col-span-1 md:col-span-3 h-full rounded-bl-[300px] overflow-hidden hidden md:block">
             <Image
-              src={"/images/main.png"}
+              src={"/images/main.jpg"}
               alt=""
               width={2000}
               height={1200}
