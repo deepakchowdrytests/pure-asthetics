@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <nav className="py-6 border-y md:flex items-center justify-between px-6 uppercase hidden font-bold border-brand-primary-light text-brand-secondary-dark font-shippori">
+        <nav className="py-6 border-y md:flex items-center justify-between px-6 uppercase hidden font-bold border-brand-primary-light text-brand-secondary-dark font-shippori z-50">
           <Link href={"/"} className="font-semibold leading-relaxed text-sm">
             Home
           </Link>

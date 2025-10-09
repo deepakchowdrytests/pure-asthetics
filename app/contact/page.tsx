@@ -50,8 +50,8 @@ const ContactPage = () => {
               Clinic information
             </h3>
             <p className="text-brand-text-primary">
-              Address: 110 Daniel Webster Hwy, Nashua, NH 03060 (with Rashda&apos;s
-              Beauty Salon)
+              Address: 110 Daniel Webster Hwy, Nashua, NH 03060 (with
+              Rashda&apos;s Beauty Salon)
             </p>
             <div className="space-y-3 grid grid-cols-1 md:grid-cols-2 list-none text-sm text-brand-text-primary max-w-3xl">
               <li>Call us: 603 800 0333</li>
@@ -70,7 +70,7 @@ const ContactPage = () => {
         </div>
       </div>
       <div className="w-11/12 flex flex-col items-center">
-        <div className="w-11/12 min-h-80 flex flex-col items-center gap-16 py-6">
+        <div className="w-full md:w-11/12 min-h-80 flex flex-col items-center gap-16 py-6">
           <h4 className="text-brand-text-primary text-xl uppercase text-center">
             Hours of Operation
           </h4>
@@ -150,7 +150,7 @@ const ContactPage = () => {
             (Extended hours available by appointment.)
           </p>
         </div>
-        <div className="w-11/12 relative text-brand-text-primary py-12">
+        <div className="w-full md:w-11/12 relative text-brand-text-primary py-12">
           <div className="grid grid-cols-1 md:grid-cols-9 gap-6 md:gap-16 items-start">
             {/* Left side - Images */}
             <div className="space-y-6 md:col-span-4 hidden md:block">
@@ -283,7 +283,7 @@ const ContactPage = () => {
               height={1200}
               src={"/images/cta-illustration.png"}
               alt="Treatment closeup"
-              className="h-full w-1/2 absolute top-0 right-0"
+              className="h-full w-1/2 object-cover md:object-contain absolute top-0 right-0"
             />
           </div>
           <div className="md:flex items-center justify-center w-2/5 hidden">
@@ -300,6 +300,57 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+      <div className="w-11/12 flex flex-col md:flex-row md:items-center space-y-12 md:space-y-0 md:space-x-16 min-h-[60vh] py-12 md:py-6">
+        <div className="space-y-6 w-full md:w-7/12">
+          <div className="space-y-4 w-full">
+            <p className="text-sm font-medium text-brand-secondary-dark leading-relaxed">
+              We&apos;d love to hear from you <br />
+              Whether you&apos;re ready to book your first treatment or simply
+              want to learn more about our services, our team is here to help.
+            </p>
+            <p className="text-sm text-brand-secondary-dark leading-relaxed">
+              At Pure Aesthetics MD, we pride ourselves on providing
+              personalized, physician-led care in a welcoming environment.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-base font-medium text-brand-secondary-dark">
+              Follow Us
+            </h3>
+            <p className="text-sm text-brand-secondary-dark">
+              Stay up-to-date on specials, events, and skincare tips:
+            </p>
+            <Link
+              href={"/"}
+              className="flex items-center gap-2 text-xs text-brand-secondary-dark"
+            >
+              <Instagram className="size-3" strokeWidth={1.5} />
+              @Pure_Aesthetics_MD
+            </Link>
+          </div>
+        </div>
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <h3 className="text-brand-secondary-dark">Location</h3>
+            <p className="text-sm text-brand-secondary-dark/80 leading-relaxed">
+              110 Daniel Webster Hwy, Nashua, NH 03060 (with Rashda’s Beauty
+              Salon)
+            </p>
+          </div>
+          <div className="w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.8234567890123!2d-71.4676543!3d42.7654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a123456789ab%3A0x123456789abcdef0!2s110%20Daniel%20Webster%20Hwy%2C%20Nashua%2C%20NH%2003060!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Pure Aesthetics MD Location - 110 Daniel Webster Hwy, Nashua, NH 03060"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
