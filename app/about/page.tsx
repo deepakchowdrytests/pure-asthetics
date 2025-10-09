@@ -253,7 +253,7 @@ const About = () => {
             <Image
               width={2000}
               height={1200}
-              src={"/images/doctor.png"}
+              src={"/img/doctor-1.jpg"}
               alt="Dr. Radhika Paluri"
               className=" w-full h-auto object-cover"
             />
@@ -315,7 +315,7 @@ const About = () => {
               <div className="flex flex-col-reverse items-center gap-3 md:max-w-72 justify-evenly h-11/12">
                 <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
                   <Image
-                    src={"/images/about-client.png"}
+                    src={"/images/transform-4.png"}
                     alt=""
                     width={2000}
                     height={1200}
@@ -354,7 +354,7 @@ const About = () => {
               <div className="flex flex-col items-center gap-3 md:max-w-72 justify-evenly h-11/12">
                 <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
                   <Image
-                    src={"/images/about-client.png"}
+                    src={"/images/transform-2.png"}
                     alt=""
                     width={2000}
                     height={1200}

@@ -81,19 +81,19 @@ const ServicesPage = () => {
     {
       title: "RF Microneedling",
       description: "Improve skin tone and firmness.",
-      image: "/images/service-1.png",
+      image: "/services/service-1.png",
       link: "/services/all#rf-microneedling",
     },
     {
       title: "Medical Grade Acid Peeling",
       description: "Reveal fresh, glowing skin.",
-      image: "/images/service-2.png",
+      image: "/services/service-2.png",
       link: "/services/all#medical-grade-acid-peeling",
     },
     {
       title: "Acne Treatment",
       description: "Solutions for clear, healthy skin.",
-      image: "/images/service-3.png",
+      image: "/services/service-3.png",
       link: "/services/all#acne-treatment",
     },
   ];

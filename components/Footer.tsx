@@ -306,7 +306,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-between h-4 md:pr-4">
           <Link href={"/"} className="text-[13px] font-bold text-[#FF835A]">
-            Terms & conditions
+            Terms & Conditions
           </Link>
           <p className="text-[13px] font-bold text-[#FF835A] hidden md:block">
             ©Pure Aesthetics MD 2025. All rights reserved.
