@@ -266,7 +266,7 @@ const About = () => {
         <section className="flex items-center justify-center z-20 py-12">
           <div className="w-11/12">
             <div className="space-y-4">
-              <h2 className="text-2xl lg:text-4xl font-bold text-brand-text-primary">
+              <h2 className="text-2xl lg:text-4xl font-medium text-brand-text-primary">
                 Our Commitment
               </h2>
               <p className="text-base text-brand-text-primary leading-relaxed">
@@ -299,7 +299,7 @@ const About = () => {
         <section className="z-20 bg-[#FFEFD7]/45 min-h-[70vh] flex items-center justify-center py-12 md:py-0">
           <div className="w-11/12 flex flex-col items-center gap-12">
             <div className="flex flex-col items-center">
-              <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-brand-text-primary">
+              <h2 className="text-2xl lg:text-4xl font-medium mb-4 text-brand-text-primary">
                 What our clients say
               </h2>
               <p className="flex items-center gap-1 text-center">

@@ -127,7 +127,7 @@ export function FeaturedServicesSection() {
                             : "bg-[#FFEFD7]"
                         } absolute bottom-0 left-0 right-0 h-24 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
                       >
-                        <h3 className="text-sm font-semibold line-clamp-1">
+                        <h3 className="text-sm font-medium line-clamp-1">
                           {s.title}
                         </h3>
                         <p className="line-clamp-2 text-xs">{s.desc}</p>
