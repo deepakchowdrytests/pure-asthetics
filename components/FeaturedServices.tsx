@@ -76,12 +76,15 @@ export function FeaturedServicesSection() {
             are here to help you achieve your healthiest skin. Explore our
             tailored offerings below.
           </p>
-          <Button className="rounded-none rounded-tr-2xl font-normal w-44 bg-[#FCF3EE] hover:bg-[#FCF3EE]/85 text-brand-text-primary">
-            <Link href="/services/featured" className="flex items-center gap-1">
-              <span>View all services</span>
+          <Link
+            href="/services/featured"
+            className="flex items-center gap-1 md:justify-start justify-center mt-4 md:mt-0 z-50"
+          >
+            <Button className="rounded-none rounded-tr-2xl font-normal px-7 bg-[#FCF3EE] hover:bg-[#FCF3EE]/85 text-brand-text-primary text-sm md:text-base">
+              View all services
               <ChevronRight className="size-4" strokeWidth={1.5} />
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
 
         {/* Carousel */}
