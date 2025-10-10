@@ -4,7 +4,7 @@ export const bodyAndWellnessTreatments: Treatment[] = [
   {
     id: "#body-sculpting",
     title: "Body Sculpting & Contouring",
-    tagline: "Shape and tone without surgery",
+    tagline: "Shape and define your body without surgery.",
     imageSrc: "/img/f-service-4.jpg",
     imageAlt: "Body Sculpting & Contouring",
     ctaText: "Book your consultation now",
@@ -39,14 +39,14 @@ export const bodyAndWellnessTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "How soon will I see results? Most clients begin noticing changes within a few weeks, with optimal results after a few months as the body eliminates fat cells.",
+        text: "How soon will I see results?\nMost clients begin noticing changes within a few weeks, with optimal results after a few months as the body eliminates fat cells.",
       },
     ],
   },
   {
     id: "#weight-loss-solutions",
     title: "Weight Loss Solutions",
-    tagline: "Customized programs for sustainable results.",
+    tagline: "Personalized, medically guided weight loss programs.",
     imageSrc: "/img/featured-3.jpg",
     imageAlt: "Weight Loss Solutions",
     ctaText: "Book your consultation now",
@@ -81,14 +81,14 @@ export const bodyAndWellnessTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Will I gain the weight back? Our goal is sustainable change. With physician guidance and lifestyle coaching, you’ll learn strategies to help maintain your results long term.",
+        text: "Will I gain the weight back?\nOur goal is sustainable change. With physician guidance and lifestyle coaching, you'll learn strategies to help maintain your results long term.",
       },
     ],
   },
   {
     id: "#hair-restoration",
     title: "Hair Restoration",
-    tagline: "Natural solutions for thinning hair.",
+    tagline: "Restore fuller, thicker hair naturally.",
     imageSrc: "/img/f-service-5.png",
     imageAlt: "Hair Restoration",
     ctaText: "Book your consultation now",
@@ -123,14 +123,14 @@ export const bodyAndWellnessTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "How many sessions will I need? A series of treatments is usually recommended for best results, with maintenance sessions to sustain hair growth.",
+        text: "How many sessions will I need?\nA series of treatments is usually recommended for best results, with maintenance sessions to sustain hair growth.",
       },
     ],
   },
   {
     id: "#iv-nutrition",
     title: "IV Nutrition Therapy",
-    tagline: "Boost energy and immunity with targeted nutrients",
+    tagline: "Replenish, energize, and restore balance from within.",
     imageSrc: "/img/f-service-6.jpg",
     imageAlt: "IV Nutrition Therapy",
     ctaText: "Book your consultation now",
@@ -165,7 +165,7 @@ export const bodyAndWellnessTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "How often can I get IV therapy? Depending on your needs, treatments can be scheduled weekly, monthly, or as needed for a wellness boost.",
+        text: "How often can I get IV therapy?\nDepending on your needs, treatments can be scheduled weekly, monthly, or as needed for a wellness boost.",
       },
     ],
   },
@@ -175,7 +175,7 @@ export const faceAntiAgingtreatments: Treatment[] = [
   {
     id: "#botox-injection",
     title: "Botox Injections",
-    tagline: "Reduce fine lines and wrinkles for a smoother look.",
+    tagline: "Smooth away fine lines and wrinkles—naturally and safely.",
     imageSrc: "/img/f-service-1.jpg",
     imageAlt: "Face And Anti Aging - Botox",
     ctaText: "Book your consultation now",
@@ -210,14 +210,14 @@ export const faceAntiAgingtreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Will I look frozen? No—when performed by a skilled physician, Botox provides natural-looking results while preserving your expressions.",
+        text: "Will I look frozen?\nNo when performed by a skilled physician, Botox provides natural-looking results while preserving your expressions.",
       },
     ],
   },
   {
     id: "#dermal-fillers",
     title: "Dermal & Bio Fillers",
-    tagline: "Restore volume and enhance natural contours.",
+    tagline: "Restore volume and definition with natural-looking results.",
     imageSrc: "/img/f-service-2.jpg",
     imageAlt: "Face And Anti Aging - Fillers",
     ctaText: "Book your consultation now",
@@ -252,14 +252,14 @@ export const faceAntiAgingtreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Is it painful? Most fillers include lidocaine for comfort. We also offer numbing options for an easy experience.",
+        text: "Is it painful?\nMost fillers include lidocaine for comfort. We also offer numbing options for an easy experience.",
       },
     ],
   },
   {
     id: "#biostimulators",
     title: "Biostimulators : Radiesse® & Sculptra®",
-    tagline: "Gradual, natural-looking collagen restoration.",
+    tagline: "A collagen booster for gradual, lasting rejuvenation.",
     imageSrc: "/img/f-service-3.jpg",
     imageAlt: "Face And Anti Aging - Biostimulators",
     ctaText: "Book your consultation now",
@@ -295,14 +295,14 @@ export const faceAntiAgingtreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "How many sessions will I need? Most patients require 2–3 treatments spaced a few weeks apart for best results.",
+        text: "How many sessions will I need?\nMost patients require 2–3 treatments spaced a few weeks apart for best results.",
       },
     ],
   },
   {
     id: "#prp-micro-needling",
     title: "PRP Microneedling",
-    tagline: "Harness your body’s own healing for radiant skin.",
+    tagline: "Revitalize your skin using your body’s own healing power.",
     imageSrc: "/img/gallery-2.jpeg",
     imageAlt: "Face And Anti Aging - PRP Microneedling",
     ctaText: "Book your consultation now",
@@ -337,7 +337,7 @@ export const faceAntiAgingtreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "How much downtime is there? Mild redness usually resolves in 24–48 hours, with improvements continuing for weeks.",
+        text: "How much downtime is there?\nMild redness usually resolves in 24–48 hours, with improvements continuing for weeks.",
       },
     ],
   },
@@ -347,7 +347,8 @@ export const laserTreatments: Treatment[] = [
   {
     id: "#laser-hair-removal",
     title: "Laser Hair Removal",
-    tagline: "Smooth, hair-free skin that lasts.",
+    tagline:
+      "Say goodbye to razors and waxing with safe, lasting hair reduction.",
     imageSrc: "/img/f-service-7.jpg",
     imageAlt: "laser hair removal",
     ctaText: "Book your consultation now",
@@ -382,14 +383,14 @@ export const laserTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Is it permanent? While results vary, most patients experience long-term hair reduction after a series of treatments, with occasional touch-ups.",
+        text: "Is it permanent?\nWhile results vary, most patients experience long-term hair reduction after a series of treatments, with occasional touch-ups.",
       },
     ],
   },
   {
     id: "#laser-skin-rejuvenation",
     title: "Laser Skin Rejuvenation",
-    tagline: "Restore youthful tone and texture.",
+    tagline: "Reverse sun damage and restore a youthful glow.",
     imageSrc: "/img/about-1.jpg",
     imageAlt: "laser skin rejuvenation",
     ctaText: "Book your consultation now",
@@ -424,14 +425,14 @@ export const laserTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "How many sessions will I need? Many clients see results after just one treatment, but a series of sessions provides optimal long-term improvement.",
+        text: "How many sessions will I need?\nMany clients see results after just one treatment, but a series of sessions provides optimal long-term improvement.",
       },
     ],
   },
   {
     id: "#laser-tattoo-pigment-removal",
     title: "Laser Tattoo & Pigment Removal",
-    tagline: "Safely fade unwanted ink and discoloration.",
+    tagline: "Erase unwanted tattoos and skin discoloration safely.",
     imageSrc: "/img/f-service-8.jpg",
     imageAlt: "laser tattoo & pigment removal",
     ctaText: "Book your consultation now",
@@ -466,7 +467,7 @@ export const laserTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Does it hurt? Most patients describe it as a snapping sensation, similar to a rubber band. Numbing options are available for comfort.",
+        text: "Does it hurt?\nMost patients describe it as a snapping sensation, similar to a rubber band. Numbing options are available for comfort.",
       },
     ],
   },
@@ -476,7 +477,8 @@ export const skinCareTreatments: Treatment[] = [
   {
     id: "#rf-microneedling",
     title: "RF Microneedling",
-    tagline: "Improve skin tone and firmness.",
+    tagline:
+      "Firm, tighten, and rejuvenate your skin with advanced technology.",
     imageSrc: "/services/service-1.png",
     imageAlt: "RF Microneedling",
     ctaText: "Book your consultation now",
@@ -511,14 +513,14 @@ export const skinCareTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "How long do results last? Results can last 12–18 months with a recommended series of treatments and proper skincare maintenance.",
+        text: "How long do results last?\nResults can last 12–18 months with a recommended series of treatments and proper skincare maintenance.",
       },
     ],
   },
   {
     id: "#medical-grade-acid-peeling",
     title: "Medical Grade Acid Peels",
-    tagline: "Reveal fresh, glowing skin.",
+    tagline: "Reveal fresh, radiant skin beneath the surface.",
     imageSrc: "/services/service-2.png",
     imageAlt: "medical grade acid peels",
     ctaText: "Book your consultation now",
@@ -553,14 +555,14 @@ export const skinCareTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Is there downtime? Peeling varies by peel depth. Light peels may have little to no downtime, while deeper peels may require a few days of recovery",
+        text: "Is there downtime?\nPeeling varies by peel depth. Light peels may have little to no downtime, while deeper peels may require a few days of recovery",
       },
     ],
   },
   {
     id: "#acne-treatment",
     title: "Acne Treatment",
-    tagline: "Solutions for clear, healthy skin.",
+    tagline: "Clear skin, renewed confidence.",
     imageSrc: "/services/service-3.png",
     imageAlt: "acne treatment",
     ctaText: "Book your consultation now",
@@ -595,7 +597,7 @@ export const skinCareTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Will I need multiple treatments? Yes—acne care is most effective with a personalized series of treatments and consistent maintenance.",
+        text: "Will I need multiple treatments?\nYes acne care is most effective with a personalized series of treatments and consistent maintenance.",
       },
     ],
   },
@@ -603,14 +605,56 @@ export const skinCareTreatments: Treatment[] = [
 
 export const intimacyTreatments: Treatment[] = [
   {
-    id: "#intimacy-wellness",
-    title: "Intimacy Wellness",
-    tagline: "Rejuvenation for enhanced confidence and comfort.",
-    imageSrc: "/img/intimacy.jpg",
-    imageAlt: "Intimacy Wellness",
+    id: "#urinary-incontinence-treatment",
+    title: "Urinary Incontinence Treatment in Nashua, NH",
+    tagline: "Regain confidence and control with non-surgical solutions.",
+    imageSrc: "/img/featured-4.jpg",
+    imageAlt: "Urinary Incontinence Treatment in Nashua, NH",
     ctaText: "Book your consultation now",
     ctaHref: "/book-now",
     imageOnRight: false,
+    sections: [
+      {
+        type: "p",
+        heading: "What it is?",
+        text: "Urinary incontinence often caused by aging, childbirth, or hormonal changes can disrupt daily life and limit confidence. At Pure Aesthetics MD, we offer safe, non-invasive treatments to strengthen pelvic floor function and improve bladder control.",
+      },
+      {
+        type: "p",
+        heading: "How it works?",
+        text: "Using advanced medical devices and physician-directed protocols, treatments stimulate pelvic muscles and tissues to restore support and improve control, all without surgery or downtime.",
+      },
+      {
+        type: "ul",
+        heading: "Benefits:",
+        items: [
+          "Non-surgical and pain-free",
+          "Strengthens pelvic floor muscles",
+          "Reduces leaks and urgency",
+          "Improves confidence and quality of life",
+        ],
+      },
+      {
+        type: "p",
+        heading: "Ideal Candidates:",
+        text: "Women experiencing mild to moderate urinary leakage or urgency who want a safe alternative to surgery or medication.",
+      },
+      {
+        type: "p",
+        heading: "FAQ:",
+        text: "How quickly will I notice improvement?\nMany women notice improvement within a few weeks, with continued progress over a series of treatments.",
+      },
+    ],
+  },
+  {
+    id: "#intimacy-wellness",
+    title: "Intimacy Wellness",
+    tagline: "Restore comfort, confidence, and vitality.",
+    imageSrc: "/img/intimacy.jpg",
+    imageAlt: "Intimacy Wellness Treatment in Nashua, NH",
+    ctaText: "Book your consultation now",
+    ctaHref: "/book-now",
+    imageOnRight: true, // image on the right for desktop (matches your original layout)
     sections: [
       {
         type: "p",
@@ -629,7 +673,6 @@ export const intimacyTreatments: Treatment[] = [
           "Enhances comfort and sensitivity",
           "Improves natural lubrication",
           "Restores confidence and sexual wellness",
-          "Non-surgical, safe, and discreet",
         ],
       },
       {
@@ -640,49 +683,7 @@ export const intimacyTreatments: Treatment[] = [
       {
         type: "p",
         heading: "FAQ:",
-        text: "Is it safe? Yes—our treatments are non-invasive, FDA-cleared, and always performed under physician supervision to ensure your safety and privacy.",
-      },
-    ],
-  },
-  {
-    id: "#urinary-incontinence-treatment",
-    title: "Medical Grade Acid Peels",
-    tagline: "Reveal fresh, glowing skin.",
-    imageSrc: "/img/featured-4.jpg",
-    imageAlt: "medical grade acid peels",
-    ctaText: "Book your consultation now",
-    ctaHref: "/book-now",
-    imageOnRight: true, // image on the right for desktop (matches your original layout)
-    sections: [
-      {
-        type: "p",
-        heading: "What it is?",
-        text: "Medical-grade acid peels are professional exfoliation treatments that safely remove the outer layer of dead skin cells to reveal smoother, brighter, and healthier-looking skin.",
-      },
-      {
-        type: "p",
-        heading: "How it works?",
-        text: "A customized solution of clinical-strength acids is applied to the skin to stimulate cell turnover, reduce imperfections, and improve skin tone and texture.",
-      },
-      {
-        type: "ul",
-        heading: "Benefits:",
-        items: [
-          "Diminishes fine lines and sun damage",
-          "Improves acne and acne scars",
-          "Fades hyperpigmentation and dark spots",
-          "Boosts overall skin radiance",
-        ],
-      },
-      {
-        type: "p",
-        heading: "Ideal Candidates:",
-        text: "Those with dull, uneven, or blemished skin looking for a non-invasive refresh. Safe for most skin types with proper physician assessment.",
-      },
-      {
-        type: "p",
-        heading: "FAQ:",
-        text: "Is there downtime? Peeling varies by peel depth. Light peels may have little to no downtime, while deeper peels may require a few days of recovery",
+        text: "Is it safe?\nYes our treatments are non-invasive, FDA-cleared, and always performed under physician supervision to ensure your safety and privacy.",
       },
     ],
   },

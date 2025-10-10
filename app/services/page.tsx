@@ -76,12 +76,12 @@ export default function ServicesPage() {
                               : i === 3
                               ? "bg-[#FFF9F6]"
                               : "bg-[#FCF3EE]"
-                          } absolute bottom-0 left-0 right-0 h-24 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
+                          } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
                         >
                           <h3 className="text-sm font-medium line-clamp-1">
                             {s.title}
                           </h3>
-                          <p className="line-clamp-2 text-xs">{s.desc}</p>
+                          <p className="line-clamp-3 text-xs leading-relaxed">{s.desc}</p>
                         </div>
                       </div>
                     </div>

@@ -34,7 +34,7 @@ const Transformations = () => {
   ];
 
   return (
-    <div className="min-h-screen py-12 md:py-0 bg-[#FFE4D7] flex items-center justify-center">
+    <div className="min-h-screen py-16 bg-[#FFE4D7] flex items-center justify-center">
       <div className="w-11/12 md:w-8/12 space-y-12">
         {/* Title */}
         <h2 className="text-2xl md:text-5xl text-center text-brand-text-primary">

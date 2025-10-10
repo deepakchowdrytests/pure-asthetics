@@ -92,8 +92,15 @@ const TreatmentSection: React.FC<{ data: Treatment }> = ({ data }) => {
                 <h3 className="text-xl text-brand-text-primary font-medium">
                   {block.heading}
                 </h3>
-                <p className="text-brand-text-primary leading-relaxed text-sm">
-                  {block.text}
+                <p className="text-brand-text-primary leading-relaxed text-sm whitespace-pre-line">
+                  {block.text.includes('\n') ? (
+                    <>
+                      <span className="font-semibold leading-8">{block.text.split('\n')[0]}</span>
+                      {'\n' + block.text.split('\n').slice(1).join('\n')}
+                    </>
+                  ) : (
+                    block.text
+                  )}
                 </p>
               </div>
             ) : (
@@ -212,7 +219,7 @@ const ServicesPageContent = () => {
       <div className="w-full flex justify-center bg-[#FFFAF6]">
         <div className="w-11/12 md:w-11/12 flex flex-col items-center py-16 gap-12">
           <h1 className="text-4xl font-medium text-brand-text-primary">
-            Intimacy Wellness
+            Women’s Health Services
           </h1>
 
           <div className="space-y-16">

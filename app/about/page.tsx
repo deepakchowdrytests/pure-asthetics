@@ -101,13 +101,11 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-base text-brand-text-primary leading-7 text-justify">
-                Pure Aesthetics MD was founded on a commitment to provide
-                trusted, medically supervised aesthetic care in a warm and
-                welcoming environment. We understand that your appearance
-                impacts your confidence, and we’re here to ensure you feel
-                empowered every step of the way. Whether you’re looking for
-                subtle anti-aging treatments or complete skin rejuvenation, we
-                deliver results that look natural, never overdone.
+                Pure Aesthetics MD was founded on a commitment to provide trusted, medically
+                supervised aesthetic care in a warm and welcoming environment. We understand that your
+                appearance impacts your confidence, and we’re here to ensure you feel empowered every
+                step of the way. Whether you’re looking for subtle anti-aging treatments or complete skin
+                rejuvenation, we deliver results that look natural, never overdone.
               </p>
             </div>
           </div>
@@ -130,10 +128,9 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-base text-brand-text-primary leading-7 text-justify">
-                To deliver safe, effective, and physician-directed aesthetic
-                treatments that enhance natural beauty, restore confidence, and
-                promote overall well-being all in a professional and welcoming
-                setting.
+                To deliver safe, effective, and physician-directed aesthetic treatments that enhance natural
+                beauty, restore confidence, and promote overall well-being - all in a professional and
+                welcoming setting.
               </p>
             </div>
 
@@ -142,9 +139,8 @@ const About = () => {
                 Our Vision
               </h2>
               <p className="text-base text-brand-text-primary leading-7 text-justify">
-                To be the most trusted medical aesthetics destination in
-                Southern New Hampshire, recognized for clinical excellence,
-                personalized care, and natural-looking results.
+                To be the most trusted medical aesthetics destination in Southern New Hampshire,
+                recognized for clinical excellence, personalized care, and natural-looking results.
               </p>
             </div>
           </div>
@@ -184,8 +180,8 @@ const About = () => {
                       Board-Certified Physician Oversight
                     </h3>
                     <p className="text-base text-brand-text-primary leading-7">
-                      Every treatment plan is designed and overseen by a
-                      qualified medical doctor obstetrics safety and precision.
+                      Every treatment plan is developed and overseen
+                      by a qualified medical doctor, ensuring safety and precision.
                     </p>
                   </li>
                   <li>
@@ -193,17 +189,17 @@ const About = () => {
                       Natural Approach
                     </h3>
                     <p className="text-base text-brand-text-primary leading-7">
-                      We focus on enhancing your natural beauty our best aging
-                      face.
+                      We focus on enhancing your features not changing them with
+                      treatments designed to bring out your best self.
                     </p>
                   </li>
                   <li>
                     <h3 className="font-medium text-lg mb-2 text-brand-text-primary">
-                      Personalized Care
+                      Cutting-Edge Technology
                     </h3>
                     <p className="text-base text-brand-text-primary leading-7">
-                      We take the time to listen to your goals and adjust to
-                      your unique needs.
+                      We use only FDA-approved, medical-grade devices and
+                      products for optimal results.
                     </p>
                   </li>
                   <li>
@@ -239,13 +235,11 @@ const About = () => {
                 Meet Dr. Radhika Paluri, MD
               </h2>
               <p className="text-base text-brand-text-primary leading-7 mb-4 text-justify">
-                Dr. Radhika Paluri, MD, is a board-certified physician with
-                years of experience in medical aesthetics and wellness care. Her
-                passion is helping patients feel confident in their skin through
-                safe, evidence-based treatments. Known for her gentle touch and
-                artistic eye, Dr.Radhika Paluri,takes the time to understand
-                your unique goals, creating customized plans for beautiful,
-                natural results.
+                Dr. Radhika Paluri, MD, is a board-certified physician with years of experience in medical
+                aesthetics and wellness care. Her passion is helping patients feel confident in their skin
+                through safe, evidence-based treatments. Known for her gentle touch and artistic eye, Dr.
+                Paluri takes the time to understand your unique goals, creating customized plans for
+                beautiful, natural results.
               </p>
             </div>
           </div>
@@ -270,10 +264,9 @@ const About = () => {
                 Our Commitment
               </h2>
               <p className="text-base text-brand-text-primary leading-relaxed">
-                Your safety, comfort, and satisfaction come first. Every
-                treatment at Pure Aesthetics MD is performed or supervised by a
-                physician, ensuring you receive care in a professional, elevated
-                environment.
+                Your safety, comfort, and satisfaction come first. Every treatment at Pure Aesthetics MD is
+                performed or supervised by a physician, ensuring you receive expert care in a calm,
+                professional environment.
               </p>
             </div>
           </div>

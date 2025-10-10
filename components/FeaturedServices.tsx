@@ -53,7 +53,7 @@ export const services = [
 export function FeaturedServicesSection() {
   const router = useRouter();
   return (
-    <section className="flex items-center justify-center pt-12 md:pt-0 min-h-[90vh] bg-[#969B59] relative">
+    <section className="flex items-center justify-center py-16 min-h-[90vh] bg-[#969B59] relative">
       {/* Decorative floral watermark */}
       <Image
         src={"/images/featured-illustration.png"}
@@ -115,17 +115,16 @@ export function FeaturedServicesSection() {
                       />
                       {/* Text panel with creamy rounded shape */}
                       <div
-                        className={`${
-                          i === 0
-                            ? "bg-[#FCF3EE]"
-                            : i === 1
+                        className={`${i === 0
+                          ? "bg-[#FCF3EE]"
+                          : i === 1
                             ? "bg-[#FFEFD7]"
                             : i === 2
-                            ? "bg-[#FEE0D9]"
-                            : i === 3
-                            ? "bg-[#FFF9F6]"
-                            : "bg-[#FFEFD7]"
-                        } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-3 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
+                              ? "bg-[#FEE0D9]"
+                              : i === 3
+                                ? "bg-[#FFF9F6]"
+                                : "bg-[#FFEFD7]"
+                          } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-3 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
                       >
                         <h3 className="text-sm font-medium line-clamp-1">
                           {s.title}

@@ -32,28 +32,28 @@ const Careers = () => {
             <div className="space-y-8 w-full">
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">1. Physician-Led Practice</span>{" "}
+                  <span className="font-semibold">1. Physician-Led Practice</span>{" "}
                   – Be part of a clinic where safety, medical expertise, and
                   patient trust come first.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">2. Collaborative Culture</span>{" "}
+                  <span className="font-semibold">2. Collaborative Culture</span>{" "}
                   – Work alongside professionals who are passionate about
                   helping people look and feel their best.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">3. Professional Growth</span> –
+                  <span className="font-semibold">3. Professional Growth</span> –
                   Access continuing education, training opportunities, and
                   exposure to advanced medical aesthetics technology.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">4. Supportive Environment</span>{" "}
+                  <span className="font-semibold">4. Supportive Environment</span>{" "}
                   – We value teamwork, respect, and creating a positive
                   workplace for staff and clients alike.
                 </p>
@@ -66,14 +66,14 @@ const Careers = () => {
             <h2 className="text-3xl lg:text-4xl font-medium text-brand-text-primary">
               Opportunities
             </h2>
-            <p>
+            <p className="text-base text-brand-text-primary/80 font-medium">
               We’re always interested in connecting with professionals who share
               our vision. Opportunities may include:
             </p>
             <div className="space-y-8 w-full">
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">
+                  <span className="font-semibold">
                     1. Aesthetic Nurse Injectors (RN/NP/PA)
                   </span>{" "}
                   – Skilled in Botox, dermal fillers, and regenerative
@@ -82,13 +82,13 @@ const Careers = () => {
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">2. Medical Aestheticians</span>{" "}
+                  <span className="font-semibold">2. Medical Aestheticians</span>{" "}
                   – Focused on skincare, facials, and advanced treatments.
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">
+                  <span className="font-semibold">
                     3. Client Care Specialists
                   </span>{" "}
                   – Passionate about customer service, scheduling, and helping
@@ -97,7 +97,7 @@ const Careers = () => {
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  <span className="font-medium">
+                  <span className="font-semibold">
                     4. Marketing & Support Staff
                   </span>{" "}
                   – Dedicated to sharing our story and growing our community
@@ -114,22 +114,22 @@ const Careers = () => {
             <div className="space-y-8 w-full">
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  Clinicians who are detail-oriented and safety-focused
+                  1. Clinicians who are detail-oriented and safety-focused
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  Professionals with a gentle touch and artistic eye
+                  2. Professionals with a gentle touch and artistic eye
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  Individuals who are empathetic, professional, and approachable
+                  3. Individuals who are empathetic, professional, and approachable
                 </p>
               </div>
               <div>
                 <p className="text-base text-brand-text-primary/80">
-                  Team players who want to grow with a new and expanding
+                  4. Team players who want to grow with a new and expanding
                   practice
                 </p>
               </div>

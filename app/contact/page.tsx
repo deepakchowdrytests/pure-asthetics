@@ -37,36 +37,53 @@ const ContactPage = () => {
             <h3 className="text-brand-text-primary text-3xl font-medium">
               Contact Us
             </h3>
-            <p className="text-brand-text-primary">
-              We’d Love to Hear From You Whether you’re ready to book your first
+            <p className="text-brand-text-primary leading-relaxed">
+              We’d love to hear from you whether you’re ready to book your first
               treatment or simply want to learn more about our services, our
               team is here to help. At Pure Aesthetics MD, we pride ourselves on
               providing personalized, physician-led care in a welcoming
               environment.
             </p>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-brand-text-primary text-3xl font-medium">
-              Clinic information
-            </h3>
-            <p className="text-brand-text-primary">
-              Address: 110 Daniel Webster Hwy, Nashua, NH 03060 (with
-              Rashda&apos;s Beauty Salon)
-            </p>
-            <div className="space-y-3 grid grid-cols-1 md:grid-cols-2 list-none text-sm text-brand-text-primary max-w-3xl">
-              <li>Call us: 603 800 0333</li>
-              <li>Follow Us</li>
-              <li>Email: info@pureaestheticsmd.org</li>
-
-              <li>Stay up-to-date on specials,events, and skincare tips:</li>
-              <li>Website: www.PureAestheticsMD.org</li>
-
-              <li className="flex items-center gap-2">
-                <Instagram className="size-3" strokeWidth={1.5} />
-                @Pure_Aesthetics_MD
-              </li>
+          <div className="grid grid-cols-5 gap-8 w-full">
+            <div className="col-span-3 space-y-6">
+              <h3 className="text-brand-text-primary text-3xl font-medium">
+                Clinic information
+              </h3>
+              <p className="text-brand-text-primary leading-relaxed">
+                Address: 110 Daniel Webster Hwy, Nashua, NH 03060 (with
+                Rashda&apos;s Beauty Salon)
+              </p>
+              <div className="space-y-3 grid grid-cols-1 md:grid-cols-2 list-none text-sm text-brand-text-primary max-w-3xl">
+                <div className="flex flex-col gap-4">
+                  <Link href="tel:6038000333">Call us: 603 800 0333</Link>
+                  <Link href="mailto:info@pureaestheticsmd.org">Email: info@pureaestheticsmd.org</Link>
+                  <Link href="https://www.PureAestheticsMD.org">Website: www.PureAestheticsMD.org</Link>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <p className="text-brand-text-primary font-medium">Follow Us</p>
+                  <p>Stay up-to-date on specials, events, and skincare tips:</p>
+                  <Link href="https://www.instagram.com/pure_aesthetics_md?igsh=aWwyd2J4djY2MmQ3" className="flex items-center gap-2">
+                    <Instagram className="size-3" strokeWidth={1.5} />
+                    @Pure_Aesthetics_MD
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-2 w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.8234567890123!2d-71.4676543!3d42.7654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a123456789ab%3A0x123456789abcdef0!2s110%20Daniel%20Webster%20Hwy%2C%20Nashua%2C%20NH%2003060!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Pure Aesthetics MD Location - 110 Daniel Webster Hwy, Nashua, NH 03060"
+              />
             </div>
           </div>
+
         </div>
       </div>
       <div className="w-11/12 flex flex-col items-center">
@@ -300,57 +317,6 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-      <div className="w-11/12 flex flex-col md:flex-row md:items-center space-y-12 md:space-y-0 md:space-x-16 min-h-[60vh] py-12 md:py-6">
-        <div className="space-y-6 w-full md:w-7/12">
-          <div className="space-y-4 w-full">
-            <p className="text-sm font-medium text-brand-secondary-dark leading-relaxed">
-              We&apos;d love to hear from you <br />
-              Whether you&apos;re ready to book your first treatment or simply
-              want to learn more about our services, our team is here to help.
-            </p>
-            <p className="text-sm text-brand-secondary-dark leading-relaxed">
-              At Pure Aesthetics MD, we pride ourselves on providing
-              personalized, physician-led care in a welcoming environment.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h3 className="text-base font-medium text-brand-secondary-dark">
-              Follow Us
-            </h3>
-            <p className="text-sm text-brand-secondary-dark">
-              Stay up-to-date on specials, events, and skincare tips:
-            </p>
-            <Link
-              href={"/"}
-              className="flex items-center gap-2 text-xs text-brand-secondary-dark"
-            >
-              <Instagram className="size-3" strokeWidth={1.5} />
-              @Pure_Aesthetics_MD
-            </Link>
-          </div>
-        </div>
-        <div className="space-y-6">
-          <div className="space-y-2">
-            <h3 className="text-brand-secondary-dark">Location</h3>
-            <p className="text-sm text-brand-secondary-dark/80 leading-relaxed">
-              110 Daniel Webster Hwy, Nashua, NH 03060 (with Rashda’s Beauty
-              Salon)
-            </p>
-          </div>
-          <div className="w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.8234567890123!2d-71.4676543!3d42.7654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a123456789ab%3A0x123456789abcdef0!2s110%20Daniel%20Webster%20Hwy%2C%20Nashua%2C%20NH%2003060!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Pure Aesthetics MD Location - 110 Daniel Webster Hwy, Nashua, NH 03060"
-            />
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
