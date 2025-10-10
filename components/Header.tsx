@@ -245,7 +245,7 @@ const Header = () => {
         </nav>
 
         <Button
-          className="mt-8 rounded-none rounded-tr-2xl font-normal w-1/2 bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary text-base"
+          className="mt-8 rounded-none rounded-tr-2xl font-normal px-6 bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary text-base"
           asChild
         >
           <Link
