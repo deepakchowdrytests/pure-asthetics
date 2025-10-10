@@ -137,30 +137,23 @@ const ServicesPageContent = () => {
   }, [searchParams]);
 
   const scrollToService = (serviceId: string) => {
-    // Ensure the serviceId starts with # if not already present
-    const targetId = serviceId.startsWith("#") ? serviceId : `#${serviceId}`;
-    const element = document.getElementById(targetId.substring(1));
+    const targetId = serviceId.startsWith("#") ? serviceId.slice(1) : serviceId;
+    const element = document.getElementById(targetId);
 
     if (element) {
-      // Check if smooth scrolling is supported
-      const supportsSmooth = "scrollBehavior" in document.documentElement.style;
+      // You can tune this to match your sticky header height
+      const headerOffset = 200;
 
-      if (supportsSmooth) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - headerOffset;
+      // Get absolute offsetTop instead of bounding rect (more stable)
+      const offsetPosition = element.offsetTop - headerOffset;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      } else {
-        // Fallback for browsers that don't support smooth scrolling
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
+
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-[#FAD1B2]">

@@ -118,7 +118,10 @@ const ServicesPage = () => {
       <h1 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
         Featured Services
       </h1>
-      <div id="face-anti-aging" className="flex justify-center w-full relative">
+      <div
+        id="face-anti-aging"
+        className="flex justify-center w-full relative min-h-screen"
+      >
         <Image
           src="/images/injection-illustration-1.png"
           alt="Pure Aesthetics MD"
@@ -176,7 +179,7 @@ const ServicesPage = () => {
       </div>
       <div
         id="body-wellness"
-        className="flex justify-center w-full bg-brand-primary/20 relative"
+        className="flex justify-center w-full bg-brand-primary/20 relative min-h-screen"
       >
         <Image
           src="/images/about-illustration-2.png"
@@ -239,7 +242,7 @@ const ServicesPage = () => {
       </div>
       <div
         id="laser-treatments"
-        className="flex justify-center w-full relative"
+        className="flex justify-center w-full relative min-h-screen"
       >
         <Image
           src="/images/dropper-illustration-1.png"
@@ -299,7 +302,7 @@ const ServicesPage = () => {
 
       <div
         id="skin-care"
-        className="flex justify-center w-full bg-brand-primary-light/20 relative"
+        className="flex justify-center w-full bg-brand-primary-light/20 relative min-h-screen"
       >
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center justify-center md:hidden">
@@ -361,7 +364,7 @@ const ServicesPage = () => {
         />
       </div>
 
-      <div id="women-health" className="flex justify-center w-full relative">
+      <div id="women-health" className="flex justify-center w-full relative min-h-screen">
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center">
             <div className="space-y-3 md:space-y-6 text-center md:text-left">

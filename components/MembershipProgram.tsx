@@ -1,4 +1,4 @@
-import { PhoneIcon } from "@/lib/icons";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -43,9 +43,9 @@ const MembershipProgram = () => {
             asChild
             size="sm"
           >
-            <Link href="tel:+16038000333">
-              <PhoneIcon width={16} height={16} />
+            <Link href="/memberships">
               <span>Learn more</span>
+              <ChevronRight className="size-4" strokeWidth={1.5} />
             </Link>
           </Button>
         </div>

@@ -108,7 +108,7 @@ const Footer = () => {
           </Link>
         </nav>
 
-        <div className="flex flex-col md:items-center justify-center gap-7 md:gap-10 pt-2 pb-8">
+        <div className="flex flex-col md:items-center justify-center gap-7 md:gap-10 pt-2 pb-8 z-50">
           <h2 className="font-medium text-xl md:text-3xl text-brand-secondary-dark">
             Our Pure Aesthetics Treatments
           </h2>
@@ -144,7 +144,7 @@ const Footer = () => {
                     href={"/services/all#biostimulators"}
                     className="font-medium"
                   >
-                    Sculptra®s
+                    Biostimulators : Radiesse® & Sculptra®
                   </Link>
                 </li>
                 <li>
