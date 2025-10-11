@@ -3,7 +3,7 @@ import { PhoneIcon } from "@/lib/icons";
 import { ChevronDown, TextAlignEnd, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 import { Button } from "./ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
@@ -72,12 +72,11 @@ const Header = () => {
             className={`hidden md:flex items-center space-x-8 text-sm text-brand-text-primary font-shippori font-medium`}
           >
             {navLinks.map((link) => (
-              <>
+              <Fragment key={link.href}>
                 {link.href === "/services" ? (
                   <HoverCard>
                     <HoverCardTrigger asChild>
                       <div
-                        key={link.href}
                         className="hover:text-brand-text-primary/75 transition-colors duration-200 font-medium flex items-center gap-1 cursor-pointer"
                       >
                         {link.label}
@@ -162,7 +161,7 @@ const Header = () => {
                         </AccordionItem>
                         <AccordionItem value="item-5">
                           <AccordionTrigger className="hover:text-brand-text-primary/75 transition-colors duration-200 font-medium flex items-center gap-1 cursor-pointer hover:no-underline">
-                            Women’s Health Services
+                            Women&apos;s Health Services
                             <ChevronDown className="size-3.5 mt-[3px]" strokeWidth={1.5} />
                           </AccordionTrigger>
                           <AccordionContent className="pl-3 space-y-3">
@@ -179,14 +178,13 @@ const Header = () => {
                   </HoverCard>
                 ) : (
                   <Link
-                    key={link.href}
                     href={link.href}
                     className="hover:text-brand-text-primary/75 transition-colors duration-200 font-medium"
                   >
                     {link.label}
                   </Link>
                 )}
-              </>
+              </Fragment>
             ))}
           </nav>
 
