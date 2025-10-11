@@ -110,7 +110,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:items-center justify-center gap-7 md:gap-10 pt-2 pb-8 z-50">
           <h2 className="font-medium text-xl md:text-3xl text-brand-secondary-dark">
-            Our Pure Aesthetics Treatments
+            Our Treatments
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-5 space-y-4 md:space-y-0 justify-between w-full">
             <div className="col-span-1 space-y-4">
@@ -309,7 +309,10 @@ const Footer = () => {
             Terms & Conditions
           </Link>
           <p className="text-[13px] font-bold text-[#FF835A] hidden md:block">
-            ©Pure Aesthetics MD 2025. All rights reserved.
+            ©Pure Aesthetics MD 2025. All rights reserved. Crafted by {" "}
+            <Link href={"https://thevortexmedia.com/?fbclid=PAZXh0bgNhZW0CMTEAAacKEOqy1E8TWqXexl9sA_1CwAdfDiXBXrczphkusJmuY23X_jHu6I4-2MIJ2g_aem_Wwx2rHph7Zdy97LF3sbLfg"} className="text-[#FF835A] font-bold hover:underline" target="_blank">
+              Vortexmedia
+            </Link>
           </p>
           <Link href={"/"} className="text-[13px] font-bold text-[#FF835A]">
             Privacy Policy
