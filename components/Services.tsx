@@ -41,7 +41,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="flex items-center py-15 md:py-0 min-h-screen justify-center bg-[#FFE4D7]">
+    <section className="flex items-center py-11 justify-center bg-[#FFE4D7]">
       <div className="flex flex-col gap-12 w-10/12">
         <div className="flex flex-col items-center gap-8">
           <Sparkles
