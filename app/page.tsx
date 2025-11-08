@@ -1,6 +1,5 @@
 import ContactForm from "@/components/ContactForm";
 import FeaturedServicesSection from "@/components/FeaturedServices";
-import Gallery from "@/components/Gallery";
 import GrandOpening from "@/components/GrandOpening";
 import Hero from "@/components/Hero";
 import MembershipProgram from "@/components/MembershipProgram";
@@ -21,9 +20,10 @@ export default function Home() {
 
       <YourDoctor />
       <GrandOpening />
+
       <MembershipProgram />
       <ContactForm />
-      <Gallery />
+      {/* <Gallery /> */}
     </div>
   );
 }

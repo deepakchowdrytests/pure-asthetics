@@ -53,8 +53,8 @@ const Transformations = () => {
                   <div className="p-1">
                     {/* Category Badge */}
                     <div className="flex justify-center mb-4">
-                      <span className="inline-flex items-center gap-2 bg-[#FF835A] text-brand-text-primary px-4 py-2 rounded-t-full rounded-br-full text-sm">
-                        <Smile className="size-3.5" strokeWidth={1.5} />
+                      <span className="inline-flex items-center gap-2 border border-brand-text-primary text-brand-text-primary px-3 py-1.5 rounded-t-full rounded-br-full text-sm font-medium">
+                        <Smile className="size-4 mt-px" strokeWidth={1.5} />
                         {transformation.category}
                       </span>
                     </div>

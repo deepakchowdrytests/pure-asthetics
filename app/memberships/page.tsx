@@ -200,7 +200,7 @@ const MemberShipsPage = () => {
                     strokeWidth={1.5}
                   />
                   <span className="text-brand-secondary-dark/95 text-xs">
-                    20% off all services & skincare products
+                    20% off all treatments & skincare products
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -249,8 +249,38 @@ const MemberShipsPage = () => {
           </Link>
         </Button>
 
+        <div className="flex items-center justify-center min-h-[75vh] w-full bg-brand-secondary/5">
+          <div className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0">
+            <div className="aspect-square col-span-1">
+              <Image
+                src={"/img/why.jpg"}
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div className="col-span-1 md:col-span-2 flex flex-col items-center justify-center gap-6">
+              <div className="w-full md:w-9/12 space-y-6">
+                <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
+                  Why Join Our Membership Program?
+                </h2>
+                <ul className="list-disc list-inside text-brand-secondary-dark text-sm md:text-base space-y-4">
+                  <li>Save money on treatments you already love.</li>
+                  <li>Stay consistent with treatments for best results.</li>
+                  <li>Enjoy exclusive perks and members-only specials.</li>
+                  <li>Flexible credits that roll over if unused.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Special offer section */}
-        <div className="w-full md:w-10/12 py-16 bg-brand-secondary/5 flex items-center justify-center">
+        <div
+          id="#special-offers"
+          className="w-full md:w-10/12 py-16 bg-brand-secondary/5 flex items-center justify-center"
+        >
           <div className="w-11/12 md:w-10/12 space-y-10">
             <div className="flex flex-col items-center gap-4">
               <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark text-center">
@@ -343,33 +373,6 @@ const MemberShipsPage = () => {
                 These specials are available for a limited time only. Don’t miss
                 your chance to save while investing in your confidence
               </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-center min-h-[75vh] w-full bg-brand-secondary/5">
-          <div className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0">
-            <div className="aspect-square col-span-1">
-              <Image
-                src={"/img/why.jpg"}
-                alt=""
-                width={1000}
-                height={1000}
-                className="w-full h-full object-cover rounded-2xl"
-              />
-            </div>
-            <div className="col-span-1 md:col-span-2 flex flex-col items-center justify-center gap-6">
-              <div className="w-full md:w-9/12 space-y-6">
-                <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
-                  Why Join Us?
-                </h2>
-                <ul className="list-disc list-inside text-brand-secondary-dark text-sm md:text-base space-y-4">
-                  <li>Save money on services you already love.</li>
-                  <li>Stay consistent with treatments for best results.</li>
-                  <li>Enjoy exclusive perks and members-only specials.</li>
-                  <li>Flexible credits that roll over if unused.</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

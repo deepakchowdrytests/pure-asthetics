@@ -7,25 +7,25 @@ const ServicesPage = () => {
       title: "Botox Injection",
       description: "Reduce fine lines and wrinkles for a smoother look.",
       image: "/img/f-service-1.jpg",
-      link: "/services/all#botox-injection",
+      link: "/treatments/all#botox-injection",
     },
     {
       title: "Dermal & Bio Fillers",
       description: "Restore volume and enhance natural contours.",
       image: "/img/f-service-2.jpg",
-      link: "/services/all#dermal-fillers",
+      link: "/treatments/all#dermal-fillers",
     },
     {
       title: "Biostimulators : Radiesse® & Sculptra®",
       description: "Stimulate collagen for long-lasting results.",
       image: "/img/f-service-3.jpg",
-      link: "/services/all#biostimulators",
+      link: "/treatments/all#biostimulators",
     },
     {
       title: "PRP Micro Needling",
       description: "Harness your body’s own healing for radiant skin.",
       image: "/img/gallery-2.jpeg",
-      link: "/services/all#prp-micro-needling",
+      link: "/treatments/all#prp-micro-needling",
     },
   ];
 
@@ -34,25 +34,25 @@ const ServicesPage = () => {
       title: "Body Sculpting & Contouring",
       description: "Shape and tone without surgery",
       image: "/img/f-service-4.jpg",
-      link: "/services/all#body-sculpting",
+      link: "/treatments/all#body-sculpting",
     },
     {
       title: "Weight Loss Solutions",
       description: "Customized programs for sustainable results.",
       image: "/img/featured-3.jpg",
-      link: "/services/all#weight-loss-solutions",
+      link: "/treatments/all#weight-loss-solutions",
     },
     {
       title: "Hair Restoration",
       description: "Natural solutions for thinning hair.",
       image: "/img/f-service-5.png",
-      link: "/services/all#hair-restoration",
+      link: "/treatments/all#hair-restoration",
     },
     {
       title: "IV Nutrition",
       description: "Boost energy and immunity with targeted nutrients",
       image: "/img/f-service-6.jpg",
-      link: "/services/all#iv-nutrition",
+      link: "/treatments/all#iv-nutrition",
     },
   ];
 
@@ -61,19 +61,19 @@ const ServicesPage = () => {
       title: "Laser Hair Removal",
       description: "Smooth, hair-free skin that lasts.",
       image: "/img/f-service-7.jpg",
-      link: "/services/all#laser-hair-removal",
+      link: "/treatments/all#laser-hair-removal",
     },
     {
       title: "Laser Skin Rejuvenation",
       description: "Restore youthful tone and texture",
       image: "/img/about-1.jpg",
-      link: "/services/all#laser-skin-rejuvenation",
+      link: "/treatments/all#laser-skin-rejuvenation",
     },
     {
       title: "Laser Tattoo & Pigment Removal",
       description: "Safely fade unwanted ink and discolorationn",
       image: "/img/f-service-8.jpg",
-      link: "/services/all#laser-tattoo-pigment-removal",
+      link: "/treatments/all#laser-tattoo-pigment-removal",
     },
   ];
 
@@ -81,20 +81,20 @@ const ServicesPage = () => {
     {
       title: "RF Microneedling",
       description: "Improve skin tone and firmness.",
-      image: "/services/service-1.png",
-      link: "/services/all#rf-microneedling",
+      image: "/treatments/service-1.png",
+      link: "/treatments/all#rf-microneedling",
     },
     {
       title: "Medical Grade Acid Peeling",
       description: "Reveal fresh, glowing skin.",
-      image: "/services/service-2.png",
-      link: "/services/all#medical-grade-acid-peeling",
+      image: "/treatments/service-2.png",
+      link: "/treatments/all#medical-grade-acid-peeling",
     },
     {
       title: "Acne Treatment",
       description: "Solutions for clear, healthy skin.",
-      image: "/services/service-3.png",
-      link: "/services/all#acne-treatment",
+      image: "/treatments/service-3.png",
+      link: "/treatments/all#acne-treatment",
     },
   ];
 
@@ -103,20 +103,20 @@ const ServicesPage = () => {
       title: "Urinary Incontinence Treatment",
       description: "Non-surgical treatments for bladder control.",
       image: "/img/featured-4.jpg",
-      link: "/services/all#urinary-incontinence-treatment",
+      link: "/treatments/all#urinary-incontinence-treatment",
     },
     {
       title: "Intimacy Wellness",
       description: "Rejuvenation for enhanced confidence and comfort.",
       image: "/img/intimacy.jpg",
-      link: "/services/all#intimacy-wellness",
+      link: "/treatments/all#intimacy-wellness",
     },
   ];
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-12 bg-[#FFF2E8]">
       <h1 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
-        Featured Services
+        Featured Treatments
       </h1>
       <div
         id="face-anti-aging"
@@ -133,7 +133,7 @@ const ServicesPage = () => {
           <div className="col-span-1 flex items-center">
             <div className="space-y-3 md:space-y-6 text-center md:text-left">
               <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
-                Face & Anti Aging Services
+                Face & Anti Aging Treatments
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
                 Smooth, refresh, and rejuvenate your appearance with
@@ -192,7 +192,7 @@ const ServicesPage = () => {
           <div className="col-span-1 flex items-center justify-center md:hidden">
             <div className="space-y-3 md:space-y-6 text-center">
               <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
-                Body & Wellness Services
+                Body & Wellness Treatments
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
                 Feel confident inside and out with non-invasive solutions that
@@ -230,7 +230,7 @@ const ServicesPage = () => {
           <div className="col-span-1 md:flex items-center justify-center hidden">
             <div className="space-y-6">
               <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
-                Body & Wellness Services
+                Body & Wellness Treatments
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
                 Feel confident inside and out with non-invasive solutions that
@@ -308,7 +308,7 @@ const ServicesPage = () => {
           <div className="col-span-1 flex items-center justify-center md:hidden">
             <div className="space-y-3 md:space-y-6 text-center">
               <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
-                Skin Care Services
+                Skin Care Treatments
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
                 Transform your skin with treatments tailored to your unique
@@ -346,7 +346,7 @@ const ServicesPage = () => {
           <div className="col-span-1 md:flex items-center justify-center hidden">
             <div className="space-y-6">
               <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
-                Skin Care Services
+                Skin Care Treatments
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
                 Transform your skin with treatments tailored to your unique
@@ -364,12 +364,15 @@ const ServicesPage = () => {
         />
       </div>
 
-      <div id="women-health" className="flex justify-center w-full relative min-h-screen">
+      <div
+        id="women-health"
+        className="flex justify-center w-full relative min-h-screen"
+      >
         <section className="w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 py-16 gap-6 md:gap-10 z-20">
           <div className="col-span-1 flex items-center">
             <div className="space-y-3 md:space-y-6 text-center md:text-left">
               <h3 className="text-lg md:text-2xl font-medium text-brand-text-primary">
-                Women&apos;s Health Services
+                Women&apos;s Health Treatments
               </h3>
               <p className="leading-relaxed text-sm md:text-base text-brand-text-primary max-w-90">
                 Confidential care to restore comfort, confidence, and intimacy

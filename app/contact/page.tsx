@@ -39,7 +39,7 @@ const ContactPage = () => {
             </h3>
             <p className="text-brand-text-primary leading-relaxed">
               We’d love to hear from you whether you’re ready to book your first
-              treatment or simply want to learn more about our services, our
+              treatment or simply want to learn more about our treatments, our
               team is here to help. At Pure Aesthetics MD, we pride ourselves on
               providing personalized, physician-led care in a welcoming
               environment.
@@ -57,13 +57,21 @@ const ContactPage = () => {
               <div className="space-y-3 grid grid-cols-1 md:grid-cols-2 list-none text-sm text-brand-text-primary max-w-3xl">
                 <div className="flex flex-col gap-4">
                   <Link href="tel:6038000333">Call us: 603 800 0333</Link>
-                  <Link href="mailto:info@pureaestheticsmd.org">Email: info@pureaestheticsmd.org</Link>
-                  <Link href="https://www.PureAestheticsMD.org">Website: www.PureAestheticsMD.org</Link>
+                  <Link href="mailto:info@pureaestheticsmd.org">
+                    Email: info@pureaestheticsmd.org
+                  </Link>
+                  <Link href="https://www.PureAestheticsMD.org">
+                    Website: www.PureAestheticsMD.org
+                  </Link>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <p className="text-brand-text-primary font-medium">Follow Us</p>
-                  <p>Stay up-to-date on specials, events, and skincare tips:</p>
-                  <Link href="https://www.instagram.com/pure_aesthetics_md?igsh=aWwyd2J4djY2MmQ3" className="flex items-center gap-2">
+                  <p className="text-brand-text-primary font-medium">
+                    Follow Us
+                  </p>
+                  <Link
+                    href="https://www.instagram.com/pure_aesthetics_md?igsh=aWwyd2J4djY2MmQ3"
+                    className="flex items-center gap-2"
+                  >
                     <Instagram className="size-3" strokeWidth={1.5} />
                     @Pure_Aesthetics_MD
                   </Link>
@@ -83,7 +91,6 @@ const ContactPage = () => {
               />
             </div>
           </div>
-
         </div>
       </div>
       <div className="w-11/12 flex flex-col items-center">

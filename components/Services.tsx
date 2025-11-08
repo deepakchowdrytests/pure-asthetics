@@ -50,7 +50,7 @@ const Services = () => {
           />
           <div className="flex flex-col items-center gap-3.5">
             <h3 className="text-2xl md:text-4xl font-medium text-brand-text-primary text-center">
-              The ultimate destination for a natural & radiant beauty
+              The ultimate destination for natural & radiant beauty
             </h3>
             <p className="text-base md:text-lg text-brand-text-primary max-w-3xl text-center leading-relaxed">
               At Pure Aesthetics, we boost confidence with advanced,

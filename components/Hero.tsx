@@ -1,4 +1,4 @@
-import { BookIcon, PhoneIcon } from "@/lib/icons";
+import { PhoneIcon } from "@/lib/icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,16 +36,6 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex items-end pb-4 gap-6 text-sm h-2/5">
-              <button className="flex items-center gap-1 text-brand-text-primary">
-                <Link
-                  target="_blank"
-                  href={"https://djrsv.myaestheticrecord.com/online-booking"}
-                  className="flex items-center gap-1"
-                >
-                  <BookIcon height={14} width={14} />
-                  <span>Book online</span>
-                </Link>
-              </button>
               <button className="flex items-center gap-1 text-brand-text-primary">
                 <Link
                   href={"tel:+16038000333"}

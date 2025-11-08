@@ -43,7 +43,7 @@ const About = () => {
             <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center">
               <div className="w-full md:w-8/12 space-y-6 md:space-y-10">
                 <h1 className="text-3xl md:text-4xl font-medium mb-6 text-brand-text-primary md:hidden">
-                  Your Journey to Radiant skin starts here
+                  Your journey to radiant skin starts here
                 </h1>
                 <div className="space-y-5">
                   <p className="text-base md:text-xl leading-7 text-justify text-brand-text-primary">
@@ -53,7 +53,7 @@ const About = () => {
                   <p className="text-base md:text-xl leading-7 text-justify text-brand-text-primary">
                     Our advanced, physician-led treatments are designed to
                     deliver results that look natural, feel effortless, and are
-                    always tailored to you.
+                    always tailored to your beauty and wellness goals.
                   </p>
                 </div>
                 <Button className="rounded-none rounded-tr-2xl font-normal w-40 bg-[#FF835A] hover:bg-[#FF835A]/85 text-brand-text-primary">

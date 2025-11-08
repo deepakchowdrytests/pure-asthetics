@@ -24,7 +24,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen py-16 md:py-0 bg-[#FAD1B2] relative overflow-">
+    <div className="flex items-center justify-center min-h-screen py-6 md:py-0 bg-[#FAD1B2] relative overflow-">
       {/* Decorative circles */}
       <Image
         src="/images/footer-illustration-2.png"
@@ -60,10 +60,12 @@ const ContactForm = () => {
 
           {/* Right side - Form */}
           <div className="col-span-1 md:col-span-5 py-4 space-y-6">
-            <h2 className="text-2xl md:text-3xl font-medium text-brand-text-primary">
-              You may also fill out the form below and we will respond as
-              quickly as possible.
-            </h2>
+            <div className="space-y-2">
+              <h2 className="text-2xl md:text-3xl font-medium text-brand-text-primary">
+                Fill out and submit the form below and we will contact you.
+              </h2>
+              <p>As an added bonus receive 10% off.</p>
+            </div>
 
             <div className="space-y-4">
               {/* Full Name */}

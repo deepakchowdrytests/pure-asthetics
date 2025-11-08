@@ -5,7 +5,10 @@ import { Button } from "./ui/button";
 
 const GrandOpening = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[90vh] bg-[#FAD1B2] py-12">
+    <div
+      id="promotions"
+      className="flex flex-col items-center justify-center min-h-[90vh] bg-[#FAD1B2] py-12"
+    >
       <div className="w-11/12 flex flex-col items-center gap-6">
         <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
           GRAND OPENING SPECIALS
@@ -27,15 +30,17 @@ const GrandOpening = () => {
             <p className="text-base text-brand-secondary-dark/80 text-center">
               For a limited time, enjoy exclusive Grand Opening offers
             </p>
-            <ul className="list-disc list-inside text-center text-brand-secondary-dark/80">
-              <li>$50 off your first Botox treatment</li>
-              <li>50% off your first chemical peel</li>
-              <li>Complimentary consultation + skin analysis</li>
+            <ul className="list-disc list-inside text-center text-brand-secondary-dark/80 space-y-2">
+              <li>40% Off Body Sculpting & Contouring Services</li>
+              <li>40% Off EM Pelvis Treatments</li>
+              <li>15% Off IV Nutrition Therapies</li>
+              <li>15% Off Laser Hair Removal Treatments</li>
+              <li>20% Off Other Services</li>
             </ul>
           </div>
           <div className="flex flex-col items-center gap-4">
             <h3 className="text-lg md:text-2xl font-medium text-brand-secondary-dark text-center">
-              Valid through October 31, 2025
+              Valid thru November 30, 2025
             </h3>
             <p className="text-base text-brand-secondary-dark/80 text-center">
               Don’t miss these special savings reserve your spot today!

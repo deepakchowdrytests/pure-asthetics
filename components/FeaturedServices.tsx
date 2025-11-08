@@ -63,25 +63,25 @@ export function FeaturedServicesSection() {
         className="absolute top-0 left-0 w-60 h-full object-cover opacity-50"
       />
       <div className="w-11/12 flex flex-col items-center justify-end h-full gap-12">
-        <div className="w-11/12 md:w-10/12 flex gap-3 md:gap-0 flex-col md:flex-row justify-between">
+        <div className="w-11/12 flex gap-3 md:gap-0 flex-col md:flex-row justify-between">
           <h2
             id="featured-services-heading"
             className="text-5xl text-brand-secondary-dark"
           >
-            Featured services
+            Featured treatments
           </h2>
 
           <p className="text-white text-base max-w-96 leading-relaxed">
-            Whether you&apos;re new to skincare or a seasoned pro, our services
-            are here to help you achieve your healthiest skin. Explore our
-            tailored offerings below.
+            Whether you&apos;re new to skincare or a seasoned pro, our
+            treatments are here to help you achieve your healthiest skin.
+            Explore our tailored offerings below.
           </p>
           <Link
-            href="/services/featured"
-            className="flex items-center gap-1 md:justify-start justify-center mt-4 md:mt-0 z-50"
+            href="/treatments/featured"
+            className="flex items-center gap-1 md:justify-start justify-center mt-4 md:mt-0 z-40"
           >
             <Button className="rounded-none rounded-tr-2xl font-normal px-7 bg-[#FCF3EE] hover:bg-[#FCF3EE]/85 text-brand-text-primary text-sm md:text-base">
-              View all services
+              View all treatments
               <ChevronRight className="size-4" strokeWidth={1.5} />
             </Button>
           </Link>
@@ -92,7 +92,6 @@ export function FeaturedServicesSection() {
           className=""
           opts={{
             align: "start",
-            loop: true,
             slidesToScroll: 1,
           }}
         >
@@ -101,7 +100,7 @@ export function FeaturedServicesSection() {
               <CarouselItem
                 key={s.id}
                 className="basis-full md:basis-1/4 gap-0 cursor-pointer"
-                onClick={() => router.push(`/services/featured${s.id}`)}
+                onClick={() => router.push(`/treatments/featured${s.id}`)}
               >
                 <div className="group">
                   <div className="overflow-hidden rounded-tl-4xl aspect-[4/6]">
@@ -115,16 +114,17 @@ export function FeaturedServicesSection() {
                       />
                       {/* Text panel with creamy rounded shape */}
                       <div
-                        className={`${i === 0
-                          ? "bg-[#FCF3EE]"
-                          : i === 1
+                        className={`${
+                          i === 0
+                            ? "bg-[#FCF3EE]"
+                            : i === 1
                             ? "bg-[#FFEFD7]"
                             : i === 2
-                              ? "bg-[#FEE0D9]"
-                              : i === 3
-                                ? "bg-[#FFF9F6]"
-                                : "bg-[#FFEFD7]"
-                          } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-3 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
+                            ? "bg-[#FEE0D9]"
+                            : i === 3
+                            ? "bg-[#FFF9F6]"
+                            : "bg-[#FFEFD7]"
+                        } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-3 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
                       >
                         <h3 className="text-sm font-medium line-clamp-1">
                           {s.title}

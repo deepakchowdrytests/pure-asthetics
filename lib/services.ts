@@ -1,4 +1,4 @@
-import { Treatment } from "@/app/services/all/page";
+import { Treatment } from "@/app/treatments/all/page";
 
 export const bodyAndWellnessTreatments: Treatment[] = [
   {

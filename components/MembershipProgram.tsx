@@ -33,7 +33,7 @@ const MembershipProgram = () => {
               Membership Benefits:
             </h3>
             <ul className="text-center list-disc flex flex-col items-center gap-1 text-brand-secondary-dark/80">
-              <li>Discounts on all services</li>
+              <li>Discounts on all treatments</li>
               <li>Free annual skin analysis</li>
               <li>Members-only promotions</li>
             </ul>

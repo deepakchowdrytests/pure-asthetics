@@ -1,7 +1,51 @@
+"use client";
+
 import { Instagram, MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Label } from "./ui/label";
+
+const SmoothScrollLink = ({
+  href,
+  children,
+  className,
+}: {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  const router = useRouter();
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const [path, hash] = href.split("#");
+
+    if (hash) {
+      // If navigating to a different page
+      if (path && path !== "/") {
+        router.push(path);
+        // Wait for page to load before scrolling
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          element?.scrollIntoView({ behavior: "smooth" });
+        }, 500);
+      } else {
+        // Same page scroll
+        const element = document.getElementById(hash);
+        element?.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push(href);
+    }
+  };
+
+  return (
+    <Link href={href} onClick={handleClick} className={className}>
+      {children}
+    </Link>
+  );
+};
 
 const Footer = () => {
   return (
@@ -31,22 +75,28 @@ const Footer = () => {
               <Label className="font-astrid">Phone</Label>
               <div className="flex items-center gap-1">
                 <PhoneIcon className="size-3.5" strokeWidth={1.5} />
-                <span className="font-medium leading-relaxed text-[13px]">
+                <Link
+                  href={"tel:6038000333"}
+                  className="font-medium leading-relaxed text-[13px]"
+                >
                   (603) 800-0333
-                </span>
+                </Link>
               </div>
             </div>
             <div className="space-y-2">
               <Label className="font-astrid">Email</Label>
               <div className="flex items-center gap-1">
                 <MailIcon className="size-3.5" strokeWidth={1.5} />
-                <span className="font-medium leading-relaxed text-[13px]">
+                <Link
+                  href={"mailto:info@pureaestheticsmd.org"}
+                  className="font-medium leading-relaxed text-[13px]"
+                >
                   info@pureaestheticsmd.org
-                </span>
+                </Link>
               </div>
             </div>
           </div>
-          <div className="col-span-1 space-y-7 md:space-y-5">
+          <div className="col-span-1 space-y-7 md:space-y-5 z-30">
             <div className="space-y-2">
               <Label className="font-astrid">Location</Label>
               <div className="flex gap-1.5">
@@ -59,10 +109,12 @@ const Footer = () => {
             </div>
             <div className="space-y-2">
               <Label className="font-astrid">Follow Us</Label>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 cursor-pointer">
                 <Instagram className="size-3.5 mt-px" strokeWidth={1.5} />
                 <Link
-                  href={""}
+                  href={
+                    "https://www.instagram.com/pure_aesthetics_md?igsh=aWwyd2J4djY2MmQ3"
+                  }
                   className="font-medium leading-relaxed text-[13px]"
                 >
                   @Pure_Aesthetics_MD
@@ -83,10 +135,10 @@ const Footer = () => {
             About Us
           </Link>
           <Link
-            href={"/services"}
+            href={"/treatments"}
             className="font-semibold leading-relaxed text-sm"
           >
-            Services
+            Treatments
           </Link>
           <Link
             href={"/memberships"}
@@ -110,213 +162,233 @@ const Footer = () => {
 
         <div className="flex flex-col md:items-center justify-center gap-7 md:gap-10 pt-2 pb-8 z-50">
           <h2 className="font-medium text-xl md:text-3xl text-brand-secondary-dark">
-            Our Treatments
+            Our Beauty & Wellness Treatments
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-5 space-y-4 md:space-y-0 justify-between w-full">
             <div className="col-span-1 space-y-4">
               <div>
-                <Link
-                  href={"/services/featured#face-anti-aging"}
+                <SmoothScrollLink
+                  href={"/treatments/featured#face-anti-aging"}
                   className="font-astrid font-medium text-brand-secondary-dark"
                 >
-                  Face & Anti-Aging Services
-                </Link>
+                  Face & Anti-Aging Treatments
+                </SmoothScrollLink>
               </div>
               <ul className="space-y-4 md:space-y-3 text-xs md:text-[13px] text-brand-secondary-dark/85">
                 <li>
-                  <Link
-                    href={"/services/all#botox-injection"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#botox-injection"}
                     className="font-medium"
                   >
                     Botox® Injections
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#dermal-fillers"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#dermal-fillers"}
                     className="font-medium"
                   >
                     Dermal & Bio Fillers
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#biostimulators"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#biostimulators"}
                     className="font-medium"
                   >
                     Biostimulators : Radiesse® & Sculptra®
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#prp-micro-needling"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#prp-micro-needling"}
                     className="font-medium"
                   >
                     PRP Microneedling
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
               </ul>
             </div>
             <div className="col-span-1 space-y-4">
               <div>
-                <Link
-                  href={"/services/featured#body-wellness"}
+                <SmoothScrollLink
+                  href={"/treatments/featured#body-wellness"}
                   className="font-astrid font-medium text-brand-secondary-dark"
                 >
-                  Body & Wellness Services
-                </Link>
+                  Body & Wellness Treatments
+                </SmoothScrollLink>
               </div>
               <ul className="space-y-4 md:space-y-3 text-xs md:text-[13px] text-brand-secondary-dark/85">
                 <li>
-                  <Link
-                    href={"/services/all#body-sculpting"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#body-sculpting"}
                     className="font-medium"
                   >
                     Body Sculpting & Contouring
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#weight-loss-solutions"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#weight-loss-solutions"}
                     className="font-medium"
                   >
                     Weight Loss Solutions
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#hair-restoration"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#hair-restoration"}
                     className="font-medium"
                   >
                     Hair Restoration
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#iv-nutrition"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#iv-nutrition"}
                     className="font-medium"
                   >
                     IV Nutrition Therapy
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
               </ul>
             </div>
             <div className="col-span-1 space-y-4">
               <div>
-                <Link
-                  href={"/services/featured#laser-treatments"}
+                <SmoothScrollLink
+                  href={"/treatments/featured#laser-treatments"}
                   className="font-astrid font-medium text-brand-secondary-dark"
                 >
                   Laser Treatments
-                </Link>
+                </SmoothScrollLink>
               </div>
               <ul className="space-y-4 md:space-y-3 text-xs md:text-[13px] text-brand-secondary-dark/85">
                 <li>
-                  <Link
-                    href={"/services/all#laser-hair-removal"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#laser-hair-removal"}
                     className="font-medium"
                   >
                     Laser Hair Removal
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#laser-skin-rejuvenation"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#laser-skin-rejuvenation"}
                     className="font-medium"
                   >
                     Laser Skin Rejuvenation
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#laser-tattoo-pigment-removal"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#laser-tattoo-pigment-removal"}
                     className="font-medium"
                   >
                     Laser Tattoo & Pigment Removal
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
               </ul>
             </div>
             <div className="col-span-1 space-y-4">
               <div>
-                <Link
-                  href={"/services/featured#skin-care"}
+                <SmoothScrollLink
+                  href={"/treatments/featured#skin-care"}
                   className="font-astrid font-medium text-brand-secondary-dark"
                 >
-                  Skin Care Services
-                </Link>
+                  Skin Care Treatments
+                </SmoothScrollLink>
               </div>
               <ul className="space-y-4 md:space-y-3 text-xs md:text-[13px] text-brand-secondary-dark/85">
                 <li>
-                  <Link
-                    href={"/services/all#rf-microneedling"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#rf-microneedling"}
                     className="font-medium"
                   >
                     RF Microneedling
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#medical-grade-acid-peeling"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#medical-grade-acid-peeling"}
                     className="font-medium"
                   >
                     Medical Grade Acid Peels
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#acne-treatment"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#acne-treatment"}
                     className="font-medium"
                   >
                     Acne Treatment
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
               </ul>
             </div>
             <div className="col-span-1 space-y-4">
               <div>
-                <Link
-                  href={"/services/featured#womens-health"}
+                <SmoothScrollLink
+                  href={"/treatments/featured#womens-health"}
                   className="font-astrid font-medium text-brand-secondary-dark"
                 >
-                  Women’s Health Services
-                </Link>
+                  Women&apos;s Health Treatments
+                </SmoothScrollLink>
               </div>
               <ul className="space-y-4 md:space-y-3 text-xs md:text-[13px] text-brand-secondary-dark/85">
                 <li>
-                  <Link
-                    href={"/services/all#urinary-incontinence-treatment"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#urinary-incontinence-treatment"}
                     className="font-medium"
                   >
                     Urinary Incontinence Treatment
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
                 <li>
-                  <Link
-                    href={"/services/all#intimacy-wellness"}
+                  <SmoothScrollLink
+                    href={"/treatments/all#intimacy-wellness"}
                     className="font-medium"
                   >
                     Intimacy Wellness
-                  </Link>
+                  </SmoothScrollLink>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center justify-between h-4 md:pr-4">
-          <Link href={"/"} className="text-[13px] font-bold text-[#FF835A]">
-            Terms & Conditions
-          </Link>
-          <p className="text-[13px] font-bold text-[#FF835A] hidden md:block">
-            ©Pure Aesthetics MD 2025. All rights reserved. Crafted by {" "}
-            <Link href={"https://thevortexmedia.com/?fbclid=PAZXh0bgNhZW0CMTEAAacKEOqy1E8TWqXexl9sA_1CwAdfDiXBXrczphkusJmuY23X_jHu6I4-2MIJ2g_aem_Wwx2rHph7Zdy97LF3sbLfg"} className="text-[#FF835A] font-bold hover:underline" target="_blank">
-              Vortexmedia
+        <div className="flex flex-col-reverse md:flex-row gap-8 md:gap-0 items-center justify-between h-fit md:h-4 md:pr-4">
+          <div className="flex items-center justify-between md:gap-6 w-full md:w-auto">
+            <Link
+              href={"/"}
+              className="text-[10px] md:text-xs font-bold text-[#FF835A]"
+            >
+              Terms & Conditions
+            </Link>
+            <Link
+              href={"/"}
+              className="text-[10px] md:text-xs font-bold text-[#FF835A]"
+            >
+              HIPAP Privacy Policy
+            </Link>
+            <Link
+              href={"/"}
+              className="text-[10px] md:text-xs font-bold text-[#FF835A]"
+            >
+              Privacy Policy
+            </Link>
+          </div>
+          <p className="text-xs font-bold text-[#FF835A] text-center md:text-right">
+            ©Pure Aesthetics MD 2025. All rights reserved. Crafted by{" "}
+            <Link
+              href={
+                "https://thevortexmedia.com/?fbclid=PAZXh0bgNhZW0CMTEAAacKEOqy1E8TWqXexl9sA_1CwAdfDiXBXrczphkusJmuY23X_jHu6I4-2MIJ2g_aem_Wwx2rHph7Zdy97LF3sbLfg"
+              }
+              className="text-[#FF835A] font-bold hover:underline"
+              target="_blank"
+            >
+              VortexMedia
             </Link>
           </p>
-          <Link href={"/"} className="text-[13px] font-bold text-[#FF835A]">
-            Privacy Policy
-          </Link>
         </div>
 
         <Image

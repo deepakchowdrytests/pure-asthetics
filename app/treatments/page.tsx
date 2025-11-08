@@ -31,69 +31,120 @@ export default function ServicesPage() {
       <section className="flex items-center justify-center min-h-screen py-12 bg-[#969B59]">
         <div className="w-11/12 flex flex-col items-center justify-center gap-8 md:gap-16">
           <h1 className="text-2xl md:text-6xl text-center text-white">
-            Premium Skincare Services
+            Premium Beauty and Wellness
             <br />
             for Radiant Results
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-brand-secondary-dark w-full px-4">
-            Featured Services
+            Featured Treatments
           </h2>
 
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-              slidesToScroll: 1,
-            }}
-            className=""
-          >
-            <CarouselContent className="gap-0">
-              {services.map((s, i) => (
-                <CarouselItem
-                  key={s.id}
-                  className="basis-full md:basis-1/4 cursor-pointer"
-                  onClick={() => router.push(`/services/featured${s.id}`)}
-                >
-                  <div className="group">
-                    <div className="overflow-hidden rounded-tl-4xl aspect-[4/6]">
-                      <div className="h-full relative">
-                        <Image
-                          src={s.img}
-                          alt={s.alt}
-                          width={1000}
-                          height={1000}
-                          className="h-full object-cover"
-                        />
-                        {/* Text panel with creamy rounded shape */}
-                        <div
-                          className={`${
-                            i === 0
-                              ? "bg-[#FCF3EE]"
-                              : i === 1
-                              ? "bg-[#FFEFD7]"
-                              : i === 2
-                              ? "bg-[#FEE0D9]"
-                              : i === 3
-                              ? "bg-[#FFF9F6]"
-                              : "bg-[#FCF3EE]"
-                          } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
-                        >
-                          <h3 className="text-sm font-medium line-clamp-1">
-                            {s.title}
-                          </h3>
-                          <p className="line-clamp-3 text-xs leading-relaxed">{s.desc}</p>
+          {/* Carousel - Desktop only */}
+          <div className="hidden md:block w-full">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+                slidesToScroll: 1,
+              }}
+              className=""
+            >
+              <CarouselContent className="gap-0">
+                {services.map((s, i) => (
+                  <CarouselItem
+                    key={s.id}
+                    className="basis-full md:basis-1/4 cursor-pointer"
+                    onClick={() => router.push(`/treatments/featured${s.id}`)}
+                  >
+                    <div className="group">
+                      <div className="overflow-hidden rounded-tl-4xl aspect-[4/6]">
+                        <div className="h-full relative">
+                          <Image
+                            src={s.img}
+                            alt={s.alt}
+                            width={1000}
+                            height={1000}
+                            className="h-full object-cover"
+                          />
+                          {/* Text panel with creamy rounded shape */}
+                          <div
+                            className={`${
+                              i === 0
+                                ? "bg-[#FCF3EE]"
+                                : i === 1
+                                ? "bg-[#FFEFD7]"
+                                : i === 2
+                                ? "bg-[#FEE0D9]"
+                                : i === 3
+                                ? "bg-[#FFF9F6]"
+                                : "bg-[#FCF3EE]"
+                            } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
+                          >
+                            <h3 className="text-sm font-medium line-clamp-1">
+                              {s.title}
+                            </h3>
+                            <p className="line-clamp-3 text-xs leading-relaxed">
+                              {s.desc}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
 
-            {/* Arrows */}
-            <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3" />
-            <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3" />
-          </Carousel>
+              {/* Arrows */}
+              <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3" />
+              <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3" />
+            </Carousel>
+          </div>
+
+          {/* Cards - Mobile only */}
+          <div className="md:hidden flex flex-col gap-4 w-full">
+            {services.map((s, i) => (
+              <div
+                key={s.id}
+                className="cursor-pointer"
+                onClick={() => router.push(`/treatments/featured${s.id}`)}
+              >
+                <div className="group">
+                  <div className="overflow-hidden rounded-tl-4xl aspect-[4/6]">
+                    <div className="h-full relative">
+                      <Image
+                        src={s.img}
+                        alt={s.alt}
+                        width={1000}
+                        height={1000}
+                        className="h-full object-cover"
+                      />
+                      {/* Text panel with creamy rounded shape */}
+                      <div
+                        className={`${
+                          i === 0
+                            ? "bg-[#FCF3EE]"
+                            : i === 1
+                            ? "bg-[#FFEFD7]"
+                            : i === 2
+                            ? "bg-[#FEE0D9]"
+                            : i === 3
+                            ? "bg-[#FFF9F6]"
+                            : "bg-[#FCF3EE]"
+                        } absolute bottom-0 left-0 right-0 min-h-28 p-3 md:p-4 text-brand-text-primary gap-2 flex flex-col justify-center rounded-tr-[75px]`}
+                      >
+                        <h3 className="text-sm font-medium line-clamp-1">
+                          {s.title}
+                        </h3>
+                        <p className="line-clamp-3 text-xs leading-relaxed">
+                          {s.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
 
           <div className="mt-10 flex flex-col gap-8 items-center justify-center">
             <p className="text-center max-w-3xl text-base md:text-xl text-white leading-relaxed">
@@ -102,8 +153,8 @@ export default function ServicesPage() {
               feel your best safely, naturally, and affordably.
             </p>
             <Button className="rounded-none rounded-tr-2xl font-normal px-7 bg-white hover:bg-brand-secondary-dark/85 text-brand-text-primary hover:text-white">
-              <Link href="/services/featured">
-                <span>View all services</span>
+              <Link href="/treatments/featured">
+                <span>View all treatments</span>
               </Link>
               <ChevronRight className="size-4" strokeWidth={1.5} />
             </Button>
@@ -132,7 +183,10 @@ export default function ServicesPage() {
                     <CardContent className="p-0">
                       <Accordion type="single" collapsible>
                         <AccordionItem value="item-1" className="border-0">
-                          <AccordionTrigger className="px-5 py-3 text-left hover:no-underline flex items-center gap-2 justify-start text-brand-text-primary [&[data-state=open]>svg]:rotate-180">
+                          <AccordionTrigger
+                            showIcon={false}
+                            className="px-5 py-3 text-left hover:no-underline flex items-center gap-2 justify-start text-brand-text-primary [&[data-state=open]>svg]:rotate-180"
+                          >
                             <PlusIcon className="size-4" />
                             <span className="font-medium font-astrid">
                               {q.q}
@@ -183,7 +237,7 @@ const faqs: { q: string; a: string }[][] = [
   [
     {
       q: "Are treatments at Pure Aesthetics MD safe?",
-      a: "Yes. All of our services are performed or overseen by a board‑certified physician using FDA‑approved products and technology. Your safety and comfort are always our priorities.",
+      a: "Yes. All of our treatments are performed or overseen by a board‑certified physician using FDA‑approved products and technology. Your safety and comfort are always our priorities.",
     },
     {
       q: "How much downtime should I expect?",

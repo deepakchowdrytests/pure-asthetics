@@ -13,30 +13,26 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      text: "The results were better than I imagined. The body contouring helped me tone my abdomen and thighs without any downtime.",
-      author: "Ankitha K. Babu, Student",
-      image: "/images/transform-2.png",
+      text: "I got my B-12 and Myers Cocktail injections done here for a very reasonable price. The clinic is impeccable and the staff was very friendly and courteous. I would highly recommend this location",
+      author: "Divya P",
       rating: 5,
     },
     {
       id: 2,
-      text: "I'm so grateful I found Pure Aesthetics! My skin has never looked this good. The anti-aging treatments are gentle but powerful. I finally feel comfortable in my skin again!",
-      author: "Emma T.",
-      image: "/images/transform-4.png",
-      rating: 5,
+      text: "I had an amazing experience at Pure Aesthetics MD! Dr. Radhika Paluri took the time to understand exactly what I wanted and explained every step of the Botox treatment. The results are subtle yet noticeable — my forehead looks smoother, and I still look completely natural. The clinic is spotless, and everyone is so welcoming. I couldn’t be happier with my results and will definitely be coming back for future treatments!",
+      author: "Jessica H",
+      rating: 4,
     },
     {
       id: 3,
-      text: "The staff is incredibly professional and caring. Every treatment feels luxurious and the results speak for themselves. Highly recommend!",
-      author: "Sarah M., Business Owner",
-      image: "/images/transform-2.png",
+      text: "I started hair restoration treatments at Pure Aesthetics MD a few months ago and the difference has been incredible. Dr. Paluri customized my treatment plan and made sure I was comfortable the entire time. My hair feels fuller and healthier already! It’s clear they truly care about results and patient confidence. Highly recommend them to anyone considering hair restoration. You’ll be in great hands.",
+      author: "Andy P",
       rating: 5,
     },
     {
       id: 4,
-      text: "Amazing experience from start to finish. The consultation was thorough and the treatments exceeded my expectations. My confidence has never been higher!",
-      author: "Jessica L.",
-      image: "/images/transform-4.png",
+      text: "I can’t say enough good things about Pure Aesthetics MD! I joined their medical weight loss program a few months ago, and it’s been life-changing. The doctor took the time to understand my goals and helped design a plan that actually works for me. I’ve lost 15 pounds so far and feel more energetic and confident than I have in years. Highly recommend this clinic to anyone serious about achieving sustainable results!",
+      author: "Linda A",
       rating: 5,
     },
   ];
@@ -60,7 +56,7 @@ const Testimonials = () => {
         </h2>
 
         {/* Testimonials Carousel */}
-        <div className="w-full max-w-4xl mx-auto">
+        <div className="w-full max-w-5xl mx-auto">
           <Carousel
             opts={{
               align: "start",
@@ -76,7 +72,7 @@ const Testimonials = () => {
                       index % 2 === 0
                         ? "bg-[#FFEFD7]"
                         : "bg-[#FFF9F6]/50 backdrop-blur-[1.5px]"
-                    } flex items-center justify-center h-72 shadow shadow-muted-foreground/10 p-4`}
+                    } flex items-center justify-center h-75 shadow shadow-muted-foreground/10 p-6`}
                   >
                     <div className="w-full flex items-center justify-between gap-4 h-full">
                       <div className="flex-1 h-full flex flex-col justify-between py-4 text-brand-text-primary">
@@ -84,7 +80,7 @@ const Testimonials = () => {
                           <div className="flex gap-1 mb-4">
                             {renderStars(testimonial.rating)}
                           </div>
-                          <p className="text-sm mb-4 leading-relaxed">
+                          <p className="text-sm mb-4 font-medium leading-6.5">
                             {testimonial.text}
                           </p>
                         </div>
@@ -92,7 +88,7 @@ const Testimonials = () => {
                           — {testimonial.author}
                         </p>
                       </div>
-                      <div className="flex-shrink-0 h-full w-32 md:w-40">
+                      {/* <div className="flex-shrink-0 h-full w-32 md:w-40">
                         <Image
                           width={160}
                           height={240}
@@ -100,7 +96,7 @@ const Testimonials = () => {
                           alt={testimonial.author}
                           className="h-full w-full object-cover object-top rounded-t-[80px]"
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </CarouselItem>
