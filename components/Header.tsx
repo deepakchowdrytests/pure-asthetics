@@ -100,9 +100,9 @@ const serviceCategories = [
 ];
 
 const aboutMenuItems = [
-  { label: "Memberships", href: "" },
+  { label: "Memberships", href: "/memberships" },
   { label: "Promotions", href: "#promotions" },
-  { label: "Careers", href: "" },
+  { label: "Careers", href: "/careers" },
 ];
 
 // Reusable Components

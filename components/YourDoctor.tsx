@@ -8,7 +8,7 @@ const YourDoctor = () => {
         <div className="flex flex-col gap-5 w-full md:w-[30%]">
           <h2 className="text-3xl font-medium">MEET YOUR DOCTOR</h2>
           <Image
-            src={"/img/doctor-1.jpg"}
+            src={"/doctor.jpeg"}
             width={400}
             height={800}
             alt="doctor"

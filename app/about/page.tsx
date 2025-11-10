@@ -19,8 +19,8 @@ const About = () => {
           <h1 className="text-3xl font-medium mb-6 text-brand-text-primary absolute top-10 left-1/2 -translate-x-1/2 hidden md:block">
             Your Journey to Radiant skin starts here
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 h-full">
-            <div className="hidden relative h-11/12 md:flex flex-col justify-end col-span-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 h-auto md:h-full">
+            <div className="relative h-fit md:h-11/12 md:flex flex-col justify-end col-span-1">
               <div className="flex justify-start w-72 rounded-3xl overflow-hidden">
                 <Image
                   src={"/img/about-1.jpg"}
@@ -36,11 +36,11 @@ const About = () => {
                   alt="Consultation"
                   width={2000}
                   height={1200}
-                  className="w-72 h-72 -translate-y-24 aspect-square object-cover rounded-3xl overflow-hidden"
+                  className="w-72 h-72 -translate-y-10 md:-translate-y-24 aspect-square object-cover rounded-3xl overflow-hidden"
                 />
               </div>
             </div>
-            <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center">
+            <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center -translate-y-10 md:-translate-y-0">
               <div className="w-full md:w-8/12 space-y-6 md:space-y-10">
                 <h1 className="text-3xl md:text-4xl font-medium mb-6 text-brand-text-primary md:hidden">
                   Your journey to radiant skin starts here
@@ -101,11 +101,13 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-base text-brand-text-primary leading-7 text-justify">
-                Pure Aesthetics MD was founded on a commitment to provide trusted, medically
-                supervised aesthetic care in a warm and welcoming environment. We understand that your
-                appearance impacts your confidence, and we’re here to ensure you feel empowered every
-                step of the way. Whether you’re looking for subtle anti-aging treatments or complete skin
-                rejuvenation, we deliver results that look natural, never overdone.
+                Pure Aesthetics MD was founded on a commitment to provide
+                trusted, medically supervised aesthetic care in a warm and
+                welcoming environment. We understand that your appearance
+                impacts your confidence, and we’re here to ensure you feel
+                empowered every step of the way. Whether you’re looking for
+                subtle anti-aging treatments or complete skin rejuvenation, we
+                deliver results that look natural, never overdone.
               </p>
             </div>
           </div>
@@ -128,9 +130,10 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-base text-brand-text-primary leading-7 text-justify">
-                To deliver safe, effective, and physician-directed aesthetic treatments that enhance natural
-                beauty, restore confidence, and promote overall well-being - all in a professional and
-                welcoming setting.
+                To deliver safe, effective, and physician-directed aesthetic
+                treatments that enhance natural beauty, restore confidence, and
+                promote overall well-being - all in a professional and welcoming
+                setting.
               </p>
             </div>
 
@@ -139,8 +142,9 @@ const About = () => {
                 Our Vision
               </h2>
               <p className="text-base text-brand-text-primary leading-7 text-justify">
-                To be the most trusted medical aesthetics destination in Southern New Hampshire,
-                recognized for clinical excellence, personalized care, and natural-looking results.
+                To be the most trusted medical aesthetics destination in
+                Southern New Hampshire, recognized for clinical excellence,
+                personalized care, and natural-looking results.
               </p>
             </div>
           </div>
@@ -180,8 +184,8 @@ const About = () => {
                       Board-Certified Physician Oversight
                     </h3>
                     <p className="text-base text-brand-text-primary leading-7">
-                      Every treatment plan is developed and overseen
-                      by a qualified medical doctor, ensuring safety and precision.
+                      Every treatment plan is developed and overseen by a
+                      qualified medical doctor, ensuring safety and precision.
                     </p>
                   </li>
                   <li>
@@ -235,11 +239,13 @@ const About = () => {
                 Meet Dr. Radhika Paluri, MD
               </h2>
               <p className="text-base text-brand-text-primary leading-7 mb-4 text-justify">
-                Dr. Radhika Paluri, MD, is a board-certified physician with years of experience in medical
-                aesthetics and wellness care. Her passion is helping patients feel confident in their skin
-                through safe, evidence-based treatments. Known for her gentle touch and artistic eye, Dr.
-                Paluri takes the time to understand your unique goals, creating customized plans for
-                beautiful, natural results.
+                Dr. Radhika Paluri, MD, is a board-certified physician with
+                years of experience in medical aesthetics and wellness care. Her
+                passion is helping patients feel confident in their skin through
+                safe, evidence-based treatments. Known for her gentle touch and
+                artistic eye, Dr. Paluri takes the time to understand your
+                unique goals, creating customized plans for beautiful, natural
+                results.
               </p>
             </div>
           </div>
@@ -264,8 +270,9 @@ const About = () => {
                 Our Commitment
               </h2>
               <p className="text-base text-brand-text-primary leading-relaxed">
-                Your safety, comfort, and satisfaction come first. Every treatment at Pure Aesthetics MD is
-                performed or supervised by a physician, ensuring you receive expert care in a calm,
+                Your safety, comfort, and satisfaction come first. Every
+                treatment at Pure Aesthetics MD is performed or supervised by a
+                physician, ensuring you receive expert care in a calm,
                 professional environment.
               </p>
             </div>
