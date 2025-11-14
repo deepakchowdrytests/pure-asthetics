@@ -17,7 +17,7 @@ const About = () => {
         />
         <section className="w-11/12 md:w-10/12 h-full relative">
           <h1 className="text-3xl font-medium mb-6 text-brand-text-primary absolute top-10 left-1/2 -translate-x-1/2 hidden md:block">
-            Your Journey to Radiant skin starts here
+            Your Journey To Radiant Skin Starts Here
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 h-auto md:h-full">
             <div className="relative h-fit md:h-11/12 md:flex flex-col justify-end col-span-1">
@@ -253,7 +253,7 @@ const About = () => {
             <Image
               width={2000}
               height={1200}
-              src={"/img/doctor-1.jpg"}
+              src={"/doctor.jpeg"}
               alt="Dr. Radhika Paluri"
               className=" w-full h-auto object-cover"
             />
@@ -296,8 +296,8 @@ const About = () => {
         />
 
         {/* What our clients say */}
-        <section className="z-20 bg-[#FFEFD7]/45 min-h-[70vh] flex items-center justify-center py-12 md:py-0">
-          <div className="w-11/12 flex flex-col items-center gap-12">
+        <section className="z-20 bg-[#FFEFD7]/45 min-h-screen flex items-center justify-center py-12 md:py-0">
+          <div className="w-11/12 flex flex-col items-center gap-12 h-[85vh]">
             <div className="flex flex-col items-center">
               <h2 className="text-2xl lg:text-4xl font-medium mb-4 text-brand-text-primary">
                 What our clients say
@@ -311,71 +311,75 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-3 w-11/12 md:w-9/12">
-              <div className="flex flex-col-reverse items-center gap-3 md:max-w-72 justify-evenly h-11/12">
+            <div id="testimonials" className="grid grid-cols-1 md:grid-cols-6 w-10/12 h-8/12">
+              <div className="col-span-2 flex flex-col-reverse items-center justify-around">
                 <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
-                  <Image
-                    src={"/images/transform-4.png"}
-                    alt=""
-                    width={2000}
-                    height={1200}
-                    className="w-12 h-12 object-cover"
-                  />
                   <div className="space-y-1">
-                    <h3 className="text-base font-medium">
-                      Adharsh Rangappa. CEO
-                    </h3>
-                    <p className="text-sm leading-6">
-                      “From consultation to results, the process was seamless. I
-                      felt safe and cared for throughout.”
+                    <h3 className="text-base font-medium">Divya P</h3>
+                    <p className="text-xs leading-6 text-wrap whitespace-pre-wrap">
+                      “I got my B-12 and Myers Cocktail injections done here for
+                      a very reasonable price. The clinic is impeccable and the
+                      staff was very friendly and courteous. I would highly
+                      recommend this location”
                     </p>
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-1 bg-[#FFEFD7] p-3 rounded-tr-[60px]">
-                  <h3 className="text-base font-medium">Sarah M.</h3>
-                  <p className="text-sm leading-6">
-                    My skin has never felt better! The team truly understands my
-                    needs and provides the best care possible.
+                  <h3 className="text-base font-medium">Jessica H</h3>
+                  <p className="text-xs leading-6 text-wrap whitespace-pre-wrap">
+                    I had an amazing experience at Pure Aesthetics MD! Dr.
+                    Radhika Paluri took the time to understand exactly what I
+                    wanted and explained every step of the Botox treatment. The
+                    results are subtle yet noticeable — my forehead looks
+                    smoother, and I still look completely natural. The clinic is
+                    spotless, and everyone is so welcoming. I couldn’t be
+                    happier with my results and will definitely be coming back
+                    for future treatments!
                   </p>
                 </div>
               </div>
 
-              <div className="relative md:w-72 h-72 rounded-[50px] overflow-hidden rounded-bl-none">
-                <Image
-                  src={"/img/gallery-6.jpg"}
-                  alt="Happy client"
-                  width={2000}
-                  height={1200}
-                  className="w-full h-full object-cover mb-4"
-                />
-              </div>
-
-              <div className="flex flex-col items-center gap-3 md:max-w-72 justify-evenly h-11/12">
-                <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
+              <div className="col-span-2 flex items-center justify-center">
+                <div className="relative md:w-72 h-72 rounded-[50px] overflow-hidden rounded-bl-none">
                   <Image
-                    src={"/images/transform-2.png"}
-                    alt=""
+                    src={"/img/gallery-6.jpg"}
+                    alt="Happy client"
                     width={2000}
                     height={1200}
-                    className="w-12 h-12 object-cover"
+                    className="w-full h-full object-cover mb-4"
                   />
+                </div>
+              </div>
+
+              <div className="col-span-2 flex flex-col gap-8 items-center justify-between">
+                <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
                   <div className="space-y-1">
-                    <h3 className="text-base font-medium">
-                      Adharsh Rangappa. CEO
-                    </h3>
-                    <p className="text-sm leading-6">
-                      “From consultation to results, the process was seamless. I
-                      felt safe and cared for throughout.”
+                    <h3 className="text-base font-medium">Andy P</h3>
+                    <p className="text-xs leading-6 text-wrap whitespace-pre-wrap">
+                      “I started hair restoration treatments at Pure Aesthetics
+                      MD a few months ago and the difference has been
+                      incredible. Dr. Paluri customized my treatment plan and
+                      made sure I was comfortable the entire time. My hair feels
+                      fuller and healthier already! It’s clear they truly care
+                      about results and patient confidence. Highly recommend
+                      them to anyone considering hair restoration. You’ll be in
+                      great hands.”
                     </p>
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-1 bg-[#FFEFD7] p-3 rounded-tr-[60px]">
-                  <h3 className="text-base font-medium">Sarah M.</h3>
-                  <p className="text-sm leading-6">
-                    My skin has never felt better! The team truly understands my
-                    needs and provides the best care possible.
+                  <h3 className="text-base font-medium">Linda A</h3>
+                  <p className="text-xs leading-6 text-wrap whitespace-pre-wrap">
+                    I can’t say enough good things about Pure Aesthetics MD! I
+                    joined their medical weight loss program a few months ago,
+                    and it’s been life-changing. The doctor took the time to
+                    understand my goals and helped design a plan that actually
+                    works for me. I’ve lost 15 pounds so far and feel more
+                    energetic and confident than I have in years. Highly
+                    recommend this clinic to anyone serious about achieving
+                    sustainable results!
                   </p>
                 </div>
               </div>

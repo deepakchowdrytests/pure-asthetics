@@ -15,21 +15,21 @@ const Transformations = () => {
   const transformations = [
     {
       id: 1,
-      category: "Face treatments",
-      beforeImage: "/images/transform-1.png",
-      afterImage: "/images/transform-2.png",
+      category: "Botox treatments",
+      beforeImage: "/botox-before.jpg",
+      afterImage: "/botox-after.jpg",
     },
     {
       id: 2,
-      category: "Face treatments",
-      beforeImage: "/images/transform-3.png",
-      afterImage: "/images/transform-4.png",
+      category: "Lip & Cheek Filler treatments",
+      beforeImage: "/lip-cheek-filler-before.jpg",
+      afterImage: "/lip-cheek-filler-after.jpg",
     },
     {
       id: 3,
-      category: "Face treatments",
-      beforeImage: "/images/transform-1.png",
-      afterImage: "/images/transform-2.png",
+      category: "Sculptra & Filler & Botox treatments",
+      beforeImage: "/sculptra-filler-botox-before.jpg",
+      afterImage: "/sculptra-filler-botox-after.jpg",
     },
   ];
 

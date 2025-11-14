@@ -7,6 +7,8 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
+import { Checkbox } from "./ui/checkbox";
+import Link from "next/link";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +26,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen py-6 md:py-0 bg-[#FAD1B2] relative overflow-">
+    <div className="flex items-center justify-center min-h-screen py-8 bg-[#FAD1B2] relative overflow-">
       {/* Decorative circles */}
       <Image
         src="/images/footer-illustration-2.png"
@@ -122,6 +124,13 @@ const ContactForm = () => {
                   rows={6}
                   className="h-full border-none rounded-none focus-visible:ring-0 shadow-none px-1 min-h-60 max-h-72"
                 />
+              </div>
+
+              <div className="flex gap-2.5 items-start">
+                <Checkbox className="border-black mt-1" />
+                <p className="text-xs leading-relaxed">
+                  I agree to the <Link href="/privacy-policy" className="text-[#fe6e3d] font-medium">HIPAA Privacy Policy</Link>, <Link href="/privacy-policy" className="text-[#fe6e3d] font-medium">Privacy Policy</Link> and <Link href="/terms-and-conditions" className="text-[#fe6e3d] font-medium">Terms & Conditions</Link>. By submitting my information, I consent to receive SMS and/or email notifications from Pure Aesthetics MD for appointment reminders, promotional messages, offers, etc.
+                </p>
               </div>
 
               {/* Submit Button */}

@@ -278,7 +278,7 @@ const MemberShipsPage = () => {
 
         {/* Special offer section */}
         <div
-          id="#special-offers"
+          id="special-offers"
           className="w-full md:w-10/12 py-16 bg-brand-secondary/5 flex items-center justify-center"
         >
           <div className="w-11/12 md:w-10/12 space-y-10">

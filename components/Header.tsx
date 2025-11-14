@@ -100,8 +100,10 @@ const serviceCategories = [
 ];
 
 const aboutMenuItems = [
+  { label: "About us", href: "/about" },
   { label: "Memberships", href: "/memberships" },
-  { label: "Promotions", href: "#promotions" },
+  { label: "Testimonials", href: "/about#testimonials" },
+  { label: "Promotions", href: "/memberships#special-offers" },
   { label: "Careers", href: "/careers" },
 ];
 
@@ -243,9 +245,8 @@ const Header = () => {
   return (
     <>
       <header
-        className={`bg-brand-base-dark sticky top-0 flex items-center justify-center mx-auto transition-all duration-300 h-16 md:h-28 z-50 ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`bg-brand-base-dark sticky top-0 flex items-center justify-center mx-auto transition-all duration-300 h-20 md:h-28 z-50 ${isVisible ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         <div className="w-[95%] md:w-11/12 h-full flex items-center justify-between">
           <Link href="/" className="z-50 min-w-40 ml-2 md:ml-0">
@@ -254,7 +255,7 @@ const Header = () => {
               alt="Pure Aesthetics MD"
               width={160}
               height={60}
-              className="w-28 md:w-60 object-cover"
+              className="w-40 md:w-60 object-cover"
             />
           </Link>
 
@@ -366,9 +367,8 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-brand-base-dark/95 backdrop-blur-xs flex flex-col transition-transform duration-300 ease-in-out transform z-50 ${
-          isOpen ? "translate-y-0" : "-translate-y-full"
-        } md:hidden`}
+        className={`fixed top-0 left-0 w-full h-full bg-brand-base-dark/95 backdrop-blur-xs flex flex-col transition-transform duration-300 ease-in-out transform z-50 ${isOpen ? "translate-y-0" : "-translate-y-full"
+          } md:hidden`}
       >
         <button onClick={toggleMenu} className="absolute top-3 right-3">
           <X className="text-brand-text-primary size-6" strokeWidth={1.5} />

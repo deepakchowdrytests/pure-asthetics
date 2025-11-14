@@ -81,19 +81,19 @@ const ServicesPage = () => {
     {
       title: "RF Microneedling",
       description: "Improve skin tone and firmness.",
-      image: "/treatments/service-1.png",
+      image: "/services/service-1.png",
       link: "/treatments/all#rf-microneedling",
     },
     {
       title: "Medical Grade Acid Peeling",
       description: "Reveal fresh, glowing skin.",
-      image: "/treatments/service-2.png",
+      image: "/services/service-2.png",
       link: "/treatments/all#medical-grade-acid-peeling",
     },
     {
       title: "Acne Treatment",
       description: "Solutions for clear, healthy skin.",
-      image: "/treatments/service-3.png",
+      image: "/services/service-3.png",
       link: "/treatments/all#acne-treatment",
     },
   ];
@@ -379,7 +379,7 @@ const ServicesPage = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center">
             {healthServices.map((service) => (
               <Link
                 href={service.link}

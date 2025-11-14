@@ -31,32 +31,32 @@ const Careers = () => {
             </h2>
             <div className="space-y-8 w-full">
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">1. Physician-Led Practice</span>{" "}
+                <li className="text-base text-brand-text-primary/80">
+                  <span className="font-semibold">Physician-Led Practice</span>{" "}
                   – Be part of a clinic where safety, medical expertise, and
                   patient trust come first.
-                </p>
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">2. Collaborative Culture</span>{" "}
+                <li className="text-base text-brand-text-primary/80">
+                  <span className="font-semibold">Collaborative Culture</span>{" "}
                   – Work alongside professionals who are passionate about
                   helping people look and feel their best.
-                </p>
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">3. Professional Growth</span> –
+                <li className="text-base text-brand-text-primary/80">
+                  <span className="font-semibold">Professional Growth</span> –
                   Access continuing education, training opportunities, and
                   exposure to advanced medical aesthetics technology.
-                </p>
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">4. Supportive Environment</span>{" "}
+                <li className="text-base text-brand-text-primary/80">
+                  <span className="font-semibold">Supportive Environment</span>{" "}
                   – We value teamwork, respect, and creating a positive
                   workplace for staff and clients alike.
-                </p>
+                </li>
               </div>
             </div>
           </div>
@@ -72,36 +72,36 @@ const Careers = () => {
             </p>
             <div className="space-y-8 w-full">
               <div>
-                <p className="text-base text-brand-text-primary/80">
+                <li className="text-base text-brand-text-primary/80">
                   <span className="font-semibold">
-                    1. Aesthetic Nurse Injectors (RN/NP/PA)
+                    Aesthetic Nurse Injectors (RN/NP/PA)
                   </span>{" "}
                   – Skilled in Botox, dermal fillers, and regenerative
                   treatments.
-                </p>
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  <span className="font-semibold">2. Medical Aestheticians</span>{" "}
+                <li className="text-base text-brand-text-primary/80">
+                  <span className="font-semibold">Medical Aestheticians</span>{" "}
                   – Focused on skincare, facials, and advanced treatments.
-                </p>
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
+                <li className="text-base text-brand-text-primary/80">
                   <span className="font-semibold">
-                    3. Client Care Specialists
+                    Client Care Specialists
                   </span>{" "}
                   – Passionate about customer service, scheduling, and helping
                   clients feel welcome
-                </p>
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
+                <li className="text-base text-brand-text-primary/80">
                   <span className="font-semibold">
-                    4. Marketing & Support Staff
+                    Marketing & Support Staff
                   </span>{" "}
                   – Dedicated to sharing our story and growing our community
-                </p>
+                </li>
               </div>
             </div>
           </div>
@@ -113,25 +113,25 @@ const Careers = () => {
             </h2>
             <div className="space-y-8 w-full">
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  1. Clinicians who are detail-oriented and safety-focused
-                </p>
+                <li className="text-base text-brand-text-primary/80">
+                  Clinicians who are detail-oriented and safety-focused
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  2. Professionals with a gentle touch and artistic eye
-                </p>
+                <li className="text-base text-brand-text-primary/80">
+                  Professionals with a gentle touch and artistic eye
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  3. Individuals who are empathetic, professional, and approachable
-                </p>
+                <li className="text-base text-brand-text-primary/80">
+                  Individuals who are empathetic, professional, and approachable
+                </li>
               </div>
               <div>
-                <p className="text-base text-brand-text-primary/80">
-                  4. Team players who want to grow with a new and expanding
+                <li className="text-base text-brand-text-primary/80">
+                  Team players who want to grow with a new and expanding
                   practice
-                </p>
+                </li>
               </div>
             </div>
           </div>
@@ -142,14 +142,14 @@ const Careers = () => {
               How to Apply
             </h2>
             <div className="space-y-4">
-              <p className="text-base text-brand-text-primary/80">
+              <li className="text-base text-brand-text-primary/80">
                 If you’re interested in joining our team, we’d love to hear from
                 you.
-              </p>
-              <p className="text-base text-brand-text-primary/80">
+              </li>
+              <li className="text-base text-brand-text-primary/80">
                 Please send your resume and a short cover letter to:
                 info@pureaestheticsmd.org For questions, call: (603) 800-0333
-              </p>
+              </li>
             </div>
           </div>
         </div>
