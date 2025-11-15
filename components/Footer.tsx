@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <nav className="py-6 border-y md:flex items-center justify-between px-6 uppercase hidden font-bold border-brand-primary-light text-brand-secondary-dark font-shippori z-50">
+        <nav className="py-6 border-y md:flex items-center justify-between px-6 uppercase hidden font-bold border-brand-primary-light text-brand-secondary-dark font-shippori z-40">
           <Link href={"/"} className="font-semibold leading-relaxed text-sm">
             Home
           </Link>
@@ -160,7 +160,7 @@ const Footer = () => {
           </Link>
         </nav>
 
-        <div className="flex flex-col md:items-center justify-center gap-7 md:gap-10 pt-2 pb-8 z-50">
+        <div className="flex flex-col md:items-center justify-center gap-7 md:gap-10 pt-2 pb-8 z-40">
           <h2 className="font-medium text-xl md:text-3xl text-brand-secondary-dark">
             Our Beauty & Wellness Treatments
           </h2>
@@ -368,7 +368,7 @@ const Footer = () => {
               href={"/"}
               className="text-[10px] md:text-xs font-bold text-[#FF835A]"
             >
-              HIPAP Privacy Policy
+              HIPAA Privacy Policy
             </Link>
             <Link
               href={"/"}

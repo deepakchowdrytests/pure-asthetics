@@ -70,7 +70,7 @@ const Testimonials = () => {
                     className={`${index % 2 === 0
                       ? "bg-[#FFEFD7]"
                       : "bg-[#FFF9F6]/50 backdrop-blur-[1.5px]"
-                      } flex items-center justify-center h-75 shadow shadow-muted-foreground/10 p-6`}
+                      } flex items-center justify-center h-full md:h-75 shadow shadow-muted-foreground/10 p-6`}
                   >
                     <div className="w-full flex items-center justify-between gap-4 h-full">
                       <div className="flex-1 h-full flex flex-col justify-between py-4 text-brand-text-primary">

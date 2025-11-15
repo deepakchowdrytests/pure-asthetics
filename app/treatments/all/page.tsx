@@ -203,7 +203,7 @@ const ServicesPageContent = () => {
       <div className="w-full flex justify-center bg-[#FFF5ED]">
         <div className="w-11/12 md:w-11/12 flex flex-col items-center py-16">
           <h1 className="text-4xl font-medium text-brand-text-primary">
-            Skin Care Wellness
+            Skin Care Treatments
           </h1>
 
           {skinCareTreatments.map((t) => (

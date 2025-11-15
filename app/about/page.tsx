@@ -297,7 +297,7 @@ const About = () => {
 
         {/* What our clients say */}
         <section className="z-20 bg-[#FFEFD7]/45 min-h-screen flex items-center justify-center py-12 md:py-0">
-          <div className="w-11/12 flex flex-col items-center gap-12 h-[85vh]">
+          <div className="w-11/12 flex flex-col items-center gap-12 h-auto md:h-[85vh]">
             <div className="flex flex-col items-center">
               <h2 className="text-2xl lg:text-4xl font-medium mb-4 text-brand-text-primary">
                 What our clients say
@@ -311,8 +311,8 @@ const About = () => {
               </p>
             </div>
 
-            <div id="testimonials" className="grid grid-cols-1 md:grid-cols-6 w-10/12 h-8/12">
-              <div className="col-span-2 flex flex-col-reverse items-center justify-around">
+            <div id="testimonials" className="grid grid-cols-1 md:grid-cols-6 gap-6 md:gap-0 w-10/12 h-8/12">
+              <div className="col-span-2 flex flex-col-reverse items-center justify-around gap-6 md:gap-0">
                 <div className="flex gap-3 bg-[#FEE0D9] p-3 rounded-lg">
                   <div className="space-y-1">
                     <h3 className="text-base font-medium">Divya P</h3>
@@ -341,7 +341,7 @@ const About = () => {
               </div>
 
               <div className="col-span-2 flex items-center justify-center">
-                <div className="relative md:w-72 h-72 rounded-[50px] overflow-hidden rounded-bl-none">
+                <div className="relative w-full md:w-72 h-72 rounded-[50px] overflow-hidden rounded-bl-none">
                   <Image
                     src={"/img/gallery-6.jpg"}
                     alt="Happy client"
