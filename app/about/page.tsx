@@ -17,7 +17,7 @@ const About = () => {
         />
         <section className="w-11/12 md:w-10/12 h-full relative">
           <h1 className="text-3xl font-medium mb-6 text-brand-text-primary absolute top-10 left-1/2 -translate-x-1/2 hidden md:block">
-            Your Journey To Radiant Skin Starts Here
+            Your journey to radiant skin starts here
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 h-auto md:h-full">
             <div className="relative h-fit md:h-11/12 md:flex flex-col justify-end col-span-1">
