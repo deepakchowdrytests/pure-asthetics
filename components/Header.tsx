@@ -245,8 +245,9 @@ const Header = () => {
   return (
     <>
       <header
-        className={`bg-brand-base-dark sticky top-0 flex items-center justify-center mx-auto transition-all duration-300 h-20 md:h-28 z-50 ${isVisible ? "translate-y-0" : "-translate-y-full"
-          }`}
+        className={`bg-brand-base-dark sticky top-0 flex items-center justify-center mx-auto transition-all duration-300 h-20 md:h-28 z-50 ${
+          isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
       >
         <div className="w-[95%] md:w-11/12 h-full flex items-center justify-between">
           <Link href="/" className="z-50 min-w-40 ml-2 md:ml-0">
@@ -367,8 +368,9 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-brand-base-dark/95 backdrop-blur-xs flex flex-col transition-transform duration-300 ease-in-out transform z-50 ${isOpen ? "translate-y-0" : "-translate-y-full"
-          } md:hidden`}
+        className={`fixed top-0 left-0 w-full h-full bg-brand-base-dark/95 backdrop-blur-xs flex flex-col transition-transform duration-300 ease-in-out transform z-50 ${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        } md:hidden`}
       >
         <button onClick={toggleMenu} className="absolute top-3 right-3">
           <X className="text-brand-text-primary size-6" strokeWidth={1.5} />
@@ -395,8 +397,17 @@ const Header = () => {
           {/* Accordion for Treatments (Services) */}
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="treatments" className="border-b-0 gap-0">
-              <AccordionTrigger className="text-lg font-medium hover:no-underline font-astrid py-2 mt-1">
-                Treatments
+              <AccordionTrigger className="text-lg font-medium hover:no-underline font-astrid py-2 mt-1 [&[data-state=open]>svg]:rotate-180">
+                <h3
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    router.push("/treatments");
+                    closeMenu();
+                  }}
+                  className="flex-1 text-left"
+                >
+                  Treatments
+                </h3>
               </AccordionTrigger>
               <AccordionContent className="space-y-2 pl-4">
                 <Accordion type="single" collapsible className="w-full">
@@ -406,8 +417,17 @@ const Header = () => {
                       value={category.title}
                       className="border-b-0"
                     >
-                      <AccordionTrigger className="text-sm font-bold hover:no-underline py-2.5">
-                        {category.title}
+                      <AccordionTrigger className="text-sm font-bold hover:no-underline py-2.5 [&[data-state=open]>svg]:rotate-180">
+                        <span
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            router.push(category.titleLink);
+                            closeMenu();
+                          }}
+                          className="flex-1 text-left"
+                        >
+                          {category.title}
+                        </span>
                       </AccordionTrigger>
                       <AccordionContent className="pl-4 space-y-4 mt-2">
                         {category.items.map((item) => (
@@ -429,8 +449,17 @@ const Header = () => {
 
             {/* Accordion for About */}
             <AccordionItem value="about" className="border-b-0">
-              <AccordionTrigger className="text-lg font-medium hover:no-underline font-astrid py-2 mt-1.5">
-                About
+              <AccordionTrigger className="text-lg font-medium hover:no-underline font-astrid py-2 mt-1.5 [&[data-state=open]>svg]:rotate-180">
+                <h3
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    router.push("/about");
+                    closeMenu();
+                  }}
+                  className="flex-1 text-left"
+                >
+                  About
+                </h3>
               </AccordionTrigger>
               <AccordionContent className="pl-4 space-y-4 mt-2">
                 {aboutMenuItems.map((item) => (
