@@ -11,7 +11,7 @@ const GrandOpening = () => {
     >
       <div className="w-11/12 flex flex-col items-center gap-6">
         <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
-          GRAND OPENING SPECIALS
+          HOLIDAY GLOW SPECIALS
         </h2>
         <div className="h-48 w-full">
           <Image
@@ -25,7 +25,7 @@ const GrandOpening = () => {
         <div className="flex flex-col items-center gap-12">
           <div className="flex flex-col items-center gap-4">
             <h3 className="text-lg md:text-2xl font-medium text-brand-secondary-dark text-center">
-              Celebrate With Us!
+              Celebrate the Season with Beauty, Confidence, & Cheer
             </h3>
             <p className="text-base text-brand-secondary-dark/80 text-center">
               For a limited time, enjoy exclusive Grand Opening offers

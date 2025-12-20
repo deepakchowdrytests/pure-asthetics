@@ -1,6 +1,7 @@
-import { PhoneIcon } from "@/lib/icons";
+import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -36,15 +37,15 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex items-end pb-4 gap-6 text-sm h-2/5">
-              <button className="flex items-center gap-1 text-brand-text-primary">
+              <Button className="flex bg-brand-secondary hover:bg-brand-secondary/85 text-white items-center gap-1">
                 <Link
                   href={"tel:+16038000333"}
                   className="flex items-center gap-1"
                 >
-                  <PhoneIcon height={15} width={15} />
+                  <Phone className="size-4 mt-px" strokeWidth={1.25} />
                   <span>Call us now</span>
                 </Link>
-              </button>
+              </Button>
             </div>
           </div>
 

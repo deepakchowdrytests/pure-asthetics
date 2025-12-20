@@ -68,7 +68,7 @@ export function FeaturedServicesSection() {
             id="featured-services-heading"
             className="text-5xl text-brand-secondary-dark"
           >
-            Featured treatments
+            Featured Treatments
           </h2>
 
           <p className="text-white text-base max-w-96 leading-relaxed">
@@ -141,8 +141,8 @@ export function FeaturedServicesSection() {
           </CarouselContent>
 
           {/* Arrows */}
-          <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3" />
-          <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3" />
+          <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3 z-50 disabled:pointer-events-auto" />
+          <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3 z-50 disabled:pointer-events-auto" />
         </Carousel>
       </div>
     </section>
