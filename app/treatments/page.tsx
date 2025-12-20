@@ -44,7 +44,6 @@ export default function ServicesPage() {
             <Carousel
               opts={{
                 align: "start",
-                loop: true,
                 slidesToScroll: 1,
               }}
               className=""
@@ -95,8 +94,8 @@ export default function ServicesPage() {
               </CarouselContent>
 
               {/* Arrows */}
-              <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3" />
-              <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3" />
+              <CarouselPrevious className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary translate-x-14 translate-y-3 disabled:pointer-events-auto" />
+              <CarouselNext className="size-9 bg-[#FFEFD7] border-none text-brand-text-primary -translate-x-14 translate-y-3 disabled:pointer-events-auto" />
             </Carousel>
           </div>
 

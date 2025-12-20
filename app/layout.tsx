@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import { Shippori_Mincho } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,6 +27,14 @@ export default function RootLayout({
       <body className={`antialiased ${shippori.variable}`}>
         <Header />
         {children}
+        <Link href={"tel:+16038000333"}>
+          <Button
+            size={"lg"}
+            className="fixed -right-14.5 top-4/6 rotate-90 bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary rounded-none uppercase z-50"
+          >
+            Call Us Now
+          </Button>
+        </Link>
         <Footer />
       </body>
     </html>

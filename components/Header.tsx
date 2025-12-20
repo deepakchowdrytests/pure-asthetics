@@ -3,7 +3,7 @@ import { PhoneIcon } from "@/lib/icons";
 import { ChevronDown, TextAlignEnd, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
 import {
   Accordion,
@@ -208,12 +208,21 @@ const CTAButton = ({
 
 const Header = () => {
   const router = useRouter();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [openHoverCard, setOpenHoverCard] = useState<string | null>(null);
 
+  const isHomePage = pathname === "/";
+
   useEffect(() => {
+    // Don't apply scroll behavior on home page
+    if (isHomePage) {
+      setIsVisible(true);
+      return;
+    }
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
@@ -230,7 +239,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, [lastScrollY, isHomePage]);
 
   const closeMenu = () => {
     setIsOpen(false);

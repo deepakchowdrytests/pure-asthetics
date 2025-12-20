@@ -8,8 +8,8 @@ import {
 import { PhoneIcon } from "@/lib/icons";
 import { Smile } from "lucide-react";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const Transformations = () => {
   const transformations = [
@@ -43,7 +43,13 @@ const Transformations = () => {
 
         {/* Carousel */}
         <div className="relative">
-          <Carousel className="w-full">
+          <Carousel
+            opts={{
+              align: "start",
+              slidesToScroll: 2,
+            }}
+            className="w-full"
+          >
             <CarouselContent>
               {transformations.map((transformation) => (
                 <CarouselItem

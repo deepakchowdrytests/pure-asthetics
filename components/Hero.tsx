@@ -37,7 +37,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex items-end pb-4 gap-6 text-sm h-2/5">
-              <Button className="flex bg-brand-secondary hover:bg-brand-secondary/85 text-white items-center gap-1">
+              <Button className="flex bg-[#FF835A] hover:bg-[#FF835A]/90 text-brand-text-primary items-center gap-1">
                 <Link
                   href={"tel:+16038000333"}
                   className="flex items-center gap-1"
