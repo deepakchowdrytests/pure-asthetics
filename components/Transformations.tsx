@@ -46,7 +46,12 @@ const Transformations = () => {
           <Carousel
             opts={{
               align: "start",
-              slidesToScroll: 2,
+              slidesToScroll: 1,
+              breakpoints: {
+                '(min-width: 768px)': {
+                  slidesToScroll: 2,
+                },
+              },
             }}
             className="w-full"
           >

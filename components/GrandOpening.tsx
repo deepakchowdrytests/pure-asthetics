@@ -15,7 +15,7 @@ const GrandOpening = () => {
         </h2>
         <div className="h-48 w-full">
           <Image
-            src={"/img/special-1.jpg"}
+            src={"/img/new-year.jpg"}
             alt=""
             width={1000}
             height={1000}
