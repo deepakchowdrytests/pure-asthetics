@@ -13,13 +13,13 @@ const GrandOpening = () => {
         <h2 className="text-2xl md:text-4xl font-medium text-brand-secondary-dark">
           NEW YEAR SPECIALS
         </h2>
-        <div className="h-48 w-full">
+        <div className="h-48 md:h-60 w-full">
           <Image
             src={"/img/new-year.jpg"}
             alt=""
             width={1000}
             height={1000}
-            className="object-cover w-full h-full"
+            className="object-cover object-left w-full h-full"
           />
         </div>
         <div className="flex flex-col items-center gap-12">

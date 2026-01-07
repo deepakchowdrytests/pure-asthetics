@@ -259,13 +259,13 @@ const Header = () => {
         }`}
       >
         <div className="w-[95%] md:w-11/12 h-full flex items-center justify-between">
-          <Link href="/" className="z-50 min-w-40 ml-2 md:ml-0">
+          <Link href="/" className="z-50 min-w-40 md:ml-0">
             <Image
-              src="/logos/logo-1.png"
+              src="/logos/pure_logo3.png"
               alt="Pure Aesthetics MD"
-              width={160}
-              height={60}
-              className="w-40 md:w-60 object-cover"
+              width={2000}
+              height={2000}
+              className="w-48 md:w-64 object-cover"
             />
           </Link>
 

@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const MembershipProgram = () => {
   return (
-    <div className="flex flex-col items-center justify-center md:min-h-[60vh] relative border-black">
+    <div className="flex flex-col items-center justify-center lg:min-h-[60vh] relative">
       <Image
         src={"/img/intro.jpg"}
         alt="intro"
@@ -18,7 +18,7 @@ const MembershipProgram = () => {
           <h2 className="text-base md:text-3xl uppercase font-medium text-brand-secondary-dark text-center">
             Introducing Our Membership Program
           </h2>
-          <div className="md:flex flex-col items-center gap-2 hidden">
+          <div className="lg:flex flex-col items-center gap-2 hidden">
             <h3 className="text-base md:text-xl uppercase font-medium text-brand-secondary-dark text-center">
               Glow All Year Long
             </h3>
@@ -28,7 +28,7 @@ const MembershipProgram = () => {
               affordable self-care.
             </p>
           </div>
-          <div className="md:flex flex-col items-center gap-2 hidden">
+          <div className="lg:flex flex-col items-center gap-2 hidden">
             <h3 className="text-base md:text-xl uppercase font-medium text-brand-secondary-dark text-center">
               Membership Benefits:
             </h3>
